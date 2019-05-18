@@ -1,12 +1,15 @@
 import React from 'react';
-import './App.css';
+import { Route, Switch } from 'react-router-dom';
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <p>Hello</p>
-    </div>
+    <Switch>
+      <Route exact path="/" render={() => <h2>Main</h2>} />
+      <Route path="/search" render={() => <h2>Search</h2>} />
+      <Route path="/random" render={() => <h2>Random</h2>} />
+      <Route render={() => <h2>404 error</h2>} />
+    </Switch>
   );
 }
-let a;
 export default App;
