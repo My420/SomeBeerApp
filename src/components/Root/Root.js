@@ -4,12 +4,14 @@ import AppRouter from '../AppRouter/AppRouter';
 // import store from "../../store/store";
 // import { Provider } from "react-redux";
 
-function Root() {
+const Root = () => {
+  // eslint-disable-next-line no-console
+  console.log('render ===== root');
   return (
     // <Provider store={store}>
     <AppRouter />
     // </Provider>
   );
-}
+};
 
 export default Root;

@@ -1,15 +1,24 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import './App.scss';
+import Header from '../Header/Header';
+import styles from './App.module.scss';
+import Container from '../Container/Container';
 
-function App() {
+const App = () => {
+  // eslint-disable-next-line no-console
+  console.log('render ===== App');
   return (
-    <Switch>
-      <Route exact path="/" render={() => <h2>Main</h2>} />
-      <Route path="/search" render={() => <h2>Search</h2>} />
-      <Route path="/random" render={() => <h2>Random</h2>} />
-      <Route render={() => <h2>404 error</h2>} />
-    </Switch>
+    <React.Fragment>
+      <Container className={styles.container}>
+        <Header />
+      </Container>
+      <Switch>
+        <Route exact path="/" render={() => <h2>Main</h2>} />
+        <Route path="/search" render={() => <h2>Search</h2>} />
+        <Route path="/random" render={() => <h2>Random</h2>} />
+        <Route render={() => <h2>404 error</h2>} />
+      </Switch>
+    </React.Fragment>
   );
-}
+};
 export default App;

@@ -1,0 +1,92 @@
+@import '../../sass/variables.scss';
+
+.list {
+  display: flex;
+  justify-content: space-around;
+  width: $PC-container-width;
+  list-style: none;
+}
+
+.link {
+  font-size: 22px;
+  font-weight: 700;
+  color: $menu-color;
+
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.link:hover,
+.active {
+  color: $menu-hover-color;
+}
+
+.link:active {
+  opacity: 0.5;
+}
+
+.link:focus {
+  outline: 2px solid $menu-hover-color;
+}
+
+.list .item:first-child .active {
+  color: $menu-color;
+}
+
+.list .item:last-child {
+  margin-left: 200px;
+}
+
+@media (max-width: $PC-max-width) {
+  .list {
+    width: $MPC-container-width;
+  }
+
+  .list .item:last-child {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: $MPC-max-width) {
+  .navigation {
+    position: absolute;
+    bottom: -420px;
+
+    width: 100%;
+
+    background-color: $menu-bar-color;
+  }
+
+  .list {
+    display: block;
+    width: auto;
+  }
+
+  .list .item:last-child {
+    margin-left: 0px;
+  }
+
+  .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+  }
+}
+
+@media (max-width: $Tablet-max-width) {
+  .navigation {
+    bottom: -350px;
+  }
+
+  .link {
+    font-size: 18px;
+  }
+
+  .item {
+    height: 50px;
+  }
+}
+
+@media (max-width: $Mobile-max-width) {
+}

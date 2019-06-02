@@ -1,0 +1,44 @@
+@import '../../sass/variables.scss';
+
+.container {
+  position: relative;
+
+  width: 28px;
+  height: 28px;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 10%;
+
+  top: 12px;
+  left: 0px;
+
+  background-color: $menu-color;
+  transform: rotate(45deg);
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 10%;
+
+  top: 12px;
+  left: 0px;
+
+  background-color: $menu-color;
+  transform: rotate(-45deg);
+}
+
+.container:hover:after,
+.container:hover:before {
+  background-color: $menu-hover-color;
+}
+
+.container:active:after,
+.container:active:before {
+  opacity: 0.5;
+}
