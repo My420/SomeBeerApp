@@ -1,13 +1,16 @@
 import React from 'react';
 import { HashRouter } from 'react-router-dom';
 import App from '../App/App';
+import ResizeProvider from '../ResizeContext/ResizeProvider';
 
 const AppRouter = () => {
   // eslint-disable-next-line no-console
   console.log('render ===== AppRouter');
   return (
     <HashRouter>
-      <App />
+      <ResizeProvider>
+        <App />
+      </ResizeProvider>
     </HashRouter>
   );
 };

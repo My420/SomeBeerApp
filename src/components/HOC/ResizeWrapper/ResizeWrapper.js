@@ -1,10 +1,12 @@
 import React from 'react';
-import calcDeviceNumber from '../../../utils/calcDeviceNumber';
+import calcBrowserWidthRatio from '../../../utils/calcBrowserWidthRatio';
 
 const withResize = WrappedComponent => {
-  return class ResizeWrapper extends React.Component {
+  class ResizeWrapper extends React.Component {
     state = {
-      deviceNumber: calcDeviceNumber(document.documentElement.clientWidth)
+      browserWidthRatio: calcBrowserWidthRatio(
+        document.documentElement.clientWidth
+      )
     };
 
     componentDidMount() {
@@ -17,20 +19,30 @@ const withResize = WrappedComponent => {
 
     onBrowserSizeChange = evt => {
       const newBrowserWidth = evt.target.innerWidth;
-      const newNumber = calcDeviceNumber(newBrowserWidth);
-      const { deviceNumber } = this.state;
-      if (newNumber !== deviceNumber) {
-        this.setState({ deviceNumber: newNumber });
+      const newRatio = calcBrowserWidthRatio(newBrowserWidth);
+      const { browserWidthRatio } = this.state;
+      if (newRatio !== browserWidthRatio) {
+        this.setState({ browserWidthRatio: newRatio });
       }
     };
 
     render() {
-      const { deviceNumber } = this.state;
+      const { browserWidthRatio } = this.state;
       // eslint-disable-next-line no-console
       console.log('render ===== ResizeWrapper');
-      return <WrappedComponent {...this.props} deviceNumber={deviceNumber} />;
+      return (
+        <WrappedComponent
+          {...this.props}
+          browserWidthRatio={browserWidthRatio}
+        />
+      );
     }
-  };
+  }
+
+  ResizeWrapper.displayName = `ResizeWrapper(${WrappedComponent.displayName ||
+    WrappedComponent.name ||
+    'Component'})`;
+  return ResizeWrapper;
 };
 
 export default withResize;

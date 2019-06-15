@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Header from '../Header/Header';
+import HeaderCreator from '../HeaderCreator/HeaderCreator';
 import styles from './App.module.scss';
 import Container from '../Container/Container';
 
@@ -10,7 +10,7 @@ const App = () => {
   return (
     <React.Fragment>
       <Container className={styles.container}>
-        <Header />
+        <HeaderCreator />
       </Container>
       <Switch>
         <Route exact path="/" render={() => <h2>Main</h2>} />
