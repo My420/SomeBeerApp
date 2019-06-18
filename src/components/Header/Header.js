@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import styles from './Header.module.scss';
+import animation from './animation.module.css';
 import Navigation from '../Navigation/Navigation';
 import Button from '../Button/Button';
 import Container from '../Container/Container';
@@ -14,7 +16,15 @@ const Header = ({ isOpen, toggleState, isButtonShown }) => {
   return (
     <header className={styles.header}>
       <Container className={styles.inner}>
-        {isOpen ? <Navigation links={NAVIGATION_LINKS} /> : null}
+        <TransitionGroup component={null}>
+          {isOpen ? (
+            <CSSTransition classNames={{ ...animation }} timeout={300}>
+              <div>
+                <Navigation links={NAVIGATION_LINKS} />
+              </div>
+            </CSSTransition>
+          ) : null}
+        </TransitionGroup>
       </Container>
       {isButtonShown ? (
         <Button onClick={toggleState} className={styles.button}>

@@ -8,7 +8,10 @@ const calcBrowserWidthRatio = width => {
     return BROWSER_WIDTH_RATIO.MPC;
   }
   if (width > BROWSER_MIN_WIDTH.TABLET) {
-    return BROWSER_WIDTH_RATIO.TABLET;
+    return BROWSER_WIDTH_RATIO.TABLET_9;
+  }
+  if (width > BROWSER_MIN_WIDTH.MOBILE) {
+    return BROWSER_WIDTH_RATIO.TABLET_7;
   }
   return BROWSER_WIDTH_RATIO.MOBILE;
 };

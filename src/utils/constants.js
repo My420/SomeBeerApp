@@ -21,8 +21,9 @@ export const NAVIGATION_LINKS = [
 export const BROWSER_WIDTH_RATIO = {
   LPC: 4,
   MPC: 3,
-  TABLET: 2,
-  MOBILE: 1
+  TABLET_9: 2,
+  TABLET_7: 1,
+  MOBILE: 0
 };
 
 export const BROWSER_MIN_WIDTH = {

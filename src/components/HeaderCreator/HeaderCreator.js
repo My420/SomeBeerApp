@@ -22,7 +22,8 @@ const HeaderCreator = ({ browserWidthRatio }) => {
 HeaderCreator.propTypes = {
   browserWidthRatio: PropTypes.oneOf([
     BROWSER_WIDTH_RATIO.MOBILE,
-    BROWSER_WIDTH_RATIO.TABLET,
+    BROWSER_WIDTH_RATIO.TABLET_7,
+    BROWSER_WIDTH_RATIO.TABLET_9,
     BROWSER_WIDTH_RATIO.MPC,
     BROWSER_WIDTH_RATIO.LPC
   ]).isRequired
