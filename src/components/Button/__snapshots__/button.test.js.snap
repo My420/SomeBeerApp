@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test <Button /> component test <Button /> component with common props should render button with common attr 1`] = `
+<button
+  className="test "
+  disabled={false}
+  onClick={[MockFunction]}
+  type="button"
+>
+   
+  test button
+   
+</button>
+`;
+
+exports[`test <Button /> component test <Button /> component with no transferred props should render default button 1`] = `
+<button
+  className="defaultButton "
+  disabled={false}
+  onClick={[Function]}
+  type="button"
+>
+   
+  button
+   
+</button>
+`;
+
+exports[`test <Button /> component test <Button /> component with uncommon props should render button  with uncommon attr 1`] = `
+<button
+  className="test active"
+  disabled={true}
+  onClick={[Function]}
+  type="submit"
+>
+   
+  button
+   
+</button>
+`;
