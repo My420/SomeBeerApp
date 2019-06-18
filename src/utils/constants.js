@@ -29,6 +29,7 @@ export const BROWSER_WIDTH_RATIO = {
 export const BROWSER_MIN_WIDTH = {
   LPC: 1200,
   MPC: 992,
-  TABLET: 768,
-  MOBILE: 480
+  TABLET_9: 768,
+  TABLET_7: 480,
+  MOBILE: 320
 };
