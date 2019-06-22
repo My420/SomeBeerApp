@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <ListGroupItem /> component Test <ListGroupItem /> with props should correct render component with props 1`] = `
+<li
+  className="test"
+>
+  <span>
+    Test
+  </span>
+</li>
+`;
+
+exports[`Test <ListGroupItem /> component Test <ListGroupItem /> without props should correct render component without props 1`] = `
+<li
+  className="list-group-item"
+/>
+`;

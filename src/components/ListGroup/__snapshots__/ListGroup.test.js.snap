@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <ListGroup /> component Test <ListGroup /> with props should correct render component with props 1`] = `
+<ol
+  className="test"
+  data-test="test"
+>
+  <li>
+    test
+  </li>
+  <li>
+    test
+  </li>
+</ol>
+`;
+
+exports[`Test <ListGroup /> component Test <ListGroup /> without props should correct render component without props 1`] = `
+<ul
+  className="list-group"
+/>
+`;
