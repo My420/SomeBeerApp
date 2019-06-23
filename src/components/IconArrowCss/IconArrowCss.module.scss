@@ -1,0 +1,42 @@
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
+.top {
+  overflow: hidden;
+}
+
+.bottom {
+  transform: rotate(180deg);
+}
+
+.right {
+  transform: rotate(90deg);
+}
+
+.left {
+  transform: rotate(270deg);
+}
+
+.arrow {
+  box-sizing: border-box;
+
+  transform-origin: 0% 0%;
+  transform: translateX(50%) rotate(45deg);
+
+  border: solid;
+}
+
+.arrowDefault {
+  border: solid black;
+  cursor: pointer;
+}
+
+.arrowDefault:hover {
+  border-color: #0000006e;
+}
+
+.arrowDefault:active {
+  opacity: 0.3;
+}

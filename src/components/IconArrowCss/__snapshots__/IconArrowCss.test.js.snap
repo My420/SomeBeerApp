@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <IconArrowCss /> component Test <IconArrowCss /> with props should correct render component with props 1`] = `
+<div
+  className="container top"
+  style={
+    Object {
+      "height": 25,
+      "width": 50,
+    }
+  }
+>
+  <div
+    className="arrow test"
+    style={
+      Object {
+        "borderWidth": "5px",
+        "height": 50,
+        "width": 50,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Test <IconArrowCss /> component Test <IconArrowCss /> without props should correct render component without props 1`] = `
+<div
+  className="container left"
+  style={
+    Object {
+      "height": 20,
+      "width": 40,
+    }
+  }
+>
+  <div
+    className="arrow arrowDefault"
+    style={
+      Object {
+        "borderWidth": "3px",
+        "height": 40,
+        "width": 40,
+      }
+    }
+  />
+</div>
+`;
