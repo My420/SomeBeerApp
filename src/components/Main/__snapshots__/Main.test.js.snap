@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <Main /> component should correct render component 1`] = `
+<main
+  className="pageMain"
+  data-test="test"
+>
+  <p>
+    test
+  </p>
+</main>
+`;

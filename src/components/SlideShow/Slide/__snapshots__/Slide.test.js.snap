@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <Slide /> component should correct render component 1`] = `
+<div
+  className="slide"
+  data-test="test"
+>
+  <span>
+    Test
+  </span>
+</div>
+`;

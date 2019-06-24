@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <SlideShow /> component Test component correct render should correct render component 1`] = `
+<div
+  className="slideBox forward"
+>
+  <Button
+    activeStyle=""
+    className="prev"
+    disabled={false}
+    onClick={[Function]}
+  >
+    <span
+      className="visually-hidden"
+    >
+      Prev
+    </span>
+    <IconArrowSvg
+      containerClass="arrowContainer"
+      direction="left"
+      pathClass="arrow"
+    />
+  </Button>
+  <TransitionGroup
+    childFactory={[Function]}
+    component={null}
+  >
+    <CSSTransition
+      addEndListener={[Function]}
+      classNames="slide"
+      key="0"
+      timeout={1000}
+    >
+      <div
+        data-slide={true}
+      >
+        <Slide
+          component={
+            <span
+              className="test1"
+            >
+              1
+            </span>
+          }
+        />
+      </div>
+    </CSSTransition>
+  </TransitionGroup>
+  <Button
+    activeStyle=""
+    className="next"
+    disabled={false}
+    onClick={[Function]}
+  >
+    <span
+      className="visually-hidden"
+    >
+      Next
+    </span>
+    <IconArrowSvg
+      containerClass="arrowContainer"
+      direction="right"
+      pathClass="arrow"
+    />
+  </Button>
+</div>
+`;

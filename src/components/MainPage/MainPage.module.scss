@@ -1,0 +1,25 @@
+@import '../../sass/variables.scss';
+
+.container {
+  width: $PC-container-width;
+
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: $PC-max-width) {
+  .container {
+    width: $MPC-container-width;
+  }
+}
+
+@media (max-width: $MPC-max-width) {
+  .main {
+    padding-top: 60px;
+  }
+
+  .container {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
