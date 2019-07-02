@@ -1,3 +1,5 @@
+export const SHOP_NAME = 'Some Beer Shop';
+
 export const LINK = {
   HOME: '/',
   LIST: '/list',

@@ -7,6 +7,9 @@ const IconArrowSvg = ({ direction, containerClass, pathClass }) => {
     styles[direction]
   }`;
 
+  // eslint-disable-next-line no-console
+  console.log('render ===== IconArrowSvg');
+
   return (
     <div className={containerClassName}>
       <svg viewBox="0 0 512 512" preserveAspectRatio="xMinYMin meet">

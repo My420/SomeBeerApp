@@ -37,6 +37,9 @@ class SlideShow extends React.Component {
     node.addEventListener('transitionend', done, false);
 
   render() {
+    // eslint-disable-next-line no-console
+    console.log('render ===== SlideShow');
+
     const { children } = this.props;
     const { index, isForward } = this.state;
 

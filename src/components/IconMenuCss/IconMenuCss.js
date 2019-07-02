@@ -3,7 +3,7 @@ import styles from './IconMenuCss.module.scss';
 
 const IconMenuCss = () => {
   // eslint-disable-next-line no-console
-  console.log('render ===== IconCrossScss');
+  console.log('render ===== IconMenuCss');
 
   return (
     <div className={styles.container}>

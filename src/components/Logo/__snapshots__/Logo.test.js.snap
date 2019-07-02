@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <Logo/> component should correct render component 1`] = `
+<div
+  className="logo"
+>
+  <h1
+    className="text"
+  >
+    Some Beer Shop
+  </h1>
+</div>
+`;

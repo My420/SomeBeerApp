@@ -17,6 +17,9 @@ const IconArrowCss = ({ size, thickness, direction, className }) => {
   const containerClassName = `${styles.container} ${styles[direction]}`;
   const arrowClassName = `${styles.arrow} ${className}`;
 
+  // eslint-disable-next-line no-console
+  console.log('render ===== IconArrowCss');
+
   return (
     <div style={containerStyle} className={containerClassName}>
       <div className={arrowClassName} style={arrowStyle} />
