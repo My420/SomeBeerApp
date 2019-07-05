@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <SloganShakespeare/> component should correct render component 1`] = `
+<section
+  className="container"
+>
+  <h5
+    className="visually-hidden"
+  >
+     William Shakespeare quote
+  </h5>
+  <Picture
+    alt="beer cheer"
+    className="image"
+    mobileSrc="beer_cheers@Mobile.jpg"
+    pcSrc="beer_cheers@PC.jpg"
+    tabletSrc="beer_cheers@Tablet.jpg"
+  />
+  <blockquote
+    className="quote"
+  >
+    <p
+      className="text"
+    >
+      «For a quart of Ale is a dish for a king»
+    </p>
+    <cite
+      className="author"
+    >
+      ~ William Shakespeare
+    </cite>
+  </blockquote>
+</section>
+`;

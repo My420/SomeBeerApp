@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <SloganChurchhill/> component should correct render component 1`] = `
+<section
+  className="container"
+>
+  <h5
+    className="visually-hidden"
+  >
+     Winston Churchhill quote
+  </h5>
+  <Picture
+    alt="bottle caps"
+    className="image"
+    mobileSrc="bottle_caps@Mobile.jpg"
+    pcSrc="bottle_caps@PC.jpg"
+    tabletSrc="bottle_caps@Tablet.jpg"
+  />
+  <blockquote
+    className="quote"
+  >
+    <p
+      className="text"
+    >
+      «Most people hate the taste of beer—to begin with. It is, however, a prejudice»
+    </p>
+    <cite
+      className="author"
+    >
+      ~ Winston Churchhill
+    </cite>
+  </blockquote>
+</section>
+`;

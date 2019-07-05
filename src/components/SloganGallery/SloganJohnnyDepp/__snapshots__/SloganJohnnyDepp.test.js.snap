@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <SloganJohnnyDepp/> component should correct render component 1`] = `
+<section
+  className="container"
+>
+  <h5
+    className="visually-hidden"
+  >
+     Johnny Depp quote
+  </h5>
+  <Picture
+    alt="beer cheer"
+    className="image"
+    mobileSrc="beer_beach@Mobile.jpg"
+    pcSrc="beer_beach@PC.jpg"
+    tabletSrc="beer_beach@Tablet.jpg"
+  />
+  <blockquote
+    className="quote"
+  >
+    <p
+      className="text"
+    >
+      «I'm an old-fashioned guy... I want to be an old man with a beer belly sitting on a porch, looking at a lake or something»
+    </p>
+    <cite
+      className="author"
+    >
+      ~ Johnny Depp
+    </cite>
+  </blockquote>
+</section>
+`;

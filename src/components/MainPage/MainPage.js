@@ -4,6 +4,10 @@ import SlideShow from '../SlideShow/SlideShow';
 import Container from '../Container/Container';
 import styles from './MainPage.module.scss';
 import Logo from '../Logo/Logo';
+import SloganShakespeare from '../SloganGallery/SloganShakespeare/SloganShakespeare';
+import SloganJohnnyDepp from '../SloganGallery/SloganJohnnyDepp/SloganJohnnyDepp';
+import SloganChurchhill from '../SloganGallery/SloganChurchhill/SloganChurchhill';
+import SloganLuther from '../SloganGallery/SloganLuther/SloganLuther';
 
 const MainPage = () => {
   // eslint-disable-next-line no-console
@@ -13,12 +17,10 @@ const MainPage = () => {
       <Container className={styles.container}>
         <Logo />
         <SlideShow>
-          <h3>slide 1</h3>
-          <span>slide 2</span>
-          <h3>slide 3</h3>
-          <h3>slide 4</h3>
-          <span>slide 5</span>
-          <h3>slide 6</h3>
+          <SloganShakespeare />
+          <SloganJohnnyDepp />
+          <SloganChurchhill />
+          <SloganLuther />
         </SlideShow>
       </Container>
     </Main>

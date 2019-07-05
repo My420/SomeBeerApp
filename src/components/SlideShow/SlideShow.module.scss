@@ -4,9 +4,10 @@
   position: relative;
 
   width: 800px;
-  height: 400px;
+  height: 530px;
 
   margin: 0 auto;
+  margin-bottom: 10px;
 
   overflow: hidden;
 }
@@ -74,7 +75,7 @@
 @media (max-width: $MPC-max-width) {
   .slideBox {
     width: 700px;
-    height: 350px;
+    height: 466px;
   }
 
   .next:focus .arrowContainer,
@@ -91,34 +92,34 @@
 @media (max-width: $Tablet9-max-width) {
   .slideBox {
     width: 600px;
-    height: 300px;
+    height: 400px;
   }
 }
 
 @media (max-width: 650px) {
   .slideBox {
     width: 500px;
-    height: 250px;
+    height: 330px;
   }
 }
 
 @media (max-width: 550px) {
   .slideBox {
     width: 400px;
-    height: 200px;
+    height: 260px;
   }
 }
 
 @media (max-width: $Tablet7-max-width) {
   .slideBox {
     width: 300px;
-    height: 150px;
+    height: 200px;
   }
 }
 
 @media (max-width: 360px) {
   .slideBox {
     width: 280px;
-    height: 140px;
+    height: 180px;
   }
 }

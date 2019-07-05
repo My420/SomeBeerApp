@@ -1,0 +1,88 @@
+@import '../../../sass/variables.scss';
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.quote {
+  position: absolute;
+
+  top: 0px;
+  left: 0px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  width: 100%;
+}
+
+.text,
+.author {
+  padding: 10px;
+
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 700;
+
+  color: #8a8675;
+}
+
+@media (max-width: $MPC-max-width) {
+  .text,
+  .author {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: $Tablet9-max-width) {
+  .text,
+  .author {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 650px) {
+  .text,
+  .author {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .author {
+    padding: 0 5px 0 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .text,
+  .author {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: $Tablet7-max-width) {
+  .text,
+  .author {
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .text,
+  .author {
+    font-size: 10px;
+    line-height: 14px;
+  }
+}

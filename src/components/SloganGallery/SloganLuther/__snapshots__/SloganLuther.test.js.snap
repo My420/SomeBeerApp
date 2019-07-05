@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <SloganLuther/> component should correct render component 1`] = `
+<section
+  className="container"
+>
+  <h5
+    className="visually-hidden"
+  >
+     Martin Luther quote
+  </h5>
+  <Picture
+    alt="beer glass"
+    className="image"
+    mobileSrc="beer_glass@Mobile.jpg"
+    pcSrc="beer_glass@PC.jpg"
+    tabletSrc="beer_glass@Tablet.jpg"
+  />
+  <blockquote
+    className="quote"
+  >
+    <p
+      className="text"
+    >
+      «Whoever drinks beer, he is quick to sleep; whoever sleeps long, does not sin; whoever does not sin, enters Heaven! Thus, let us drink beer!»
+    </p>
+    <cite
+      className="author"
+    >
+      ~ Martin Luther
+    </cite>
+  </blockquote>
+</section>
+`;
