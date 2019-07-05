@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <Picture/> component should correct render component 1`] = `
+<picture>
+  <source
+    media="(max-width: 480px)"
+    srcSet="mobile/test/src"
+  />
+  <source
+    media="(max-width: 992px)"
+    srcSet="tablet/test/src"
+  />
+  <img
+    alt="test"
+    className="test"
+    src="pc/test/src"
+  />
+</picture>
+`;
