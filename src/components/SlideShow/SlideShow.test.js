@@ -25,16 +25,16 @@ describe('Test <SlideShow /> component', () => {
       expect(wrapper.state()).toEqual(initialState);
     });
 
-    test('should render div with correct className', () => {
-      expect(wrapper.find('div.slideBox').prop('className')).toBe(
+    test('should render section with correct className', () => {
+      expect(wrapper.find('section.slideBox').prop('className')).toBe(
         'slideBox forward'
       );
     });
 
-    test('should render two Buttons components with proper className inside div.slideBox ', () => {
+    test('should render two Buttons components with proper className inside section.slideBox ', () => {
       expect(
         wrapper
-          .find('div.slideBox')
+          .find('section.slideBox')
           .find('Button')
           .first()
           .prop('className')
@@ -42,7 +42,7 @@ describe('Test <SlideShow /> component', () => {
 
       expect(
         wrapper
-          .find('div.slideBox')
+          .find('section.slideBox')
           .find('Button')
           .last()
           .prop('className')
@@ -80,10 +80,10 @@ describe('Test <SlideShow /> component', () => {
       );
     });
 
-    test('should render <Slide> component with correct props inside div.slideBox', () => {
+    test('should render <Slide> component with correct props inside section.slideBox', () => {
       expect(
         wrapper
-          .find('div.slideBox')
+          .find('section.slideBox')
           .find('Slide')
           .prop('component')
       ).toStrictEqual(<span className="test1">1</span>);

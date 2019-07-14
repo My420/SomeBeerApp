@@ -1,9 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Test <SlideShow /> component Test component correct render should correct render component 1`] = `
-<div
+<section
   className="slideBox forward"
 >
+  <h2
+    className="visually-hidden"
+  >
+    Slogan Galery
+  </h2>
   <Button
     activeStyle=""
     className="prev"
@@ -63,5 +68,19 @@ exports[`Test <SlideShow /> component Test component correct render should corre
       pathClass="arrow"
     />
   </Button>
-</div>
+  <div
+    className="hidden"
+  >
+    <span
+      className="test2"
+    >
+      2
+    </span>
+    <span
+      className="test3"
+    >
+      3
+    </span>
+  </div>
+</section>
 `;

@@ -10,7 +10,7 @@ const SloganShakespeare = () => {
   console.log('render ===== Shakespeare');
 
   return (
-    <section className={styles.container}>
+    <article className={styles.container}>
       <h5 className="visually-hidden"> William Shakespeare quote</h5>
       <Picture
         className={styles.image}
@@ -23,7 +23,7 @@ const SloganShakespeare = () => {
         <p className={styles.text}>«For a quart of Ale is a dish for a king»</p>
         <cite className={styles.author}>~ William Shakespeare</cite>
       </blockquote>
-    </section>
+    </article>
   );
 };
 

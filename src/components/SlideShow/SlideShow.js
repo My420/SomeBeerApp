@@ -47,8 +47,16 @@ class SlideShow extends React.Component {
       isForward ? 'forward' : 'backward'
     }`;
 
+    const hiddenSlides = children.filter((elem, i) => {
+      if (i === index) {
+        return false;
+      }
+      return true;
+    });
+
     return (
-      <div className={slideBoxClassName}>
+      <section className={slideBoxClassName}>
+        <h2 className="visually-hidden">Slogan Galery</h2>
         <Button className={styles.prev} onClick={this.showPrevSlide}>
           <span className="visually-hidden">Prev</span>
           <IconArrowSvg
@@ -78,7 +86,8 @@ class SlideShow extends React.Component {
             containerClass={styles.arrowContainer}
           />
         </Button>
-      </div>
+        <div className={styles.hidden}>{hiddenSlides}</div>
+      </section>
     );
   }
 }

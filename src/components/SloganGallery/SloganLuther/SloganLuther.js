@@ -10,7 +10,7 @@ const SloganLuther = () => {
   console.log('render ===== SloganLuther');
 
   return (
-    <section className={styles.container}>
+    <article className={styles.container}>
       <h5 className="visually-hidden"> Martin Luther quote</h5>
       <Picture
         className={styles.image}
@@ -27,7 +27,7 @@ const SloganLuther = () => {
         </p>
         <cite className={styles.author}>~ Martin Luther</cite>
       </blockquote>
-    </section>
+    </article>
   );
 };
 

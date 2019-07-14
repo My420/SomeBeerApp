@@ -10,7 +10,7 @@ const SloganJohnnyDepp = () => {
   console.log('render ===== SloganJohnnyDepp');
 
   return (
-    <section className={styles.container}>
+    <article className={styles.container}>
       <h5 className="visually-hidden"> Johnny Depp quote</h5>
       <Picture
         className={styles.image}
@@ -26,7 +26,7 @@ const SloganJohnnyDepp = () => {
         </p>
         <cite className={styles.author}>~ Johnny Depp</cite>
       </blockquote>
-    </section>
+    </article>
   );
 };
 
