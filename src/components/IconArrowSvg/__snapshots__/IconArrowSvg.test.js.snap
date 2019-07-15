@@ -2,15 +2,16 @@
 
 exports[`Test <IconArrowSvg /> component Test <IconArrowSvg /> with props should correct render component with props 1`] = `
 <div
-  className="container testContainer top"
+  className="testContainer top"
 >
   <svg
-    preserveAspectRatio="xMinYMin meet"
-    viewBox="0 0 512 512"
+    height="100%"
+    viewBox="0 0 24 24"
+    width="100%"
   >
     <path
       className="testPath"
-      d="M352 128.4L319.7 96 160 256l159.7 160 32.3-32.4L224.7 256z"
+      d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"
     />
   </svg>
 </div>
@@ -18,15 +19,16 @@ exports[`Test <IconArrowSvg /> component Test <IconArrowSvg /> with props should
 
 exports[`Test <IconArrowSvg /> component Test <IconArrowSvg /> without props should correct render component without props 1`] = `
 <div
-  className="container svgContainer left"
+  className="container right"
 >
   <svg
-    preserveAspectRatio="xMinYMin meet"
-    viewBox="0 0 512 512"
+    height="100%"
+    viewBox="0 0 24 24"
+    width="100%"
   >
     <path
       className="path"
-      d="M352 128.4L319.7 96 160 256l159.7 160 32.3-32.4L224.7 256z"
+      d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"
     />
   </svg>
 </div>

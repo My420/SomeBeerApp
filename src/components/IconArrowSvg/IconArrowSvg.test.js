@@ -11,9 +11,7 @@ describe('Test <IconArrowSvg /> component', () => {
     });
 
     test('should  render div with default className', () => {
-      expect(wrapper.find('div').prop('className')).toBe(
-        'container svgContainer left'
-      );
+      expect(wrapper.find('div').prop('className')).toBe('container left');
     });
 
     test("should  render svg'", () => {
@@ -39,9 +37,7 @@ describe('Test <IconArrowSvg /> component', () => {
     });
 
     test('should  correct set className at div ', () => {
-      expect(wrapper.find('div').prop('className')).toBe(
-        'container testContainer top'
-      );
+      expect(wrapper.find('div').prop('className')).toBe('testContainer top');
     });
 
     test('should  correct set className at path', () => {

@@ -3,19 +3,17 @@ import PropTypes from 'prop-types';
 import styles from './IconArrowSvg.module.scss';
 
 const IconArrowSvg = ({ direction, containerClass, pathClass }) => {
-  const containerClassName = `${styles.container} ${containerClass} ${
-    styles[direction]
-  }`;
+  const containerClassName = `${containerClass} ${styles[direction]}`;
 
   // eslint-disable-next-line no-console
   console.log('render ===== IconArrowSvg');
 
   return (
     <div className={containerClassName}>
-      <svg viewBox="0 0 512 512" preserveAspectRatio="xMinYMin meet">
+      <svg width="100%" height="100%" viewBox="0 0 24 24">
         <path
           className={pathClass}
-          d="M352 128.4L319.7 96 160 256l159.7 160 32.3-32.4L224.7 256z"
+          d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"
         />
       </svg>
     </div>
@@ -29,8 +27,8 @@ IconArrowSvg.propTypes = {
 };
 
 IconArrowSvg.defaultProps = {
-  direction: 'left',
-  containerClass: styles.svgContainer,
+  direction: 'right',
+  containerClass: styles.container,
   pathClass: styles.path
 };
 
