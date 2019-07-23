@@ -8,6 +8,7 @@ import SloganShakespeare from '../SloganGallery/SloganShakespeare/SloganShakespe
 import SloganJohnnyDepp from '../SloganGallery/SloganJohnnyDepp/SloganJohnnyDepp';
 import SloganChurchhill from '../SloganGallery/SloganChurchhill/SloganChurchhill';
 import SloganLuther from '../SloganGallery/SloganLuther/SloganLuther';
+import PopularGoods from '../PopularGoods/PopularGoods';
 
 const MainPage = () => {
   // eslint-disable-next-line no-console
@@ -22,6 +23,7 @@ const MainPage = () => {
           <SloganChurchhill />
           <SloganLuther />
         </SlideShow>
+        <PopularGoods />
       </Container>
     </Main>
   );

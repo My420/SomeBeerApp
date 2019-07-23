@@ -43,3 +43,7 @@ export const SOCIAL_LINK = {
 };
 
 export const AUTHOR = 'Klinovitsky Aleksey';
+
+export const POPULAR_BEER__GET_REQUEST = 'POPULAR_BEER__GET_REQUEST';
+export const POPULAR_BEER__GET_SUCCESS = 'POPULAR_BEER__GET_SUCCESS';
+export const POPULAR_BEER__GET_FAILURE = 'POPULAR_BEER__GET_FAILURE';
