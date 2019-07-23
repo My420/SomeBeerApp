@@ -1,0 +1,40 @@
+@import '../../sass/variables.scss';
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-height: 60px;
+
+  margin: 0 auto;
+  padding: 10px 0px 20px 0px;
+}
+
+@media (max-width: $MPC-max-width) {
+  .footer {
+    padding: 8px 0px 8px 0px;
+    font-size: $Tablet9-text-size;
+  }
+}
+
+@media (max-width: $Tablet7-max-width) {
+  .footer {
+    padding: 4px 0px 4px 0px;
+    font-size: $Tablet7-text-size;
+    line-height: $Tablet7-line-height;
+  }
+
+  .information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: $Mobile-max-width) {
+  .footer {
+    font-size: $Mobile-text-size;
+    line-height: $Mobile-line-height;
+  }
+}

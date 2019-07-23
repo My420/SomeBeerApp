@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <SocialMedia /> component should correct render component 1`] = `
+<ListGroup
+  className="list"
+  tag="ul"
+>
+  <ListGroupItem
+    className="item item-github"
+    key="github"
+  >
+    <a
+      className="link link-github"
+      href="https://github.com/My420"
+      title="GitHub profile"
+    >
+      <IconGithub
+        pathClass="path"
+        wrapperClass="container"
+      />
+    </a>
+  </ListGroupItem>
+  <ListGroupItem
+    className="item item-email"
+    key="email"
+  >
+    <a
+      className="link link-email"
+      href="mailto:klinovitsky.aleksey@gmail.com"
+      title="Email Address"
+    >
+      <IconEmail
+        pathClass="path"
+        wrapperClass="container"
+      />
+    </a>
+  </ListGroupItem>
+  <ListGroupItem
+    className="item item-skype"
+    key="skype"
+  >
+    <a
+      className="link link-skype"
+      href="skype:live:klinovitsky.aleksey?chat"
+      title="Skype"
+    >
+      <IconSkype
+        pathClass="path"
+        wrapperClass="container"
+      />
+    </a>
+  </ListGroupItem>
+</ListGroup>
+`;

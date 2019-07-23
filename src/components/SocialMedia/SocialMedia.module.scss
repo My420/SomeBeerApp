@@ -1,0 +1,78 @@
+@import '../../sass/variables.scss';
+
+.list {
+  display: flex;
+  margin-top: 4px;
+  list-style: none;
+}
+
+.item {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+}
+
+.item-skype,
+.item-github,
+.item-email,
+.link-skype,
+.link-github,
+.link-email {
+  background-color: transparent;
+}
+
+.link {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.link:hover .path,
+.link:focus:hover .path {
+  fill: $menu-hover-color;
+}
+
+.link:focus {
+  outline: none;
+}
+
+.link:focus .path {
+  fill: $social-focus-color;
+}
+
+.link:active .path {
+  opacity: 0.5;
+  fill: $menu-hover-color;
+}
+
+@media (max-width: $MPC-max-width) {
+  .item,
+  .link {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+@media (max-width: $Tablet9-max-width) {
+  .item,
+  .link {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media (max-width: $Tablet7-max-width) {
+  .item,
+  .link {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: $Mobile-max-width) {
+  .item,
+  .link {
+    width: 14px;
+    height: 14px;
+  }
+}

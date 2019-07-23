@@ -1,11 +1,14 @@
 $menu-color: black;
 $menu-hover-color: #e69e63;
 $menu-bar-color: #a9a9a8;
+$background: #f7f3ed;
+
+$social-focus-color: #e31e24;
 
 $PC-container-width: 1160px;
 $PC-max-width: 1200px;
 
-$MPC-container-width: 952px;
+$MPC-container-width: 932px;
 $MPC-max-width: 992px;
 
 $Tablet9-container-width: 748px;
@@ -16,3 +19,11 @@ $Tablet7-max-width: 480px;
 
 $Mobile-container-width: 300px;
 $Mobile-max-width: 320px;
+
+$Tablet9-text-size: 16px;
+$Tablet7-text-size: 14px;
+$Mobile-text-size: 12px;
+
+$Tablet9-line-height: 20px;
+$Tablet7-line-height: 18px;
+$Mobile-line-height: 16px;

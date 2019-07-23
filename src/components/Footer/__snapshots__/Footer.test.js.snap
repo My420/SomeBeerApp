@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <Footer /> component should correct render component 1`] = `
+<footer
+  className="footer"
+>
+  <p
+    className="information"
+  >
+    <span
+      className="copyright"
+    >
+      © 2019 Some Beer Shop.
+    </span>
+    <span
+      className="author"
+    >
+      Developed by 
+      Klinovitsky Aleksey
+      .
+    </span>
+  </p>
+  <SocialMedia />
+</footer>
+`;

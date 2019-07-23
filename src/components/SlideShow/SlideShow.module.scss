@@ -4,6 +4,10 @@
   display: none;
 }
 
+.arrow {
+  fill: $background;
+}
+
 .slideBox {
   position: relative;
 
@@ -53,6 +57,11 @@
 .prev {
   left: 0px;
   top: 0px;
+}
+
+.arrowContainer {
+  width: 50%;
+  height: 50%;
 }
 
 .next:hover,

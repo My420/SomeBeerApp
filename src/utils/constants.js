@@ -35,3 +35,11 @@ export const BROWSER_MIN_WIDTH = {
   TABLET_7: 480,
   MOBILE: 320
 };
+
+export const SOCIAL_LINK = {
+  GITHUB: 'https://github.com/My420',
+  EMAIL: 'mailto:klinovitsky.aleksey@gmail.com',
+  SKYPE: 'skype:live:klinovitsky.aleksey?chat'
+};
+
+export const AUTHOR = 'Klinovitsky Aleksey';

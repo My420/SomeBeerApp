@@ -4,6 +4,7 @@ import HeaderCreator from '../HeaderCreator/HeaderCreator';
 import styles from './App.module.scss';
 import Container from '../Container/Container';
 import MainPage from '../MainPage/MainPage';
+import Footer from '../Footer/Footer';
 
 const App = () => {
   // eslint-disable-next-line no-console
@@ -19,6 +20,9 @@ const App = () => {
         <Route path="/random" render={() => <h2>Random</h2>} />
         <Route render={() => <h2>404 error</h2>} />
       </Switch>
+      <Container className={styles.container}>
+        <Footer />
+      </Container>
     </React.Fragment>
   );
 };
