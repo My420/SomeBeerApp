@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import styles from './PopularBeer.module.scss';
-import downloadPopularBeerData from '../ActionCreator/downloadPopularBeerData';
+import downloadPopularBeerData from '../../ActionCreator/downloadPopularBeerData';
 
 class PopularBeer extends React.Component {
   componentDidMount() {

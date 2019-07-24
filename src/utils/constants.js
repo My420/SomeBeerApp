@@ -47,3 +47,10 @@ export const AUTHOR = 'Klinovitsky Aleksey';
 export const POPULAR_BEER__GET_REQUEST = 'POPULAR_BEER__GET_REQUEST';
 export const POPULAR_BEER__GET_SUCCESS = 'POPULAR_BEER__GET_SUCCESS';
 export const POPULAR_BEER__GET_FAILURE = 'POPULAR_BEER__GET_FAILURE';
+
+export const API_HOST = 'https://api.punkapi.com/v2/';
+
+export const POPULAR_BEER_AMOUNT = 8;
+
+export const LOAD_ERROR_MESSAGE =
+  'Could not download data, please refresh the page';

@@ -1,12 +1,10 @@
 import { Record, OrderedMap } from 'immutable';
-import arrayToObj from '../utils/arrayToObj';
-
 import {
   POPULAR_BEER__GET_REQUEST,
   POPULAR_BEER__GET_FAILURE,
   POPULAR_BEER__GET_SUCCESS
 } from '../utils/constants';
-import BeerDataRecord from '../utils/BeerDataRecord';
+import convertApiDataToImmutable from '../utils/convertApiDataToImmutable';
 
 const ReducerState = new Record({
   isLoaded: false,
@@ -30,19 +28,16 @@ const popularBeer = (state = popularBeerInitialState, action) => {
         errorMessage: payload.errorMessage
       });
     case POPULAR_BEER__GET_SUCCESS: {
-      let data = payload.data.map(elem => {
-        return new BeerDataRecord({ elem });
-      });
+      const data = convertApiDataToImmutable(payload.data);
 
-      data = arrayToObj(payload.data);
-
-      return state.merge({
-        isLoaded: true,
-        isLoading: false,
-        isError: false,
-        errorMessage: '',
-        data
-      });
+      return state
+        .merge({
+          isLoaded: true,
+          isLoading: false,
+          isError: false,
+          errorMessage: ''
+        })
+        .set('data', data);
     }
     default:
       return state;
