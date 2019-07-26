@@ -1,4 +1,5 @@
-import getPopularBeer from '../utils/getPopularBeer';
+import getDataFromAPI from '../utils/getDataFromAPI';
+import createPopularBeerRequestAddress from '../utils/createPopularBeerRequestAddress';
 import {
   POPULAR_BEER__GET_REQUEST,
   POPULAR_BEER__GET_FAILURE,
@@ -12,7 +13,8 @@ const downloadPopularBeerData = () => {
     });
 
     try {
-      const data = await getPopularBeer();
+      const request = createPopularBeerRequestAddress();
+      const data = await getDataFromAPI(request);
       dispatch({
         type: POPULAR_BEER__GET_SUCCESS,
         payload: { data }

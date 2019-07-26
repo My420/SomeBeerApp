@@ -1,4 +1,4 @@
-import { Record, OrderedMap } from 'immutable';
+import { Record, List } from 'immutable';
 import {
   POPULAR_BEER__GET_REQUEST,
   POPULAR_BEER__GET_FAILURE,
@@ -6,15 +6,15 @@ import {
 } from '../utils/constants';
 import convertApiDataToImmutable from '../utils/convertApiDataToImmutable';
 
-const ReducerState = new Record({
+const ReducerState = Record({
   isLoaded: false,
   isLoading: false,
   isError: false,
   errorMessage: '',
-  data: new OrderedMap({})
+  data: List([])
 });
 
-export const popularBeerInitialState = new ReducerState();
+export const popularBeerInitialState = ReducerState();
 
 const popularBeer = (state = popularBeerInitialState, action) => {
   const { type, payload } = action;

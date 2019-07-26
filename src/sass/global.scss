@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 h1,
 h2,
 h3,
@@ -56,9 +58,23 @@ img {
   height: auto;
 }
 
-/*@media screen and (min-width: 320px) {
-  html {
-    margin-left: calc(100vw - 100%);
-    margin-right: 0;
+@media (max-width: $MPC-max-width) {
+  body {
+    font-size: $Tablet9-text-size;
+    line-height: $Tablet9-line-height;
   }
-}*/
+}
+
+@media (max-width: $Tablet7-max-width) {
+  body {
+    font-size: $Tablet7-text-size;
+    line-height: $Tablet7-line-height;
+  }
+}
+
+@media (max-width: $Mobile-max-width) {
+  body {
+    font-size: $Mobile-text-size;
+    line-height: $Mobile-line-height;
+  }
+}

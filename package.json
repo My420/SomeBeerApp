@@ -5,6 +5,7 @@
   "dependencies": {
     "enzyme-to-json": "^3.3.5",
     "immutable": "^4.0.0-rc.12",
+    "jest-fetch-mock": "^2.1.2",
     "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
@@ -52,7 +53,8 @@
     "lint-staged": "^8.1.7",
     "prettier": "^1.17.1",
     "pretty-quick": "^1.10.0",
-    "redux-devtools-extension": "^2.13.8"
+    "redux-devtools-extension": "^2.13.8",
+    "redux-mock-store": "^1.5.3"
   },
   "lint-staged": {
     "*.{js,jsx}": [

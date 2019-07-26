@@ -1,12 +1,11 @@
-import { OrderedMap } from 'immutable';
+import { List } from 'immutable';
 import BeerDataRecord from './BeerDataRecord';
 
 const convertApiDataToImmutable = data => {
-  let immutableData = new OrderedMap({});
+  let immutableData = List([]);
   for (let i = 0; i < data.length; i += 1) {
-    const elem = new BeerDataRecord(data[i]);
-    const { id } = elem;
-    immutableData = immutableData.set(id, elem);
+    const elem = BeerDataRecord(data[i]);
+    immutableData = immutableData.push(elem);
   }
   return immutableData;
 };
