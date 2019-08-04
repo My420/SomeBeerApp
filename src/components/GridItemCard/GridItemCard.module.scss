@@ -1,0 +1,11 @@
+@import '../../sass/variables.scss';
+
+.card {
+  font-size: 18px;
+  line-height: 24px;
+  border: 2px solid $menu-bar-color;
+}
+
+.card:hover {
+  box-shadow: 0 0 5px 1px $menu-color;
+}

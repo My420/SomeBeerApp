@@ -1,0 +1,77 @@
+@import '../../../sass/variables.scss';
+
+.controls {
+  display: flex;
+  width: 100%;
+}
+
+.toggleButton,
+.favoriteButton,
+.cartButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 40px;
+
+  margin: 8px 5px;
+
+  box-sizing: border-box;
+
+  border: 2px solid $menu-color;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.toggleButton:hover,
+.favoriteButton:hover,
+.cartButton:hover {
+  border-color: $menu-hover-color;
+}
+
+.toggleButton:hover .infoPathOpen,
+.toggleButton:hover .infoPathClose,
+.favoriteButton:hover .favoritePath,
+.cartButton:hover .cartPath {
+  fill: $menu-hover-color;
+}
+
+.toggleButton:active,
+.favoriteButton:active,
+.cartButton:active {
+  opacity: 0.5;
+}
+
+.toggleButton:focus,
+.favoriteButton:focus,
+.cartButton:focus {
+  border-color: $menu-hover-color;
+  outline: none;
+  box-shadow: inset 0 0 1px 1px $menu-hover-color;
+}
+
+.cartButton {
+  margin-left: auto;
+}
+
+.favoriteContainer,
+.infoContainer {
+  width: 20px;
+  height: 20px;
+}
+
+.cartContainer {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.favoritePath,
+.cartPath,
+.infoPathClose {
+  fill: $menu-color;
+}
+
+.infoPathOpen {
+  fill: $social-focus-color;
+}
