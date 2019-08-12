@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <ErrorMsg /> component Test <ErrorMsg /> with props should correct render component with props 1`] = `
+<p
+  className="error"
+>
+  <span
+    className="title"
+  >
+    Oops! Something went wrong.
+  </span>
+  <span
+    className="action"
+  >
+    Please refresh page or try again later.
+  </span>
+  <span
+    className="msg"
+  >
+    Test error msg
+  </span>
+</p>
+`;
+
+exports[`Test <ErrorMsg /> component Test <ErrorMsg /> without props should correct render component without props 1`] = `
+<p
+  className="error"
+>
+  <span
+    className="title"
+  >
+    Oops! Something went wrong.
+  </span>
+  <span
+    className="action"
+  >
+    Please refresh page or try again later.
+  </span>
+  <span
+    className="msg"
+  />
+</p>
+`;

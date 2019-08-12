@@ -1,0 +1,24 @@
+@import '../../sass/variables.scss';
+
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 320px;
+
+  margin: 0 auto;
+
+  color: $error-color;
+}
+
+.msg {
+  text-decoration: underline;
+}
+
+@media (max-width: $Tablet7-max-width) {
+  .error {
+    width: 280px;
+  }
+}
