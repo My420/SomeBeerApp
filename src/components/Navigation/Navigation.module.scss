@@ -2,9 +2,12 @@
 
 .list {
   display: flex;
-  justify-content: space-around;
   width: $PC-container-width;
   list-style: none;
+}
+
+.item {
+  margin-right: 50px;
 }
 
 .link {
@@ -34,16 +37,13 @@
 }
 
 .list .item:last-child {
-  margin-left: 200px;
+  margin-left: auto;
+  margin-right: 0px;
 }
 
 @media (max-width: $PC-max-width) {
   .list {
     width: $MPC-container-width;
-  }
-
-  .list .item:last-child {
-    margin-left: 100px;
   }
 }
 
@@ -51,7 +51,7 @@
   .navigation {
     position: absolute;
     z-index: 10;
-    bottom: -420px;
+    bottom: -360px;
 
     width: 100%;
 
@@ -71,13 +71,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     height: 60px;
+
+    margin: 0px;
   }
 }
 
 @media (max-width: $Tablet9-max-width) {
   .navigation {
-    bottom: -350px;
+    bottom: -290px;
   }
 
   .link {
@@ -87,7 +90,4 @@
   .item {
     height: 50px;
   }
-}
-
-@media (max-width: $Mobile-max-width) {
 }

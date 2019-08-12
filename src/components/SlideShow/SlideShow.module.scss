@@ -80,8 +80,8 @@
   opacity: 0.3;
 }
 
-.next:focus .arrowContainer,
-.prev:focus .arrowContainer {
+.next:focus .arrow,
+.prev:focus .arrow {
   fill: $menu-hover-color;
 }
 

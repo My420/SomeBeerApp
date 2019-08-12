@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <PopularGoods /> component should correct render <PopularGoods /> component  1`] = `
+<section
+  className="popular"
+>
+  <h2
+    className="title"
+  >
+    Most popular
+  </h2>
+  <Connect(PopularBeer) />
+</section>
+`;

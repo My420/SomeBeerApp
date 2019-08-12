@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <ProductList /> component should correct render <ProductList /> component  1`] = `
+<ListGroup
+  className="list"
+  tag="ul"
+>
+  <ListGroupItem
+    className="item"
+    key="1"
+  >
+    <GridItemCard
+      data={
+        Object {
+          "id": "1",
+        }
+      }
+    />
+  </ListGroupItem>
+  <ListGroupItem
+    className="item"
+    key="2"
+  >
+    <GridItemCard
+      data={
+        Object {
+          "id": "2",
+        }
+      }
+    />
+  </ListGroupItem>
+</ListGroup>
+`;
