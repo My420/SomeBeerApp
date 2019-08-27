@@ -46,6 +46,10 @@ export const POPULAR_BEER__GET_REQUEST = 'POPULAR_BEER__GET_REQUEST';
 export const POPULAR_BEER__GET_SUCCESS = 'POPULAR_BEER__GET_SUCCESS';
 export const POPULAR_BEER__GET_FAILURE = 'POPULAR_BEER__GET_FAILURE';
 
+export const CART_ADD_ITEM = 'CART_ADD_ITEM';
+export const CART_DELETE_ITEM = 'CART_DELETE_ITEM';
+export const CART_SET_ITEM_AMOUNT = 'CART_SET_ITEM_AMOUNT';
+
 export const API_HOST = 'https://api.punkapi.com/v2/';
 
 export const POPULAR_BEER_AMOUNT = 8;
