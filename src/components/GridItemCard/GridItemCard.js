@@ -37,6 +37,7 @@ class GridItemCard extends React.Component {
           onCursorLeave={this.hideDescription}
         />
         <GridCardControl
+          data={data}
           isDescriptionOpen={isDescriptionOpen}
           onToggleButtonClick={this.toggleDescription}
         />

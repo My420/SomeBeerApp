@@ -6,8 +6,7 @@
 }
 
 .toggleButton,
-.favoriteButton,
-.cartButton {
+.favoriteButton {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,34 +23,26 @@
 }
 
 .toggleButton:hover,
-.favoriteButton:hover,
-.cartButton:hover {
+.favoriteButton:hover {
   border-color: $menu-hover-color;
 }
 
 .toggleButton:hover .infoPathOpen,
 .toggleButton:hover .infoPathClose,
-.favoriteButton:hover .favoritePath,
-.cartButton:hover .cartPath {
+.favoriteButton:hover .favoritePath {
   fill: $menu-hover-color;
 }
 
 .toggleButton:active,
-.favoriteButton:active,
-.cartButton:active {
+.favoriteButton:active {
   opacity: 0.5;
 }
 
 .toggleButton:focus,
-.favoriteButton:focus,
-.cartButton:focus {
+.favoriteButton:focus {
   border-color: $menu-hover-color;
   outline: none;
   box-shadow: inset 0 0 1px 1px $menu-hover-color;
-}
-
-.cartButton {
-  margin-left: auto;
 }
 
 .favoriteContainer,
@@ -60,14 +51,7 @@
   height: 20px;
 }
 
-.cartContainer {
-  width: 25px;
-  height: 25px;
-  margin-right: 5px;
-}
-
 .favoritePath,
-.cartPath,
 .infoPathClose {
   fill: $menu-color;
 }

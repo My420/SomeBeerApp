@@ -2,11 +2,10 @@ import React from 'react';
 import Button from '../../Button/Button';
 import IconFavoriteSvg from '../../IconFavoriteSvg/IconFavoriteSvg';
 import IconInfoSvg from '../../IconInfoSvg/IconInfoSvg';
-
-import IconCartSvg from '../../IconCartSvg/IconCartSvg';
 import styles from './GridCardControl.module.scss';
+import CartButton from '../CartButton/CartButton';
 
-const GridCardControl = ({ isDescriptionOpen, onToggleButtonClick }) => {
+const GridCardControl = ({ data, isDescriptionOpen, onToggleButtonClick }) => {
   // eslint-disable-next-line no-console
   console.log('render ===== GridCardControl');
 
@@ -27,14 +26,7 @@ const GridCardControl = ({ isDescriptionOpen, onToggleButtonClick }) => {
           pathClass={styles.favoritePath}
         />
       </Button>
-      <Button className={styles.cartButton}>
-        {' '}
-        <IconCartSvg
-          containerClass={styles.cartContainer}
-          pathClass={styles.cartPath}
-        />
-        <span className={styles.cartText}>Add to Cart</span>
-      </Button>
+      <CartButton itemData={data} />
     </div>
   );
 };
