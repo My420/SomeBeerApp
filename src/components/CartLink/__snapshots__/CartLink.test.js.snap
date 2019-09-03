@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <CartLink /> component should correct render <CartLink /> component  1`] = `
+<span
+  className="container"
+>
+  <span
+    className="amount"
+  >
+    2
+  </span>
+  <span
+    className="name"
+  >
+    Cart
+  </span>
+</span>
+`;

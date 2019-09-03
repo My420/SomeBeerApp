@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import ListGroup from '../ListGroup/ListGroup';
 import ListGroupItem from '../ListGroupItem/ListGroupItem';
 import styles from './Navigation.module.scss';
+import Cart from '../CartLink/CartLink';
+import { CART } from '../../utils/constants';
 
 const Navigation = ({ links }) => {
   // eslint-disable-next-line no-console
@@ -20,7 +22,7 @@ const Navigation = ({ links }) => {
                 activeClassName={styles.active}
                 exact
               >
-                {element[1]}
+                {element[1] === CART ? <Cart /> : element[1]}
               </NavLink>
             </ListGroupItem>
           );

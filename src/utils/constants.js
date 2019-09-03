@@ -9,13 +9,15 @@ export const LINK = {
   CART: '/cart'
 };
 
+export const CART = 'Cart';
+
 export const NAVIGATION_LINKS = [
   [LINK.HOME, 'Home'],
   [LINK.CATALOG, 'Catalog'],
   [LINK.ROULETTE, 'Roulette!'],
   [LINK.FAVORITE, 'Favorite'],
   [LINK.ABOUT, 'About'],
-  [LINK.CART, 'Cart']
+  [LINK.CART, CART]
 ];
 
 export const BROWSER_WIDTH_RATIO = {
