@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <Header /> component should correct render component with PC props should correct render <Header /> component  1`] = `
+<header
+  className="header"
+>
+  <Container
+    className="inner"
+  >
+    <TransitionGroup
+      childFactory={[Function]}
+      component={null}
+    >
+      <CSSTransition
+        classNames={Object {}}
+        timeout={300}
+      >
+        <div>
+          <Navigation
+            links={
+              Array [
+                Array [
+                  "/",
+                  "Home",
+                ],
+                Array [
+                  "/catalog",
+                  "Catalog",
+                ],
+                Array [
+                  "/roulette",
+                  "Roulette!",
+                ],
+                Array [
+                  "/favorite",
+                  "Favorite",
+                ],
+                Array [
+                  "/about",
+                  "About",
+                ],
+                Array [
+                  "/cart",
+                  "Cart",
+                ],
+              ]
+            }
+          />
+        </div>
+      </CSSTransition>
+    </TransitionGroup>
+  </Container>
+</header>
+`;
+
+exports[`Test <Header /> component should correct render component with Tablet props (nav close) should correct render <Header /> component  1`] = `
+<header
+  className="header"
+>
+  <Container
+    className="inner"
+  >
+    <TransitionGroup
+      childFactory={[Function]}
+      component={null}
+    />
+  </Container>
+  <Button
+    activeStyle=""
+    className="button"
+    disabled={false}
+    onClick={[Function]}
+  >
+    <IconMenuCss />
+  </Button>
+</header>
+`;
+
+exports[`Test <Header /> component should correct render component with Tablet props (nav open) should correct render <Header /> component  1`] = `
+<header
+  className="header"
+>
+  <Container
+    className="inner"
+  >
+    <TransitionGroup
+      childFactory={[Function]}
+      component={null}
+    >
+      <CSSTransition
+        classNames={Object {}}
+        timeout={300}
+      >
+        <div>
+          <Navigation
+            links={
+              Array [
+                Array [
+                  "/",
+                  "Home",
+                ],
+                Array [
+                  "/catalog",
+                  "Catalog",
+                ],
+                Array [
+                  "/roulette",
+                  "Roulette!",
+                ],
+                Array [
+                  "/favorite",
+                  "Favorite",
+                ],
+                Array [
+                  "/about",
+                  "About",
+                ],
+                Array [
+                  "/cart",
+                  "Cart",
+                ],
+              ]
+            }
+          />
+        </div>
+      </CSSTransition>
+    </TransitionGroup>
+  </Container>
+  <Button
+    activeStyle=""
+    className="button"
+    disabled={false}
+    onClick={[Function]}
+  >
+    <IconCrossCss />
+  </Button>
+</header>
+`;

@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <Navigation /> component should correct render <Navigation /> component  1`] = `
+<nav
+  className="navigation"
+>
+  <ListGroup
+    className="list"
+    tag="ul"
+  >
+    <ListGroupItem
+      className="item"
+      key="/"
+    >
+      <NavLink
+        activeClassName="active"
+        className="link"
+        exact={true}
+        to="/"
+      >
+        Main
+      </NavLink>
+    </ListGroupItem>
+    <ListGroupItem
+      className="item"
+      key="/test"
+    >
+      <NavLink
+        activeClassName="active"
+        className="link"
+        exact={true}
+        to="/test"
+      >
+        Test
+      </NavLink>
+    </ListGroupItem>
+  </ListGroup>
+</nav>
+`;

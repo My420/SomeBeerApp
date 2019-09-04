@@ -5,7 +5,7 @@ import withResize from '../ResizeContext/ResizeWrapper';
 import withToggle from '../HOC/ToggleWrapper/ToggleWrapper';
 import { BROWSER_WIDTH_RATIO } from '../../utils/constants';
 
-const HeaderCreator = ({ browserWidthRatio }) => {
+export const HeaderCreator = ({ browserWidthRatio }) => {
   // eslint-disable-next-line no-console
   console.log('render ===== HeaderCreator');
   const HeaderComponent = withToggle(

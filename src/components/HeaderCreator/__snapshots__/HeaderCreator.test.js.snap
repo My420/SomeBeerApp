@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <HeaderCreator /> component prop browserWidthRatio = BROWSER_WIDTH_RATIO.LPC should correct render <HeaderCreator /> component  1`] = `
+<ToggleWrapper(Header)
+  isButtonShown={false}
+/>
+`;
+
+exports[`Test <HeaderCreator /> component prop browserWidthRatio = BROWSER_WIDTH_RATIO.MOBILE should correct render <HeaderCreator /> component  1`] = `
+<ToggleWrapper(Header)
+  isButtonShown={true}
+/>
+`;
+
+exports[`Test <HeaderCreator /> component prop browserWidthRatio = BROWSER_WIDTH_RATIO.MPC should correct render <HeaderCreator /> component  1`] = `
+<ToggleWrapper(Header)
+  isButtonShown={false}
+/>
+`;
+
+exports[`Test <HeaderCreator /> component prop browserWidthRatio = BROWSER_WIDTH_RATIO.TABLET_7 should correct render <HeaderCreator /> component  1`] = `
+<ToggleWrapper(Header)
+  isButtonShown={true}
+/>
+`;
+
+exports[`Test <HeaderCreator /> component prop browserWidthRatio = BROWSER_WIDTH_RATIO.TABLET_9 should correct render <HeaderCreator /> component  1`] = `
+<ToggleWrapper(Header)
+  isButtonShown={true}
+/>
+`;
