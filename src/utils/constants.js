@@ -56,6 +56,9 @@ export const CART_ADD_ITEM = 'CART_ADD_ITEM';
 export const CART_DELETE_ITEM = 'CART_DELETE_ITEM';
 export const CART_SET_ITEM_AMOUNT = 'CART_SET_ITEM_AMOUNT';
 
+export const FAVORITE_ADD_ITEM = 'FAVORITE_ADD_ITEM';
+export const FAVORITE_DELETE_ITEM = 'FAVORITE_DELETE_ITEM';
+
 export const API_HOST = 'https://api.punkapi.com/v2/';
 
 export const POPULAR_BEER_AMOUNT = 8;
