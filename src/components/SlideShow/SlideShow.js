@@ -6,8 +6,16 @@ import './animation.css';
 import Button from '../Button/Button';
 import IconArrowSvg from '../IconArrowSvg/IconArrowSvg';
 import Slide from './Slide/Slide';
+import debounce from '../../utils/debounce';
 
 class SlideShow extends React.Component {
+  constructor() {
+    super();
+    this.duration = 1000;
+    this.showNextSlide = debounce(this.showNextSlide, this.duration);
+    this.showPrevSlide = debounce(this.showPrevSlide, this.duration);
+  }
+
   state = {
     index: 0,
     isForward: true
@@ -69,7 +77,7 @@ class SlideShow extends React.Component {
           <CSSTransition
             key={index}
             classNames="slide"
-            timeout={1000}
+            timeout={this.duration}
             addEndListener={this.addEndListener}
           >
             <div data-slide>

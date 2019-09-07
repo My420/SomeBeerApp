@@ -91,23 +91,33 @@ describe('Test <SlideShow /> component', () => {
   });
 
   describe('Test component slide-change logic', () => {
+    jest.useFakeTimers();
+    beforeEach(() => {
+      jest.spyOn(global, 'setTimeout');
+    });
+
     test('should corect change Next slide', () => {
       wrapper.find("Button[className='next']").simulate('click');
       expect(wrapper.state()).toEqual({ index: 1, isForward: true });
       expect(wrapper.find('Slide').prop('component')).toStrictEqual(
         <span className="test2">2</span>
       );
+
+      jest.runAllTimers();
     });
 
     test('should corect change Next slide in corner case', () => {
-      wrapper
-        .find("Button[className='next']")
-        .simulate('click')
-        .simulate('click');
+      wrapper.find("Button[className='next']").simulate('click');
+
+      jest.runAllTimers();
+
+      wrapper.find("Button[className='next']").simulate('click');
       expect(wrapper.state()).toEqual({ index: 0, isForward: true });
       expect(wrapper.find('Slide').prop('component')).toStrictEqual(
         <span className="test1">1</span>
       );
+
+      jest.runAllTimers();
     });
 
     test('should corect change Prev slide in corner case', () => {
@@ -116,6 +126,8 @@ describe('Test <SlideShow /> component', () => {
       expect(wrapper.find('Slide').prop('component')).toStrictEqual(
         <span className="test3">3</span>
       );
+
+      jest.runAllTimers();
     });
   });
 });
