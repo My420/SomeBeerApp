@@ -44,7 +44,7 @@ export const SOCIAL_LINK = {
 
 export const AUTHOR = 'Klinovitsky Aleksey';
 
-export const APP_LOCALSTORAGE_KEY = '__SOME_BEER_APP__';
+export const APP_LOCAL_STORAGE_FAVORITE_KEY = 'SOME_BEER_APP__FAVORITE';
 
 export const FAVORITE = 'FAVORITE';
 

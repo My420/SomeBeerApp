@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { Map } from 'immutable';
 import { connect } from 'react-redux';
 import {
   addToFavorite,
@@ -11,6 +13,12 @@ const withFavorite = WrappedComponent => {
     console.log('render ===== FavoriteWrapper');
 
     return <WrappedComponent {...props} />;
+  };
+
+  FavoriteWrapper.propTypes = {
+    favoriteData: PropTypes.instanceOf(Map).isRequired,
+    addItemToFavorite: PropTypes.func.isRequired,
+    deleteItemFromFavorite: PropTypes.func.isRequired
   };
 
   FavoriteWrapper.displayName = `FavoriteWrapper(${WrappedComponent.displayName ||

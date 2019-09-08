@@ -9,11 +9,11 @@ describe('test convertApiDataToImmutable function', () => {
     expect(isImmutable(immutableData)).toBeTruthy();
   });
 
-  test('function should return OrderedMap', () => {
+  test('function should return List', () => {
     expect(immutableData.constructor.name).toBe('List');
   });
 
-  test('OrderedMap should contain Record ', () => {
+  test('List should contain Record ', () => {
     immutableData.map(v => {
       expect(v.constructor.name).toBe('Record');
       return v;

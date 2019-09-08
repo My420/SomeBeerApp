@@ -15,7 +15,6 @@ const FavoriteButton = ({
 }) => {
   // eslint-disable-next-line no-console
   console.log('render ===== FavoriteButton');
-
   const { id } = itemData;
   const isItemOnFavorite = favoriteData.has(id);
   const onFavoriteButtonClick = () => {

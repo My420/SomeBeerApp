@@ -12,7 +12,7 @@ import IconMenuCss from '../IconMenuCss/IconMenuCss';
 
 const Header = ({ isOpen, toggleState, isButtonShown }) => {
   // eslint-disable-next-line no-console
-  console.log('render ===== Header');
+  console.log('render ======================== Header');
   return (
     <header className={styles.header}>
       <Container className={styles.inner}>

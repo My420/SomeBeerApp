@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { Map } from 'immutable';
 import { connect } from 'react-redux';
 import {
   addToCart,
@@ -12,6 +14,13 @@ const withCart = WrappedComponent => {
     console.log('render ===== CartWrapper');
 
     return <WrappedComponent {...props} />;
+  };
+
+  CartWrapper.propTypes = {
+    cartData: PropTypes.instanceOf(Map).isRequired,
+    addItemToCart: PropTypes.func.isRequired,
+    deleteItemFromCart: PropTypes.func.isRequired,
+    cahngeCartItemAmount: PropTypes.func.isRequired
   };
 
   CartWrapper.displayName = `CartWrapper(${WrappedComponent.displayName ||

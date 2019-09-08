@@ -29,7 +29,6 @@ const popularBeer = (state = popularBeerInitialState, action) => {
       });
     case POPULAR_BEER__GET_SUCCESS: {
       const data = convertApiDataToImmutable(payload.data);
-
       return state
         .merge({
           isLoaded: true,

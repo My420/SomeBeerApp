@@ -19,7 +19,7 @@ export class PopularBeer extends React.Component {
 
   render() {
     // eslint-disable-next-line no-console
-    console.log('render ===== PopularBeer');
+    console.log('render =============================== PopularBeer');
 
     const { isLoaded, isLoading, isError, errorMessage, data } = this.props;
 

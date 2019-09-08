@@ -5,7 +5,7 @@ import { AUTHOR } from '../../utils/constants';
 
 const Footer = () => {
   // eslint-disable-next-line no-console
-  console.log('render ===== Footer');
+  console.log('render ================================ Footer');
   return (
     <footer className={styles.footer}>
       <p className={styles.information}>
