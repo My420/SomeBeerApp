@@ -5,6 +5,7 @@ import styles from './App.module.scss';
 import Container from '../Container/Container';
 import MainPage from '../MainPage/MainPage';
 import Footer from '../Footer/Footer';
+import CatalogPage from '../CatalogPage/CatalogPage';
 
 const App = () => {
   // eslint-disable-next-line no-console
@@ -16,7 +17,7 @@ const App = () => {
       </Container>
       <Switch>
         <Route exact path="/" component={MainPage} />
-        <Route path="/search" render={() => <h2>Search</h2>} />
+        <Route exact path="/catalog" component={CatalogPage} />
         <Route path="/random" render={() => <h2>Random</h2>} />
         <Route render={() => <h2>404 error</h2>} />
       </Switch>

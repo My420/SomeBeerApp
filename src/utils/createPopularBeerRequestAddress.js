@@ -4,7 +4,7 @@ const createPopularBeerRequestAddress = () => {
   const day = new Date().getDay();
   const pageNumber = (day + 1) * 4;
 
-  const request = `${API_HOST}beers?page=${pageNumber}&per_page=${POPULAR_BEER_AMOUNT}`;
+  const request = `${API_HOST}?page=${pageNumber}&per_page=${POPULAR_BEER_AMOUNT}`;
 
   return request;
 };
