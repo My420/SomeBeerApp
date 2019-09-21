@@ -1,3 +1,4 @@
+import * as fc from 'fast-check';
 import createCatalogRequestAddress from './createCatalogRequestAddress';
 import {
   API_HOST,
@@ -7,7 +8,9 @@ import {
   IBU_MORE_PROP,
   IBU_LESS_PROP,
   EBC_MORE_PROP,
-  EBC_LESS_PROP
+  EBC_LESS_PROP,
+  SEARCH_INPUT_MAX_LENGTH,
+  PAGE
 } from './constants';
 
 describe('testing CatalogRequestRequestStatus function', () => {
@@ -83,6 +86,43 @@ describe('testing CatalogRequestRequestStatus function', () => {
     );
     expect(createCatalogRequestAddress(options2)).toEqual(
       expect.stringMatching(apiRequestRegExp)
+    );
+  });
+
+  test('request address match regExp with random incorrect options', () => {
+    fc.assert(
+      fc.property(fc.dictionary(fc.string(10), fc.string(10)), options => {
+        expect(createCatalogRequestAddress(options)).toEqual(
+          expect.stringMatching(apiRequestRegExp)
+        );
+      })
+    );
+  });
+
+  test('request address match regExp with random correct options', () => {
+    const optionsKey = [
+      PAGE,
+      ABV_LESS_PROP,
+      ABV_MORE_PROP,
+      IBU_MORE_PROP,
+      IBU_LESS_PROP,
+      EBC_MORE_PROP,
+      EBC_LESS_PROP
+    ];
+    fc.assert(
+      fc.property(
+        fc.string(SEARCH_INPUT_MAX_LENGTH),
+        fc.array(fc.integer(0, 99), 1, 7),
+        (name, values) => {
+          const options = { [BEER_NAME_PROP]: name };
+          for (let i = 0; i < values.length; i += 1) {
+            options[optionsKey[i]] = values[i];
+          }
+          expect(createCatalogRequestAddress(options)).toEqual(
+            expect.stringMatching(apiRequestRegExp)
+          );
+        }
+      )
     );
   });
 });
