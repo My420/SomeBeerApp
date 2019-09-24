@@ -8,6 +8,7 @@ import ProductList from '../ProductList/ProductList';
 import GridItemCard from '../GridItemCard/GridItemCard';
 import IconLoadingSvg from '../IconLoadingSvg/IconLoadingSvg';
 import ErrorMsg from '../ErrorMsg/ErrorMsg';
+import LoadStatusSwitcher from '../LoadStatusSwitcher/LoadStatusSwitcher';
 
 export class PopularBeer extends React.Component {
   componentDidMount() {
@@ -23,20 +24,37 @@ export class PopularBeer extends React.Component {
 
     const { isLoaded, isLoading, isError, errorMessage, data } = this.props;
 
+    const LoadingComponent = () => {
+      return (
+        <div className={styles.loader}>
+          <IconLoadingSvg color="#e69e63" />
+        </div>
+      );
+    };
+
+    const ErrorComponent = () => {
+      return (
+        <div className={styles.error}>
+          <ErrorMsg errorMsg={errorMessage} />
+        </div>
+      );
+    };
+
+    const DataComponent = () => {
+      return <ProductList data={data} ProductCard={GridItemCard} />;
+    };
+
     return (
       <section className={styles.popular}>
         <h2 className="visually-hidden">Popular Beer</h2>
-        {isLoading && (
-          <div className={styles.loader}>
-            <IconLoadingSvg color="#e69e63" />
-          </div>
-        )}
-        {isError && (
-          <div className={styles.error}>
-            <ErrorMsg errorMsg={errorMessage} />
-          </div>
-        )}
-        {isLoaded && <ProductList data={data} ProductCard={GridItemCard} />}
+        <LoadStatusSwitcher
+          isLoading={isLoading}
+          isError={isError}
+          isLoaded={isLoaded}
+          LoadingComponent={LoadingComponent}
+          ErrorComponent={ErrorComponent}
+          DataComponent={DataComponent}
+        />
       </section>
     );
   }

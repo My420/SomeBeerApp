@@ -5,8 +5,8 @@ import Button from '../Button/Button';
 import Abv from './Abv/Abv';
 import Ibu from './Ibu/Ibu';
 import Ebc from './Ebc/Ebc';
-import createCatalogRequestAddress from '../../utils/createCatalogRequestAddress';
 import {
+  PAGE,
   BEER_NAME_PROP,
   ABV_LESS_PROP,
   ABV_MORE_PROP,
@@ -15,6 +15,8 @@ import {
   EBC_LESS_PROP,
   EBC_MORE_PROP
 } from '../../utils/constants';
+import createOptions from '../../utils/createOptions';
+import compareOptions from '../../utils/compareOptions';
 
 class CatalogFilter extends React.Component {
   constructor(props) {
@@ -29,7 +31,11 @@ class CatalogFilter extends React.Component {
 
   onSubmit = evt => {
     evt.preventDefault();
-    createCatalogRequestAddress(this.state);
+    const { history, value } = this.props;
+    if (!compareOptions(this.state, value)) {
+      const options = createOptions({ ...this.state, [PAGE]: '1' });
+      history.push(options);
+    }
   };
 
   render() {

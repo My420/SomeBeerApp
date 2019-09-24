@@ -15,7 +15,22 @@ const ProductList = ({ data, ProductCard }) => {
       </ListGroupItem>
     );
   });
-  return <ListGroup className={styles.list}>{goods}</ListGroup>;
+
+  const EmptyList = () => {
+    return (
+      <ListGroupItem className={styles.item}>
+        <p className={styles.empty}>No found</p>
+      </ListGroupItem>
+    );
+  };
+
+  const isEmpty = goods.length === 0;
+
+  return (
+    <ListGroup className={styles.list}>
+      {isEmpty ? <EmptyList /> : goods}
+    </ListGroup>
+  );
 };
 
 export default ProductList;
