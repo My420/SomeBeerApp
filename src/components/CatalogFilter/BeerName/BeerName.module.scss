@@ -1,0 +1,20 @@
+@import '../../../sass/variables.scss';
+
+.nameField {
+  border: none;
+}
+
+.nameInput {
+  width: 300px;
+  height: 30px;
+
+  border: 2px solid $menu-bar-color;
+  border-radius: 5px;
+  @include input;
+}
+
+@media (max-width: 400px) {
+  .nameInput {
+    width: 220px;
+  }
+}

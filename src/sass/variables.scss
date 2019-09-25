@@ -7,6 +7,7 @@ $social-focus-color: #e31e24;
 $chip-color: gray;
 
 $error-color: #d66f6f;
+$second-text-color: #74abe6;
 
 $PC-container-width: 1160px;
 $PC-max-width: 1220px;
@@ -30,3 +31,64 @@ $Mobile-text-size: 12px;
 $Tablet9-line-height: 20px;
 $Tablet7-line-height: 18px;
 $Mobile-line-height: 16px;
+
+@mixin border {
+  border: 2px solid $menu-bar-color;
+  border-radius: 5px;
+}
+
+@mixin border-bottom {
+  border: none;
+  border-bottom: 2px solid $menu-bar-color;
+  border-radius: 5px;
+}
+
+@mixin input {
+  &:hover {
+    border-color: $menu-hover-color;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    border-color: $menu-hover-color;
+    outline: none;
+    box-shadow: inset 0 0 1px 1px $menu-hover-color;
+  }
+}
+
+@mixin button {
+  &:hover {
+    border-color: $menu-hover-color;
+    .path {
+      fill: $menu-hover-color;
+    }
+  }
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    border-color: $menu-hover-color;
+    outline: none;
+    box-shadow: inset 0 0 1px 1px $menu-hover-color;
+  }
+}
+
+@mixin text-button {
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    color: $second-text-color;
+    outline: none;
+    text-shadow: 2px 2px 3px $menu-hover-color;
+  }
+
+  &:hover {
+    color: $menu-hover-color;
+  }
+}

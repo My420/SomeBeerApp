@@ -1,0 +1,41 @@
+@import '../../sass/variables.scss';
+
+.filter {
+  width: 100%;
+  padding-bottom: 10px;
+
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.form {
+  width: 350px;
+  margin: 0 auto;
+}
+
+.nameWrapper {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+
+  margin-bottom: 5px;
+}
+
+.submit {
+  width: 35px;
+  height: 35px;
+
+  background-color: transparent;
+
+  border: 2px solid $menu-bar-color;
+  border-radius: 5px;
+  @include button;
+}
+
+@media (max-width: 400px) {
+  .form {
+    width: 280px;
+    margin: 0 auto;
+  }
+}

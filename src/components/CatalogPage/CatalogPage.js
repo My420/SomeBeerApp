@@ -16,7 +16,7 @@ const CatalogPage = ({ location, history }) => {
     <Main className={styles.main}>
       <Container className={styles.container}>
         <section className={styles.catalogPage}>
-          <h2 className={styles.title}>Catalog</h2>
+          <h2 className="visually-hidden">Catalog</h2>
           <Catalog options={options} history={history} />
         </section>
       </Container>

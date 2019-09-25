@@ -1,0 +1,46 @@
+.appear {
+}
+.appearActive {
+}
+.appearDone {
+}
+.enter {
+  height: 0px;
+  overflow: hidden;
+}
+.enterActive {
+  height: 202px;
+  transition: all 300ms;
+}
+.enterDone {
+}
+.exit {
+  height: 202px;
+  overflow: hidden;
+}
+.exitActive {
+  height: 0px;
+  transition: all 300ms;
+}
+.exitDone {
+}
+
+@media (max-width: 400px) {
+  .enter {
+    height: 0px;
+    overflow: hidden;
+  }
+  .enterActive {
+    height: 176px;
+    transition: all 300ms;
+  }
+
+  .exit {
+    height: 176px;
+    overflow: hidden;
+  }
+  .exitActive {
+    height: 0px;
+    transition: all 300ms;
+  }
+}

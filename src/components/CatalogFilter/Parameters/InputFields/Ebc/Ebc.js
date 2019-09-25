@@ -5,8 +5,8 @@ import {
   EBC_MORE_PROP,
   EBC_BOTTOM_VALUE,
   EBC_TOP_VALUE
-} from '../../../utils/constants';
-import validateNumberValue from '../../../utils/validateNumberValue';
+} from '../../../../../utils/constants';
+import validateNumberValue from '../../../../../utils/validateNumberValue';
 
 class Ebc extends React.PureComponent {
   onEBCChange = evt => {
@@ -31,19 +31,21 @@ class Ebc extends React.PureComponent {
     const { lessValue, moreValue } = this.props;
     return (
       <fieldset className={styles.ebcField}>
-        <legend className={styles.ebclegend}>Color Units Ebc</legend>
-        <label className={styles.ebcLabelMore} htmlFor="ebcMore">
-          {'More'}
-          <input
-            id="ebcMore"
-            name="ebcMore"
-            className={styles.ebcInputMore}
-            type="number"
-            value={moreValue}
-            onChange={this.onEBCChange}
-          />
+        <legend className={styles.ebcLegend}>Color Units Ebc</legend>
+        <div className={styles.ebcInner}>
+          <label className={styles.ebcLabelMore} htmlFor="ebcMore">
+            <span className={styles.textMore}>more than</span>
+            <input
+              id="ebcMore"
+              name="ebcMore"
+              className={styles.ebcInputMore}
+              type="number"
+              value={moreValue}
+              onChange={this.onEBCChange}
+            />
+          </label>
           <label className={styles.ebcLabelLess} htmlFor="ebcLess">
-            {'Less'}
+            <span className={styles.textLess}>less than</span>
             <input
               id="ebcLess"
               name="ebcLess"
@@ -53,7 +55,7 @@ class Ebc extends React.PureComponent {
               onChange={this.onEBCChange}
             />
           </label>
-        </label>
+        </div>
       </fieldset>
     );
   }

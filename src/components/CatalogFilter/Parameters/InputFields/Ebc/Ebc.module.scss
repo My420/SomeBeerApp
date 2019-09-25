@@ -1,0 +1,44 @@
+@import '../../../../../sass/variables.scss';
+
+.ebcField {
+  padding-bottom: 10px;
+  border: none;
+}
+
+.ebcInputMore,
+.ebcInputLess {
+  width: 50px;
+  height: 25px;
+
+  @include border;
+  @include input;
+}
+
+.textMore,
+.textLess {
+  margin-right: 7px;
+}
+
+.ebcInner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ebcLegend {
+  display: inline-block;
+  text-align: center;
+  font-weight: 700;
+}
+
+@media (max-width: 400px) {
+  .ebcField {
+    padding-bottom: 5px;
+  }
+
+  .ebcInputMore,
+  .ebcInputLess {
+    width: 30px;
+    height: 20px;
+    font-size: 14px;
+  }
+}

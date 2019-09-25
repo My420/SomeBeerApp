@@ -1,0 +1,45 @@
+@import '../../../../../sass/variables.scss';
+
+.abvField {
+  padding-bottom: 10px;
+  border: none;
+  @include border-bottom;
+}
+
+.abvInputMore,
+.abvInputLess {
+  width: 40px;
+  height: 25px;
+
+  @include border;
+  @include input;
+}
+
+.textMore,
+.textLess {
+  margin-right: 7px;
+}
+
+.abvInner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.abvLegend {
+  display: inline-block;
+  text-align: center;
+  font-weight: 700;
+}
+
+@media (max-width: 400px) {
+  .abvField {
+    padding-bottom: 5px;
+  }
+
+  .abvInputMore,
+  .abvInputLess {
+    width: 30px;
+    height: 20px;
+    font-size: 14px;
+  }
+}

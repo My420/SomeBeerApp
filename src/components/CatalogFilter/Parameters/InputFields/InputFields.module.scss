@@ -1,0 +1,6 @@
+@import '../../../../sass/variables.scss';
+
+.wrapper {
+  margin-top: 5px;
+  @include border;
+}
