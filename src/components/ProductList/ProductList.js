@@ -18,8 +18,8 @@ const ProductList = ({ data, ProductCard }) => {
 
   const EmptyList = () => {
     return (
-      <ListGroupItem className={styles.item}>
-        <p className={styles.empty}>No found</p>
+      <ListGroupItem className={styles.itemEmpty}>
+        <p className={styles.empty}>No results found.</p>
       </ListGroupItem>
     );
   };

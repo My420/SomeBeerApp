@@ -59,6 +59,41 @@ $Mobile-line-height: 16px;
   }
 }
 
+@mixin link-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 3px 10px;
+
+  box-sizing: border-box;
+
+  border: 2px solid $menu-color;
+  border-radius: 5px;
+  background-color: transparent;
+
+  font-size: 18px;
+  line-height: 18px;
+  color: $menu-color;
+
+  text-decoration: none;
+  cursor: default;
+
+  &:hover {
+    border-color: $menu-hover-color;
+    color: $menu-hover-color;
+  }
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    border-color: $menu-hover-color;
+    outline: none;
+    box-shadow: inset 0 0 1px 1px $menu-hover-color;
+  }
+}
+
 @mixin button {
   &:hover {
     border-color: $menu-hover-color;

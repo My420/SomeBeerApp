@@ -5,6 +5,10 @@
   width: 100%;
 }
 
+.main {
+  min-height: calc(100vh - 60px - 90px);
+}
+
 .container {
   width: $PC-container-width;
 
@@ -22,6 +26,7 @@
 @media (max-width: $MPC-max-width) {
   .main {
     padding-top: 60px;
+    min-height: calc(100vh - 60px - 76px);
   }
 
   .container {
@@ -35,5 +40,11 @@
 @media (max-width: $Tablet9-max-width) {
   .container {
     padding-top: 40px;
+  }
+}
+
+@media (max-width: $Tablet7-max-width) {
+  .main {
+    min-height: calc(100vh - 60px - 68px);
   }
 }

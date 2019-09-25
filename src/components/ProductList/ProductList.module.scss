@@ -12,6 +12,17 @@
   margin-bottom: 25px;
 }
 
+.itemEmpty {
+  width: 100%;
+}
+
+.empty {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  color: $menu-hover-color;
+}
+
 @media (max-width: $MPC-container-width) {
   .list {
     width: 572px;

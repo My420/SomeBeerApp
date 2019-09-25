@@ -15,20 +15,22 @@ const CatalogPagination = ({ options }) => {
   const nextLink = createOptions({ ...options, [PAGE]: nextPage });
   return (
     <ListGroup className={styles.list}>
-      <ListGroupItem className={styles.item}>
-        {!isPrevDisabled ? (
-          <Link to={prevLink} className={styles.prev} disabled={prevPage < 1}>
-            Prev
+      <div className={styles.wrapper}>
+        <ListGroupItem className={styles.item}>
+          {!isPrevDisabled ? (
+            <Link to={prevLink} className={styles.prev} disabled={prevPage < 1}>
+              prev
+            </Link>
+          ) : (
+            <p className={styles.prevDesabled}>prev</p>
+          )}
+        </ListGroupItem>
+        <ListGroupItem className={styles.item}>
+          <Link to={nextLink} className={styles.next}>
+            next
           </Link>
-        ) : (
-          <p className={styles.prevDesabled}>Prev</p>
-        )}
-      </ListGroupItem>
-      <ListGroupItem className={styles.item}>
-        <Link to={nextLink} className={styles.next}>
-          Next
-        </Link>
-      </ListGroupItem>
+        </ListGroupItem>
+      </div>
     </ListGroup>
   );
 };
