@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <LoadStatusSwitcher /> component Test DataComponent should match snapshot 1`] = `
+<Fragment>
+  <DataComponent />
+</Fragment>
+`;
+
+exports[`Test <LoadStatusSwitcher /> component Test ErrorComponent should match snapshot 1`] = `
+<Fragment>
+  <ErrorComponent />
+</Fragment>
+`;
+
+exports[`Test <LoadStatusSwitcher /> component Test LoadingComponent should match snapshot 1`] = `
+<Fragment>
+  <LoadingComponent />
+</Fragment>
+`;

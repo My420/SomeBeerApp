@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test <PopularBeer /> component test <PopularBeer/> component should render <ErrorMsg/> if isError: true 1`] = `
+exports[`Test <PopularBeer /> component should match snapshot 1`] = `
 <section
   className="popular"
 >
@@ -9,49 +9,13 @@ exports[`Test <PopularBeer /> component test <PopularBeer/> component should ren
   >
     Popular Beer
   </h2>
-  <div
-    className="error"
-  >
-    <ErrorMsg
-      errorMsg="test error"
-    />
-  </div>
-</section>
-`;
-
-exports[`Test <PopularBeer /> component test <PopularBeer/> component should render <IconLoadingSvg/> if isLoading: true 1`] = `
-<section
-  className="popular"
->
-  <h2
-    className="visually-hidden"
-  >
-    Popular Beer
-  </h2>
-  <div
-    className="loader"
-  >
-    <IconLoadingSvg
-      color="#e69e63"
-      svgClass="svg"
-      wrapperClass="container"
-    />
-  </div>
-</section>
-`;
-
-exports[`Test <PopularBeer /> component test <PopularBeer/> component should render <PropductList/> if isLoaded: true 1`] = `
-<section
-  className="popular"
->
-  <h2
-    className="visually-hidden"
-  >
-    Popular Beer
-  </h2>
-  <ProductList
-    ProductCard={[Function]}
-    data="test"
+  <LoadStatusSwitcher
+    DataComponent={[Function]}
+    ErrorComponent={[Function]}
+    LoadingComponent={[Function]}
+    isError={false}
+    isLoaded={false}
+    isLoading={false}
   />
 </section>
 `;

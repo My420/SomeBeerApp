@@ -1,7 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { PopularBeer } from './PopularBeer';
-import GridItemCard from '../GridItemCard/GridItemCard';
 
 describe('Test <PopularBeer /> component', () => {
   const props = {
@@ -12,6 +11,30 @@ describe('Test <PopularBeer /> component', () => {
     data: 'test',
     getBeerData: () => {}
   };
+
+  const wrapper = shallow(<PopularBeer {...props} />);
+  test('should match snapshot', () => {
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  test('should render LoadStatusSwitcher component with correct props', () => {
+    const { isLoaded, isLoading, isError } = props;
+    expect(wrapper.find('LoadStatusSwitcher')).toHaveLength(1);
+    expect(wrapper.find('LoadStatusSwitcher').prop('isLoading')).toBe(
+      isLoading
+    );
+    expect(wrapper.find('LoadStatusSwitcher').prop('isLoaded')).toBe(isLoaded);
+    expect(wrapper.find('LoadStatusSwitcher').prop('isError')).toBe(isError);
+    expect(
+      typeof wrapper.find('LoadStatusSwitcher').prop('LoadingComponent')
+    ).toBe('function');
+    expect(
+      typeof wrapper.find('LoadStatusSwitcher').prop('ErrorComponent')
+    ).toBe('function');
+    expect(
+      typeof wrapper.find('LoadStatusSwitcher').prop('DataComponent')
+    ).toBe('function');
+  });
 
   describe('test getBeerData function call', () => {
     test('call the `getBeerData` function in componentDidMount', () => {
@@ -36,41 +59,6 @@ describe('Test <PopularBeer /> component', () => {
       shallow(<PopularBeer {...newProps} />);
 
       expect(testFunc.mock.calls.length).toBe(1);
-    });
-  });
-
-  describe('test <PopularBeer/> component', () => {
-    test('should render <IconLoadingSvg/> if isLoading: true', () => {
-      const newProps = { ...props, isLoading: true };
-      const wrapper = shallow(<PopularBeer {...newProps} />);
-
-      expect(wrapper).toMatchSnapshot();
-      expect(wrapper.find('IconLoadingSvg')).toHaveLength(1);
-    });
-
-    test('should render <ErrorMsg/> if isError: true', () => {
-      const newProps = { ...props, isError: true, errorMessage: 'test error' };
-      const wrapper = shallow(<PopularBeer {...newProps} />);
-
-      expect(wrapper).toMatchSnapshot();
-      expect(wrapper.find('ErrorMsg')).toHaveLength(1);
-    });
-
-    test('should render <PropductList/> if isLoaded: true', () => {
-      const newProps = { ...props, isLoaded: true };
-      const wrapper = shallow(<PopularBeer {...newProps} />);
-
-      expect(wrapper).toMatchSnapshot();
-      expect(wrapper.find('ProductList')).toHaveLength(1);
-    });
-    test('should correct render <ProductList /> component', () => {
-      const newProps = { ...props, isLoaded: true };
-      const wrapper = shallow(<PopularBeer {...newProps} />);
-
-      expect(wrapper.find('ProductList').prop('data')).toBe(props.data);
-      expect(wrapper.find('ProductList').prop('ProductCard')).toEqual(
-        GridItemCard
-      );
     });
   });
 });
