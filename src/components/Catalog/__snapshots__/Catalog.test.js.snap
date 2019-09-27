@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test <Catalog /> component should match snapshot 1`] = `
+<Fragment>
+  <CatalogFilter
+    history={
+      Object {
+        "path": "test",
+      }
+    }
+    value={
+      Object {
+        "name": "test",
+      }
+    }
+  />
+  <LoadStatusSwitcher
+    DataComponent={[Function]}
+    ErrorComponent={[Function]}
+    LoadingComponent={[Function]}
+    isError={false}
+    isLoaded={false}
+    isLoading={true}
+  />
+  <CatalogPagination
+    options={
+      Object {
+        "name": "test",
+      }
+    }
+  />
+</Fragment>
+`;

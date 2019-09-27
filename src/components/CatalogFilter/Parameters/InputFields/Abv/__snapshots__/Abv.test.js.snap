@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test <Abv /> component should match snapshot 1`] = `
+<fieldset
+  className="abvField"
+>
+  <legend
+    className="abvLegend"
+  >
+    Alcohol By Volume
+  </legend>
+  <div
+    className="abvInner"
+  >
+    <label
+      className="abvLabelMore"
+      htmlFor="abvMore"
+    >
+      <span
+        className="textMore"
+      >
+        more than
+      </span>
+      <input
+        className="abvInputMore"
+        id="abvMore"
+        name="abvMore"
+        onChange={[Function]}
+        type="number"
+        value="30"
+      />
+    </label>
+    <label
+      className="abvLabelLess"
+      htmlFor="abvLess"
+    >
+      <span
+        className="textLess"
+      >
+        less than
+      </span>
+      <input
+        className="abvInputLess"
+        id="abvLess"
+        name="abvLess"
+        onChange={[Function]}
+        type="number"
+        value="20"
+      />
+    </label>
+  </div>
+</fieldset>
+`;

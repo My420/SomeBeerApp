@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test <CatalogPage /> component should match snapshot 1`] = `
+<Main
+  className="main"
+>
+  <Container
+    className="container"
+  >
+    <section
+      className="catalogPage"
+    >
+      <h2
+        className="visually-hidden"
+      >
+        Catalog
+      </h2>
+      <Connect(Catalog)
+        history={
+          Object {
+            "path": "test",
+          }
+        }
+        options={
+          Object {
+            "abv_gt": "0",
+            "abv_lt": "0",
+            "beer_name": "",
+            "ebc_gt": "0",
+            "ebc_lt": "0",
+            "ibu_gt": "0",
+            "ibu_lt": "0",
+            "page": "1",
+          }
+        }
+      />
+    </section>
+  </Container>
+</Main>
+`;

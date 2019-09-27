@@ -1,0 +1,416 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test <CatalogFilter /> component should match snapshot 1`] = `
+<section
+  className="filter"
+>
+  <form
+    className="form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="nameWrapper"
+    >
+      <BeerName
+        onPropertyChange={[Function]}
+        value="test"
+      />
+      <Button
+        activeStyle=""
+        className="submit"
+        disabled={false}
+        onClick={[Function]}
+        type="submit"
+      >
+        <IconSearchSvg
+          pathClass="path"
+          wrapperClass="container"
+        />
+        <span
+          className="visually-hidden"
+        >
+          Apply
+        </span>
+      </Button>
+    </div>
+    <ToggleWrapper(Parameters)
+      onPropertyChange={[Function]}
+      options={
+        Object {
+          "beer_name": "test",
+        }
+      }
+    />
+  </form>
+</section>
+`;
+
+exports[`test state cahnging <CatalogFilter /> component should match snapshot 1`] = `
+<CatalogFilter
+  history={
+    Object {
+      "push": [MockFunction],
+    }
+  }
+  value={
+    Object {
+      "abv_gt": "0",
+      "abv_lt": "0",
+      "beer_name": "",
+      "ebc_gt": "0",
+      "ebc_lt": "0",
+      "ibu_gt": "0",
+      "ibu_lt": "0",
+      "page": "1",
+    }
+  }
+>
+  <section
+    className="filter"
+  >
+    <form
+      className="form"
+      onSubmit={[Function]}
+    >
+      <div
+        className="nameWrapper"
+      >
+        <BeerName
+          onPropertyChange={[Function]}
+          value=""
+        >
+          <fieldset
+            className="nameField"
+          >
+            <legend
+              className="visually-hidden"
+            >
+              Beer Name
+            </legend>
+            <input
+              className="nameInput"
+              maxLength={40}
+              onChange={[Function]}
+              placeholder="search"
+              type="text"
+              value=""
+            />
+          </fieldset>
+        </BeerName>
+        <Button
+          activeStyle=""
+          className="submit"
+          disabled={false}
+          onClick={[Function]}
+          type="submit"
+        >
+          <button
+            className="submit "
+            disabled={false}
+            onClick={[Function]}
+            type="submit"
+          >
+             
+            <IconSearchSvg
+              pathClass="path"
+              wrapperClass="container"
+            >
+              <div
+                className="container"
+              >
+                <svg
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  width="100%"
+                >
+                  <path
+                    className="path"
+                    d="M23.111 20.058l-4.977-4.977c.965-1.52 1.523-3.322 1.523-5.251 0-5.42-4.409-9.83-9.829-9.83-5.42 0-9.828 4.41-9.828 9.83s4.408 9.83 9.829 9.83c1.834 0 3.552-.505 5.022-1.383l5.021 5.021c2.144 2.141 5.384-1.096 3.239-3.24zm-20.064-10.228c0-3.739 3.043-6.782 6.782-6.782s6.782 3.042 6.782 6.782-3.043 6.782-6.782 6.782-6.782-3.043-6.782-6.782zm2.01-1.764c1.984-4.599 8.664-4.066 9.922.749-2.534-2.974-6.993-3.294-9.922-.749z"
+                  />
+                </svg>
+              </div>
+            </IconSearchSvg>
+            <span
+              className="visually-hidden"
+            >
+              Apply
+            </span>
+             
+          </button>
+        </Button>
+      </div>
+      <ToggleWrapper(Parameters)
+        onPropertyChange={[Function]}
+        options={
+          Object {
+            "abv_gt": "0",
+            "abv_lt": "0",
+            "beer_name": "",
+            "ebc_gt": "0",
+            "ebc_lt": "0",
+            "ibu_gt": "0",
+            "ibu_lt": "0",
+            "page": "1",
+          }
+        }
+      >
+        <Parameters
+          isOpen={true}
+          onPropertyChange={[Function]}
+          options={
+            Object {
+              "abv_gt": "0",
+              "abv_lt": "0",
+              "beer_name": "",
+              "ebc_gt": "0",
+              "ebc_lt": "0",
+              "ibu_gt": "0",
+              "ibu_lt": "0",
+              "page": "1",
+            }
+          }
+          toggleState={[Function]}
+        >
+          <Button
+            activeStyle=""
+            className="button"
+            disabled={false}
+            onClick={[Function]}
+          >
+            <button
+              className="button "
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+               
+              <span
+                className="buttonText"
+              >
+                hide
+              </span>
+               
+            </button>
+          </Button>
+          <TransitionGroup
+            childFactory={[Function]}
+            component={null}
+          >
+            <CSSTransition
+              classNames={Object {}}
+              in={true}
+              key=".0"
+              onExited={[Function]}
+              timeout={300}
+            >
+              <Transition
+                appear={false}
+                enter={true}
+                exit={true}
+                in={true}
+                mountOnEnter={false}
+                onEnter={[Function]}
+                onEntered={[Function]}
+                onEntering={[Function]}
+                onExit={[Function]}
+                onExited={[Function]}
+                onExiting={[Function]}
+                timeout={300}
+                unmountOnExit={false}
+              >
+                <div>
+                  <InputFields
+                    onPropertyChange={[Function]}
+                    options={
+                      Object {
+                        "abv_gt": "0",
+                        "abv_lt": "0",
+                        "beer_name": "",
+                        "ebc_gt": "0",
+                        "ebc_lt": "0",
+                        "ibu_gt": "0",
+                        "ibu_lt": "0",
+                        "page": "1",
+                      }
+                    }
+                  >
+                    <div
+                      className="wrapper"
+                    >
+                      <Abv
+                        lessValue="0"
+                        moreValue="0"
+                        onPropertyChange={[Function]}
+                      >
+                        <fieldset
+                          className="abvField"
+                        >
+                          <legend
+                            className="abvLegend"
+                          >
+                            Alcohol By Volume
+                          </legend>
+                          <div
+                            className="abvInner"
+                          >
+                            <label
+                              className="abvLabelMore"
+                              htmlFor="abvMore"
+                            >
+                              <span
+                                className="textMore"
+                              >
+                                more than
+                              </span>
+                              <input
+                                className="abvInputMore"
+                                id="abvMore"
+                                name="abvMore"
+                                onChange={[Function]}
+                                type="number"
+                                value="0"
+                              />
+                            </label>
+                            <label
+                              className="abvLabelLess"
+                              htmlFor="abvLess"
+                            >
+                              <span
+                                className="textLess"
+                              >
+                                less than
+                              </span>
+                              <input
+                                className="abvInputLess"
+                                id="abvLess"
+                                name="abvLess"
+                                onChange={[Function]}
+                                type="number"
+                                value="0"
+                              />
+                            </label>
+                          </div>
+                        </fieldset>
+                      </Abv>
+                      <Ibu
+                        lessValue="0"
+                        moreValue="0"
+                        onPropertyChange={[Function]}
+                      >
+                        <fieldset
+                          className="ibuField"
+                        >
+                          <legend
+                            className="ibuLegend"
+                          >
+                            International Bitterness Unit
+                          </legend>
+                          <div
+                            className="ibuInner"
+                          >
+                            <label
+                              className="ibuLabelMore"
+                              htmlFor="ibuMore"
+                            >
+                              <span
+                                className="textMore"
+                              >
+                                more than
+                              </span>
+                              <input
+                                className="ibuInputMore"
+                                id="ibuMore"
+                                name="ibuMore"
+                                onChange={[Function]}
+                                type="number"
+                                value="0"
+                              />
+                            </label>
+                            <label
+                              className="ibuLabelLess"
+                              htmlFor="ibuLess"
+                            >
+                              <span
+                                className="textLess"
+                              >
+                                less than
+                              </span>
+                              <input
+                                className="ibuInputLess"
+                                id="ibuLess"
+                                name="ibuLess"
+                                onChange={[Function]}
+                                type="number"
+                                value="0"
+                              />
+                            </label>
+                          </div>
+                        </fieldset>
+                      </Ibu>
+                      <Ebc
+                        lessValue="0"
+                        moreValue="0"
+                        onPropertyChange={[Function]}
+                      >
+                        <fieldset
+                          className="ebcField"
+                        >
+                          <legend
+                            className="ebcLegend"
+                          >
+                            Color Units Ebc
+                          </legend>
+                          <div
+                            className="ebcInner"
+                          >
+                            <label
+                              className="ebcLabelMore"
+                              htmlFor="ebcMore"
+                            >
+                              <span
+                                className="textMore"
+                              >
+                                more than
+                              </span>
+                              <input
+                                className="ebcInputMore"
+                                id="ebcMore"
+                                name="ebcMore"
+                                onChange={[Function]}
+                                type="number"
+                                value="0"
+                              />
+                            </label>
+                            <label
+                              className="ebcLabelLess"
+                              htmlFor="ebcLess"
+                            >
+                              <span
+                                className="textLess"
+                              >
+                                less than
+                              </span>
+                              <input
+                                className="ebcInputLess"
+                                id="ebcLess"
+                                name="ebcLess"
+                                onChange={[Function]}
+                                type="number"
+                                value="0"
+                              />
+                            </label>
+                          </div>
+                        </fieldset>
+                      </Ebc>
+                    </div>
+                  </InputFields>
+                </div>
+              </Transition>
+            </CSSTransition>
+          </TransitionGroup>
+        </Parameters>
+      </ToggleWrapper(Parameters)>
+    </form>
+  </section>
+</CatalogFilter>
+`;

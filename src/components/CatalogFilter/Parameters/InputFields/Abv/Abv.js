@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './Abv.module.scss';
 import {
   ABV_LESS_PROP,
@@ -8,9 +9,8 @@ import {
 } from '../../../../../utils/constants';
 import validateNumberValue from '../../../../../utils/validateNumberValue';
 
-class Abv extends React.PureComponent {
-  onABVChange = evt => {
-    const { onPropertyChange } = this.props;
+const Abv = ({ lessValue, moreValue, onPropertyChange }) => {
+  const onABVChange = evt => {
     const value = validateNumberValue(
       evt.target.value,
       ABV_BOTTOM_VALUE,
@@ -24,41 +24,41 @@ class Abv extends React.PureComponent {
     }
   };
 
-  render() {
-    // eslint-disable-next-line no-console
-    console.log('render ========== AbvInput');
+  return (
+    <fieldset className={styles.abvField}>
+      <legend className={styles.abvLegend}>Alcohol By Volume</legend>
+      <div className={styles.abvInner}>
+        <label className={styles.abvLabelMore} htmlFor="abvMore">
+          <span className={styles.textMore}>more than</span>
+          <input
+            id="abvMore"
+            name="abvMore"
+            className={styles.abvInputMore}
+            type="number"
+            value={moreValue}
+            onChange={onABVChange}
+          />
+        </label>
+        <label className={styles.abvLabelLess} htmlFor="abvLess">
+          <span className={styles.textLess}>less than</span>
+          <input
+            id="abvLess"
+            name="abvLess"
+            className={styles.abvInputLess}
+            type="number"
+            value={lessValue}
+            onChange={onABVChange}
+          />
+        </label>
+      </div>
+    </fieldset>
+  );
+};
 
-    const { lessValue, moreValue } = this.props;
-    return (
-      <fieldset className={styles.abvField}>
-        <legend className={styles.abvLegend}>Alcohol By Volume</legend>
-        <div className={styles.abvInner}>
-          <label className={styles.abvLabelMore} htmlFor="abvMore">
-            <span className={styles.textMore}>more than</span>
-            <input
-              id="abvMore"
-              name="abvMore"
-              className={styles.abvInputMore}
-              type="number"
-              value={moreValue}
-              onChange={this.onABVChange}
-            />
-          </label>
-          <label className={styles.abvLabelLess} htmlFor="abvLess">
-            <span className={styles.textLess}>less than</span>
-            <input
-              id="abvLess"
-              name="abvLess"
-              className={styles.abvInputLess}
-              type="number"
-              value={lessValue}
-              onChange={this.onABVChange}
-            />
-          </label>
-        </div>
-      </fieldset>
-    );
-  }
-}
+Abv.propTypes = {
+  lessValue: PropTypes.string.isRequired,
+  moreValue: PropTypes.string.isRequired,
+  onPropertyChange: PropTypes.func.isRequired
+};
 
 export default Abv;

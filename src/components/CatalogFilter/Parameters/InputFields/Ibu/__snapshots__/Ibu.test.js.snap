@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test <Ibu /> component should match snapshot 1`] = `
+<fieldset
+  className="ibuField"
+>
+  <legend
+    className="ibuLegend"
+  >
+    International Bitterness Unit
+  </legend>
+  <div
+    className="ibuInner"
+  >
+    <label
+      className="ibuLabelMore"
+      htmlFor="ibuMore"
+    >
+      <span
+        className="textMore"
+      >
+        more than
+      </span>
+      <input
+        className="ibuInputMore"
+        id="ibuMore"
+        name="ibuMore"
+        onChange={[Function]}
+        type="number"
+        value="30"
+      />
+    </label>
+    <label
+      className="ibuLabelLess"
+      htmlFor="ibuLess"
+    >
+      <span
+        className="textLess"
+      >
+        less than
+      </span>
+      <input
+        className="ibuInputLess"
+        id="ibuLess"
+        name="ibuLess"
+        onChange={[Function]}
+        type="number"
+        value="20"
+      />
+    </label>
+  </div>
+</fieldset>
+`;

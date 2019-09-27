@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test <InputFields /> component should match snapshot 1`] = `
+<div
+  className="wrapper"
+>
+  <Abv
+    lessValue="10"
+    moreValue="20"
+    onPropertyChange={[Function]}
+  />
+  <Ibu
+    lessValue="30"
+    moreValue="40"
+    onPropertyChange={[Function]}
+  />
+  <Ebc
+    lessValue="50"
+    moreValue="60"
+    onPropertyChange={[Function]}
+  />
+</div>
+`;

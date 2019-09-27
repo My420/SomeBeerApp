@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './Ebc.module.scss';
 import {
   EBC_LESS_PROP,
@@ -8,9 +9,8 @@ import {
 } from '../../../../../utils/constants';
 import validateNumberValue from '../../../../../utils/validateNumberValue';
 
-class Ebc extends React.PureComponent {
-  onEBCChange = evt => {
-    const { onPropertyChange } = this.props;
+const Ebc = ({ lessValue, moreValue, onPropertyChange }) => {
+  const onEBCChange = evt => {
     const value = validateNumberValue(
       evt.target.value,
       EBC_BOTTOM_VALUE,
@@ -24,41 +24,41 @@ class Ebc extends React.PureComponent {
     }
   };
 
-  render() {
-    // eslint-disable-next-line no-console
-    console.log('render ========== EbcInput');
+  return (
+    <fieldset className={styles.ebcField}>
+      <legend className={styles.ebcLegend}>Color Units Ebc</legend>
+      <div className={styles.ebcInner}>
+        <label className={styles.ebcLabelMore} htmlFor="ebcMore">
+          <span className={styles.textMore}>more than</span>
+          <input
+            id="ebcMore"
+            name="ebcMore"
+            className={styles.ebcInputMore}
+            type="number"
+            value={moreValue}
+            onChange={onEBCChange}
+          />
+        </label>
+        <label className={styles.ebcLabelLess} htmlFor="ebcLess">
+          <span className={styles.textLess}>less than</span>
+          <input
+            id="ebcLess"
+            name="ebcLess"
+            className={styles.ebcInputLess}
+            type="number"
+            value={lessValue}
+            onChange={onEBCChange}
+          />
+        </label>
+      </div>
+    </fieldset>
+  );
+};
 
-    const { lessValue, moreValue } = this.props;
-    return (
-      <fieldset className={styles.ebcField}>
-        <legend className={styles.ebcLegend}>Color Units Ebc</legend>
-        <div className={styles.ebcInner}>
-          <label className={styles.ebcLabelMore} htmlFor="ebcMore">
-            <span className={styles.textMore}>more than</span>
-            <input
-              id="ebcMore"
-              name="ebcMore"
-              className={styles.ebcInputMore}
-              type="number"
-              value={moreValue}
-              onChange={this.onEBCChange}
-            />
-          </label>
-          <label className={styles.ebcLabelLess} htmlFor="ebcLess">
-            <span className={styles.textLess}>less than</span>
-            <input
-              id="ebcLess"
-              name="ebcLess"
-              className={styles.ebcInputLess}
-              type="number"
-              value={lessValue}
-              onChange={this.onEBCChange}
-            />
-          </label>
-        </div>
-      </fieldset>
-    );
-  }
-}
+Ebc.propTypes = {
+  lessValue: PropTypes.string.isRequired,
+  moreValue: PropTypes.string.isRequired,
+  onPropertyChange: PropTypes.func.isRequired
+};
 
 export default Ebc;

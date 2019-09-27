@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './InputFields.module.scss';
 import Abv from './Abv/Abv';
 import Ibu from './Ibu/Ibu';
@@ -41,6 +42,18 @@ const InputFields = ({ options, onPropertyChange }) => {
       />
     </div>
   );
+};
+
+InputFields.propTypes = {
+  options: PropTypes.shape({
+    [ABV_LESS_PROP]: PropTypes.string.isRequired,
+    [ABV_MORE_PROP]: PropTypes.string.isRequired,
+    [IBU_LESS_PROP]: PropTypes.string.isRequired,
+    [IBU_MORE_PROP]: PropTypes.string.isRequired,
+    [EBC_LESS_PROP]: PropTypes.string.isRequired,
+    [EBC_MORE_PROP]: PropTypes.string.isRequired
+  }).isRequired,
+  onPropertyChange: PropTypes.func.isRequired
 };
 
 export default InputFields;

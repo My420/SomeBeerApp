@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test <Parameters /> component test <Parameters /> component with close InputFields should match snapshot 1`] = `
+<Fragment>
+  <Button
+    activeStyle=""
+    className="button"
+    disabled={false}
+    onClick={[MockFunction]}
+  >
+    <span
+      className="buttonText"
+    >
+      options
+    </span>
+  </Button>
+  <TransitionGroup
+    childFactory={[Function]}
+    component={null}
+  />
+</Fragment>
+`;
+
+exports[`test <Parameters /> component test <Parameters /> component with open InputFields should match snapshot 1`] = `
+<Fragment>
+  <Button
+    activeStyle=""
+    className="button"
+    disabled={false}
+    onClick={[MockFunction]}
+  >
+    <span
+      className="buttonText"
+    >
+      hide
+    </span>
+  </Button>
+  <TransitionGroup
+    childFactory={[Function]}
+    component={null}
+  >
+    <CSSTransition
+      classNames={Object {}}
+      timeout={300}
+    >
+      <div>
+        <InputFields
+          onPropertyChange={[MockFunction]}
+          options={Object {}}
+        />
+      </div>
+    </CSSTransition>
+  </TransitionGroup>
+</Fragment>
+`;

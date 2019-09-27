@@ -1,12 +1,22 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './CatalogFilter.module.scss';
 import BeerName from './BeerName/BeerName';
 import Button from '../Button/Button';
-import { PAGE, BEER_NAME_PROP } from '../../utils/constants';
 import createOptions from '../../utils/createOptions';
 import compareOptions from '../../utils/compareOptions';
-import Parameters from './Parameters/Parameters';
+import Options from './Parameters/Parameters';
 import IconSearchSvg from '../IconSearchSvg/IconSearchSvg';
+import {
+  ABV_LESS_PROP,
+  ABV_MORE_PROP,
+  IBU_LESS_PROP,
+  IBU_MORE_PROP,
+  EBC_LESS_PROP,
+  EBC_MORE_PROP,
+  PAGE,
+  BEER_NAME_PROP
+} from '../../utils/constants';
 
 class CatalogFilter extends React.Component {
   constructor(props) {
@@ -29,9 +39,6 @@ class CatalogFilter extends React.Component {
   };
 
   render() {
-    // eslint-disable-next-line no-console
-    console.log('render ========== CatalogFilter');
-
     const { [BEER_NAME_PROP]: name } = this.state;
 
     return (
@@ -44,7 +51,7 @@ class CatalogFilter extends React.Component {
               <span className="visually-hidden">Apply</span>
             </Button>
           </div>
-          <Parameters
+          <Options
             options={this.state}
             onPropertyChange={this.onPropertyChange}
           />
@@ -53,5 +60,19 @@ class CatalogFilter extends React.Component {
     );
   }
 }
+
+CatalogFilter.propTypes = {
+  value: PropTypes.shape({
+    [PAGE]: PropTypes.string.isRequired,
+    [BEER_NAME_PROP]: PropTypes.string.isRequired,
+    [ABV_LESS_PROP]: PropTypes.string.isRequired,
+    [ABV_MORE_PROP]: PropTypes.string.isRequired,
+    [IBU_LESS_PROP]: PropTypes.string.isRequired,
+    [IBU_MORE_PROP]: PropTypes.string.isRequired,
+    [EBC_LESS_PROP]: PropTypes.string.isRequired,
+    [EBC_MORE_PROP]: PropTypes.string.isRequired
+  }).isRequired,
+  history: PropTypes.object.isRequired // eslint-disable-line react/forbid-prop-types
+};
 
 export default CatalogFilter;

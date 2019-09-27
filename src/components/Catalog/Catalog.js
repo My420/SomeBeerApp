@@ -11,8 +11,18 @@ import getCatalogBeerData from '../../ActionCreator/getCatalogBeerData';
 import CatalogFilter from '../CatalogFilter/CatalogFilter';
 import LoadStatusSwitcher from '../LoadStatusSwitcher/LoadStatusSwitcher';
 import CatalogPagination from '../CatalogPagination/CatalogPagination';
+import {
+  ABV_LESS_PROP,
+  ABV_MORE_PROP,
+  IBU_LESS_PROP,
+  IBU_MORE_PROP,
+  EBC_LESS_PROP,
+  EBC_MORE_PROP,
+  PAGE,
+  BEER_NAME_PROP
+} from '../../utils/constants';
 
-class Catalog extends React.Component {
+export class Catalog extends React.Component {
   componentDidMount() {
     const { getCatalogData, options } = this.props;
     getCatalogData(options);
@@ -98,12 +108,23 @@ const mapDispatchToProps = dispatch => {
 };
 
 Catalog.propTypes = {
-  isLoaded: PropTypes.bool.isRequired,
-  isLoading: PropTypes.bool.isRequired,
-  isError: PropTypes.bool.isRequired,
-  errorMessage: PropTypes.string.isRequired,
-  data: PropTypes.instanceOf(List).isRequired,
-  getCatalogData: PropTypes.func.isRequired
+  history: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
+  options: PropTypes.shape({
+    [PAGE]: PropTypes.string.isRequired,
+    [BEER_NAME_PROP]: PropTypes.string.isRequired,
+    [ABV_LESS_PROP]: PropTypes.string.isRequired,
+    [ABV_MORE_PROP]: PropTypes.string.isRequired,
+    [IBU_LESS_PROP]: PropTypes.string.isRequired,
+    [IBU_MORE_PROP]: PropTypes.string.isRequired,
+    [EBC_LESS_PROP]: PropTypes.string.isRequired,
+    [EBC_MORE_PROP]: PropTypes.string.isRequired
+  }).isRequired,
+  isLoaded: PropTypes.bool.isRequired, // form connect
+  isLoading: PropTypes.bool.isRequired, // form connect
+  isError: PropTypes.bool.isRequired, // form connect
+  errorMessage: PropTypes.string.isRequired, // form connect
+  data: PropTypes.instanceOf(List).isRequired, // form connect
+  getCatalogData: PropTypes.func.isRequired // form connect
 };
 
 export default connect(

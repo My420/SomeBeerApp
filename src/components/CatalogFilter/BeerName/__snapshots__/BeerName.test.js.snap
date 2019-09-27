@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test <BeerName /> component should match snapshot 1`] = `
+<fieldset
+  className="nameField"
+>
+  <legend
+    className="visually-hidden"
+  >
+    Beer Name
+  </legend>
+  <input
+    className="nameInput"
+    maxLength={40}
+    onChange={[Function]}
+    placeholder="search"
+    type="text"
+    value="test"
+  />
+</fieldset>
+`;

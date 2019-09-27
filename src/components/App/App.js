@@ -11,7 +11,7 @@ const App = () => {
   // eslint-disable-next-line no-console
   console.log('render ===== App');
   return (
-    <React.Fragment>
+    <div className={styles.wrapper}>
       <Container className={styles.container}>
         <Header />
       </Container>
@@ -24,7 +24,7 @@ const App = () => {
       <Container className={styles.container}>
         <Footer />
       </Container>
-    </React.Fragment>
+    </div>
   );
 };
 export default App;
