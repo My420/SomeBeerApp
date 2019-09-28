@@ -6,6 +6,7 @@ import Container from '../Container/Container';
 import MainPage from '../MainPage/MainPage';
 import Footer from '../Footer/Footer';
 import CatalogPage from '../CatalogPage/CatalogPage';
+import ItemPage from '../ItemPage/ItemPage';
 
 const App = () => {
   // eslint-disable-next-line no-console
@@ -18,6 +19,7 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={MainPage} />
         <Route exact path="/catalog" component={CatalogPage} />
+        <Route exact path="/id/:id" component={ItemPage} />
         <Route path="/random" render={() => <h2>Random</h2>} />
         <Route render={() => <h2>404 error</h2>} />
       </Switch>

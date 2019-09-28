@@ -9,6 +9,12 @@ export const LINK = {
   CART: '/cart'
 };
 
+export const ParamMap = {
+  abv: 'Alcohol By Volume',
+  ebc: 'Color Units Ebc',
+  ibu: 'International Bitterness Unit'
+};
+
 export const CART = 'Cart';
 
 export const NAVIGATION_LINKS = [
@@ -76,6 +82,10 @@ export const CATALOG_BEER__GET_REQUEST = 'CATALOG_BEER__GET_REQUEST';
 export const CATALOG_BEER__GET_SUCCESS = 'CATALOG_BEER__GET_SUCCESS';
 export const CATALOG_BEER__GET_FAILURE = 'CATALOG_BEER__GET_FAILURE';
 
+export const BEER_ID__GET_REQUEST = 'BEER_ID__GET_REQUEST';
+export const BEER_ID__GET_SUCCESS = 'BEER_ID__GET_SUCCESS';
+export const BEER_ID__GET_FAILURE = 'BEER_ID__GET_FAILURE';
+
 export const CART_ADD_ITEM = 'CART_ADD_ITEM';
 export const CART_DELETE_ITEM = 'CART_DELETE_ITEM';
 export const CART_SET_ITEM_AMOUNT = 'CART_SET_ITEM_AMOUNT';
@@ -90,3 +100,5 @@ export const LOAD_ERROR_MESSAGE =
 
 export const ERROR_TITLE = 'Oops! Something went wrong.';
 export const ERROR_ACTION = 'Please refresh page or try again later.';
+
+export const ENTER_CHAR_CODE = 13;

@@ -14,7 +14,6 @@ const getCatalogBeerData = options => {
 
     try {
       const request = createCatalogRequestAddress(options);
-      console.log(request);
       const data = await getDataFromAPI(request);
       dispatch({
         type: CATALOG_BEER__GET_SUCCESS,

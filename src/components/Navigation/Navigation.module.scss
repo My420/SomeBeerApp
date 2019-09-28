@@ -11,6 +11,8 @@
 }
 
 .link {
+  display: inline-block;
+
   font-size: 22px;
   font-weight: 700;
   color: $menu-color;
@@ -32,8 +34,8 @@
   outline: 2px solid $menu-hover-color;
 }
 
-.list .item:first-child .active {
-  color: $menu-color;
+.list .item .active {
+  color: $menu-hover-color;
 }
 
 .list .item:last-child {
