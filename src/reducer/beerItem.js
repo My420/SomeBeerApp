@@ -14,9 +14,9 @@ const ReducerState = Record({
   data: BeerDataRecord()
 });
 
-export const BeerItemInitialState = ReducerState();
+export const beerItemInitialState = ReducerState();
 
-const beerItem = (state = BeerItemInitialState, action) => {
+const beerItem = (state = beerItemInitialState, action) => {
   const { type, payload } = action;
   switch (type) {
     case BEER_ID__GET_REQUEST:
