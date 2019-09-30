@@ -2,8 +2,8 @@ import React from 'react';
 import Button from '../../Button/Button';
 import IconInfoSvg from '../../IconInfoSvg/IconInfoSvg';
 import styles from './GridCardControl.module.scss';
-import CartButton from '../CartButton/CartButton';
-import FavoriteButton from '../FavoriteButton/FavoriteButton';
+import CartBtn from '../../CartButton/CartButton';
+import FavoriteBtn from '../../FavoriteButton/FavoriteButton';
 
 const GridCardControl = ({ data, isDescriptionOpen, onToggleButtonClick }) => {
   // eslint-disable-next-line no-console
@@ -19,8 +19,8 @@ const GridCardControl = ({ data, isDescriptionOpen, onToggleButtonClick }) => {
           }
         />
       </Button>
-      <FavoriteButton itemData={data} />
-      <CartButton itemData={data} />
+      <FavoriteBtn itemData={data} />
+      <CartBtn itemData={data} />
     </div>
   );
 };

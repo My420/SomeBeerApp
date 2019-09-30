@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test <CartButton /> component test component when item is in the cart should match snapshot 1`] = `
+<Button
+  activeStyle=""
+  className="cartButton"
+  disabled={false}
+  onClick={[Function]}
+>
+   
+  <IconCartSvg
+    containerClass="cartContainer"
+    pathClass="cartPath"
+  />
+  <span
+    className="cartText"
+  >
+    Delete
+  </span>
+</Button>
+`;
+
+exports[`test <CartButton /> component test component when item is not in the cart should match snapshot 1`] = `
+<Button
+  activeStyle=""
+  className="cartButton"
+  disabled={false}
+  onClick={[Function]}
+>
+   
+  <IconCartSvg
+    containerClass="cartContainer"
+    pathClass="cartPath"
+  />
+  <span
+    className="cartText"
+  >
+    Add to Cart
+  </span>
+</Button>
+`;

@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test <BeerItemParameters /> component should render default button 1`] = `
+<div
+  className="description"
+>
+  <p
+    className="title"
+  >
+    test title
+  </p>
+  <dl
+    className="parameters"
+  >
+    <dt
+      className="name"
+      key="abv-dt"
+    >
+      Alcohol By Volume
+    </dt>
+    <dd
+      className="value"
+      key="abv-dd"
+    >
+      90
+    </dd>
+    <dt
+      className="name"
+      key="ebc-dt"
+    >
+      Color Units Ebc
+    </dt>
+    <dd
+      className="value"
+      key="ebc-dd"
+    >
+      60
+    </dd>
+    <dt
+      className="name"
+      key="ibu-dt"
+    >
+      International Bitterness Unit
+    </dt>
+    <dd
+      className="value"
+      key="ibu-dd"
+    >
+      40
+    </dd>
+  </dl>
+</div>
+`;

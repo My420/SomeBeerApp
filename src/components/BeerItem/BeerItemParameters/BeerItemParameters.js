@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './BeerItemParameters.module.scss';
 import { ParamMap } from '../../../utils/constants';
 
@@ -20,6 +21,15 @@ const BeerItemParameters = ({ parameter, title }) => {
       <dl className={styles.parameters}>{parameters}</dl>
     </div>
   );
+};
+
+BeerItemParameters.propTypes = {
+  parameter: PropTypes.shape({
+    abv: PropTypes.number.isRequired,
+    ebc: PropTypes.number.isRequired,
+    ibu: PropTypes.number.isRequired
+  }).isRequired,
+  title: PropTypes.string.isRequired
 };
 
 export default BeerItemParameters;

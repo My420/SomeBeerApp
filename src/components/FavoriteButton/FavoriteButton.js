@@ -2,12 +2,12 @@ import React from 'react';
 import { Map } from 'immutable';
 import PropTypes from 'prop-types';
 import styles from './FavoriteButton.module.scss';
-import Button from '../../Button/Button';
-import IconFavoriteSvg from '../../IconFavoriteSvg/IconFavoriteSvg';
-import IconFavoriteFillSvg from '../../IconFavoriteFillSvg/IconFavoriteFillSvg';
-import withFavorite from '../../HOC/FavoriteWrapper/FavoriteWrapper';
+import Button from '../Button/Button';
+import IconFavoriteSvg from '../IconFavoriteSvg/IconFavoriteSvg';
+import IconFavoriteFillSvg from '../IconFavoriteFillSvg/IconFavoriteFillSvg';
+import withFavorite from '../HOC/FavoriteWrapper/FavoriteWrapper';
 
-const FavoriteButton = ({
+export const FavoriteButton = ({
   itemData,
   favoriteData,
   addItemToFavorite,

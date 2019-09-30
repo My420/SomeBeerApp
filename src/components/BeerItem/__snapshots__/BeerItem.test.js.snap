@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test <BeerItem /> component should match snapshot 1`] = `
+<section
+  className="beer"
+>
+  <h1
+    className="visually-hidden"
+  >
+    Beer
+  </h1>
+  <div
+    className="wrapper"
+  >
+    <div
+      className="imageWrapper"
+    >
+      <img
+        alt="Test Beer"
+        className="image"
+        src="test_url"
+      />
+    </div>
+    <div
+      className="infoWrapper"
+    >
+      <h2
+        className="name"
+      >
+        Test Beer
+      </h2>
+      <BeerItemParameters
+        parameter={
+          Object {
+            "abv": "10",
+            "ebc": "20",
+            "ibu": "30",
+          }
+        }
+        title="test_tegline"
+      />
+      <div
+        className="actions"
+      >
+        <Connect(FavoriteWrapper(FavoriteButton))
+          itemData={
+            Object {
+              "abv": "10",
+              "attenuation_level": null,
+              "boil_volume": Object {},
+              "brewers_tips": "test_brewers_tips",
+              "contributed_by": null,
+              "description": "test_description",
+              "ebc": "20",
+              "first_brewed": null,
+              "food_pairing": "test_food_pairing",
+              "ibu": "30",
+              "id": null,
+              "image_url": "test_url",
+              "ingredients": Object {},
+              "method": Object {},
+              "name": "Test Beer",
+              "ph": null,
+              "srm": null,
+              "tagline": "test_tegline",
+              "target_fg": null,
+              "target_og": null,
+              "volume": Object {},
+            }
+          }
+        />
+        <Connect(CartWrapper(CartButton))
+          itemData={
+            Object {
+              "abv": "10",
+              "attenuation_level": null,
+              "boil_volume": Object {},
+              "brewers_tips": "test_brewers_tips",
+              "contributed_by": null,
+              "description": "test_description",
+              "ebc": "20",
+              "first_brewed": null,
+              "food_pairing": "test_food_pairing",
+              "ibu": "30",
+              "id": null,
+              "image_url": "test_url",
+              "ingredients": Object {},
+              "method": Object {},
+              "name": "Test Beer",
+              "ph": null,
+              "srm": null,
+              "tagline": "test_tegline",
+              "target_fg": null,
+              "target_og": null,
+              "volume": Object {},
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="descriptionWrapper"
+  >
+    <BeerItemDescription
+      description={
+        Object {
+          "Description": "test_description",
+          "Food": "test_food_pairing",
+          "Tips": "test_brewers_tips",
+        }
+      }
+    />
+  </div>
+</section>
+`;

@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 import { Record } from 'immutable';
 import styles from './BeerItem.module.scss';
 import BeerItemParameters from './BeerItemParameters/BeerItemParameters';
-import FavoriteButton from '../GridItemCard/FavoriteButton/FavoriteButton';
-import CartButton from '../GridItemCard/CartButton/CartButton';
+import FavoriteBtn from '../FavoriteButton/FavoriteButton';
+import CartBtn from '../CartButton/CartButton';
 import BeerItemDescription from './BeerItemDescription/BeerItemDescription';
 
 const BeerItem = ({ data }) => {
   // eslint-disable-next-line no-console
-  console.log('render ================ BeerPage');
+  console.log('render ================ BeerItem');
 
   const beerData = data.toJS();
   const {
@@ -18,13 +18,16 @@ const BeerItem = ({ data }) => {
     tagline,
     description,
     brewers_tips: tips,
-    food_pairing: food
+    food_pairing: food,
+    abv,
+    ibu,
+    ebc
   } = beerData;
 
   const parameter = {
-    abv: beerData.abv,
-    ibu: beerData.ibu,
-    ebc: beerData.ebc
+    abv,
+    ibu,
+    ebc
   };
 
   const beerDescription = {
@@ -44,8 +47,8 @@ const BeerItem = ({ data }) => {
           <h2 className={styles.name}>{name}</h2>
           <BeerItemParameters parameter={parameter} title={tagline} />
           <div className={styles.actions}>
-            <FavoriteButton itemData={beerData} />
-            <CartButton itemData={beerData} />
+            <FavoriteBtn itemData={beerData} />
+            <CartBtn itemData={beerData} />
           </div>
         </div>
       </div>

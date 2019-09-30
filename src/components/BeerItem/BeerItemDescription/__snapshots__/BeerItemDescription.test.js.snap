@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test <BeerItemDescription /> component test <BeerItemDescription /> shuld render 'Food' tab should match snapshot 1`] = `
+<Fragment>
+  <ListGroup
+    className="tabList"
+    tag="ul"
+  >
+    <ListGroupItem
+      className="tabItem"
+      data-active={false}
+      data-tab="Description"
+      key="Description"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      tabIndex="0"
+    >
+      Description
+    </ListGroupItem>
+    <ListGroupItem
+      className="tabItem"
+      data-active={true}
+      data-tab="Food"
+      key="Food"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      tabIndex="0"
+    >
+      Food
+    </ListGroupItem>
+    <ListGroupItem
+      className="tabItem"
+      data-active={false}
+      data-tab="Tips"
+      key="Tips"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      tabIndex="0"
+    >
+      Tips
+    </ListGroupItem>
+  </ListGroup>
+  <ListGroup
+    className="foodList"
+    tag="ul"
+  >
+    <ListGroupItem
+      className="foodItem"
+      key="food1"
+    >
+      food1
+    </ListGroupItem>
+    <ListGroupItem
+      className="foodItem"
+      key="food2"
+    >
+      food2
+    </ListGroupItem>
+  </ListGroup>
+</Fragment>
+`;
+
+exports[`test <BeerItemDescription /> component test <BeerItemDescription /> shuld render 'Tips' tab should match snapshot 1`] = `
+<Fragment>
+  <ListGroup
+    className="tabList"
+    tag="ul"
+  >
+    <ListGroupItem
+      className="tabItem"
+      data-active={false}
+      data-tab="Description"
+      key="Description"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      tabIndex="0"
+    >
+      Description
+    </ListGroupItem>
+    <ListGroupItem
+      className="tabItem"
+      data-active={false}
+      data-tab="Food"
+      key="Food"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      tabIndex="0"
+    >
+      Food
+    </ListGroupItem>
+    <ListGroupItem
+      className="tabItem"
+      data-active={true}
+      data-tab="Tips"
+      key="Tips"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      tabIndex="0"
+    >
+      Tips
+    </ListGroupItem>
+  </ListGroup>
+  <p
+    className="description"
+  >
+    Tips
+  </p>
+</Fragment>
+`;
+
+exports[`test <BeerItemDescription /> component test <BeerItemDescription /> shuld render Description tab first should match snapshot 1`] = `
+<Fragment>
+  <ListGroup
+    className="tabList"
+    tag="ul"
+  >
+    <ListGroupItem
+      className="tabItem"
+      data-active={true}
+      data-tab="Description"
+      key="Description"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      tabIndex="0"
+    >
+      Description
+    </ListGroupItem>
+    <ListGroupItem
+      className="tabItem"
+      data-active={false}
+      data-tab="Food"
+      key="Food"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      tabIndex="0"
+    >
+      Food
+    </ListGroupItem>
+    <ListGroupItem
+      className="tabItem"
+      data-active={false}
+      data-tab="Tips"
+      key="Tips"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      tabIndex="0"
+    >
+      Tips
+    </ListGroupItem>
+  </ListGroup>
+  <p
+    className="description"
+  >
+    Description
+  </p>
+</Fragment>
+`;

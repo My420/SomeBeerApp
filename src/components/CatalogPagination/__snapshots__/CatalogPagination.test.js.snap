@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test <CatalogPagination /> component should match snapshot 1`] = `
+<ListGroup
+  className="list"
+  tag="ul"
+>
+  <div
+    className="wrapper"
+  >
+    <ListGroupItem
+      className="item"
+    >
+      <p
+        className="prevDisabled"
+      >
+        prev
+      </p>
+    </ListGroupItem>
+    <ListGroupItem
+      className="item"
+    >
+      <Link
+        className="next"
+        to="?page=2&per_page=24&beer_name=test&abv_lt=1&abv_gt=2&ibu_lt=3&ibu_gt=4&ebc_lt=5&ebc_gt=6"
+      >
+        next
+      </Link>
+    </ListGroupItem>
+  </div>
+</ListGroup>
+`;

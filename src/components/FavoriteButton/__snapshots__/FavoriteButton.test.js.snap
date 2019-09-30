@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test <FavoriteButton /> component test component when item is in the cart should match snapshot 1`] = `
+<Button
+  activeStyle=""
+  className="favoriteButton"
+  disabled={false}
+  onClick={[Function]}
+>
+   
+  <IconFavoriteFillSvg
+    containerClass="favoriteContainer"
+    pathClass="favoritePath"
+  />
+</Button>
+`;
+
+exports[`test <FavoriteButton /> component test component when item is not in the cart should match snapshot 1`] = `
+<Button
+  activeStyle=""
+  className="favoriteButton"
+  disabled={false}
+  onClick={[Function]}
+>
+   
+  <IconFavoriteSvg
+    containerClass="favoriteContainer"
+    pathClass="favoritePath"
+  />
+</Button>
+`;

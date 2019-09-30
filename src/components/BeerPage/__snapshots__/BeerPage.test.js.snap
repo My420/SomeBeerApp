@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test <BeerPage /> component should match snapshot 1`] = `
+<Fragment>
+  <LoadStatusSwitcher
+    DataComponent={[Function]}
+    ErrorComponent={[Function]}
+    LoadingComponent={[Function]}
+    isError={false}
+    isLoaded={true}
+    isLoading={false}
+  />
+</Fragment>
+`;

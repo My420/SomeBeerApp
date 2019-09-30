@@ -2,11 +2,11 @@ import React from 'react';
 import { Map } from 'immutable';
 import PropTypes from 'prop-types';
 import styles from './CartButton.module.scss';
-import Button from '../../Button/Button';
-import IconCartSvg from '../../IconCartSvg/IconCartSvg';
-import withCart from '../../HOC/CartWrapper/CartWrapper';
+import Button from '../Button/Button';
+import IconCartSvg from '../IconCartSvg/IconCartSvg';
+import withCart from '../HOC/CartWrapper/CartWrapper';
 
-const CartButton = ({
+export const CartButton = ({
   itemData,
   cartData,
   addItemToCart,
