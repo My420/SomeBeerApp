@@ -1,0 +1,35 @@
+@import '../../../sass/variables.scss';
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 70px;
+
+  padding-bottom: 20px;
+
+  list-style: none;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.prev,
+.next {
+  @include link-button;
+}
+
+.next {
+  margin-left: 40px;
+}
+
+@media (max-width: $Tablet7-max-width) {
+  .list {
+    height: 30px;
+
+    padding-bottom: 30px;
+  }
+}
