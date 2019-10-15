@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test <FavoritePagination /> component should match snapshot 1`] = `
+<ListGroup
+  className="list"
+  tag="ul"
+>
+  <div
+    className="wrapper"
+  >
+    <ListGroupItem
+      className="item"
+    >
+      <Button
+        activeStyle=""
+        className="prev"
+        data-action="prev"
+        disabled={true}
+        onClick={[MockFunction]}
+      >
+        prev
+      </Button>
+    </ListGroupItem>
+    <ListGroupItem
+      className="item"
+    >
+      <Button
+        activeStyle=""
+        className="next"
+        data-action="next"
+        disabled={false}
+        onClick={[MockFunction]}
+      >
+        next
+      </Button>
+    </ListGroupItem>
+  </div>
+</ListGroup>
+`;

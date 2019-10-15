@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test <FavoritePage /> component should match snapshot 1`] = `
+<Main
+  className="main"
+>
+  <Container
+    className="container"
+  >
+    <section
+      className="favoritePage"
+    >
+      <h2
+        className="visually-hidden"
+      >
+        Favorite
+      </h2>
+      <Connect(FavoriteCatalog) />
+    </section>
+  </Container>
+</Main>
+`;
