@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Map } from 'immutable';
-import { connect } from 'react-redux';
 import ProductList from '../ProductList/ProductList';
 import GridItemCard from '../GridItemCard/GridItemCard';
 import { CATALOG_BEER_AMOUNT } from '../../utils/constants';
 import FavoritePagination from './FavoritePagination/FavoritePagination';
+import withFavorite from '../HOC/FavoriteWrapper/FavoriteWrapper';
 
 export class FavoriteCatalog extends React.Component {
   state = {
@@ -13,9 +13,9 @@ export class FavoriteCatalog extends React.Component {
   };
 
   getPageData = () => {
-    const { favorite } = this.props;
-    const { size } = favorite;
-    const list = favorite.toList();
+    const { favoriteData } = this.props;
+    const { size } = favoriteData;
+    const list = favoriteData.toList();
     if (size <= CATALOG_BEER_AMOUNT) {
       return list;
     }
@@ -40,7 +40,7 @@ export class FavoriteCatalog extends React.Component {
     // eslint-disable-next-line no-console
     console.log('render ========== FavoriteCatalog');
     const {
-      favorite: { size }
+      favoriteData: { size }
     } = this.props;
     const { page } = this.state;
     const pageAmount = Math.ceil(size / CATALOG_BEER_AMOUNT);
@@ -63,14 +63,8 @@ export class FavoriteCatalog extends React.Component {
   }
 }
 
-const mapStateToProps = store => {
-  return {
-    favorite: store.favorite
-  };
-};
-
 FavoriteCatalog.propTypes = {
-  favorite: PropTypes.instanceOf(Map).isRequired
+  favoriteData: PropTypes.instanceOf(Map).isRequired
 };
 
-export default connect(mapStateToProps)(FavoriteCatalog);
+export default withFavorite(FavoriteCatalog);

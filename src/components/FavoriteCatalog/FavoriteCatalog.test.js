@@ -11,10 +11,10 @@ describe('test <FavoriteCatalog /> component', () => {
     data[i] = { id: i };
   }
 
-  const favorite = convertFavoriteToImmutable(data);
+  const favoriteData = convertFavoriteToImmutable(data);
 
   describe('Should correct render 1st page ', () => {
-    const wrapper = shallow(<FavoriteCatalog favorite={favorite} />);
+    const wrapper = shallow(<FavoriteCatalog favoriteData={favoriteData} />);
     test('should match snapshot', () => {
       expect(wrapper).toMatchSnapshot();
     });
@@ -39,10 +39,10 @@ describe('test <FavoriteCatalog /> component', () => {
       );
     });
 
-    test(`ProductList prop data shuold be equal  0-${CATALOG_BEER_AMOUNT} elements of favorite prop`, () => {
+    test(`ProductList prop data shuold be equal  0-${CATALOG_BEER_AMOUNT} elements of favoriteData prop`, () => {
       const propData = wrapper.find('ProductList').prop('data');
 
-      const expected = favorite.toList().slice(0, 24);
+      const expected = favoriteData.toList().slice(0, 24);
 
       expect(is(propData, expected)).toBeTruthy();
     });
@@ -66,7 +66,7 @@ describe('test <FavoriteCatalog /> component', () => {
   });
 
   describe('Should correct render 2nd page ', () => {
-    const wrapper = shallow(<FavoriteCatalog favorite={favorite} />);
+    const wrapper = shallow(<FavoriteCatalog favoriteData={favoriteData} />);
     wrapper.setState({ page: 1 });
     test('should match snapshot', () => {
       expect(wrapper).toMatchSnapshot();
@@ -93,10 +93,10 @@ describe('test <FavoriteCatalog /> component', () => {
     });
 
     test(`ProductList prop data shuold be equal  ${CATALOG_BEER_AMOUNT}-${CATALOG_BEER_AMOUNT *
-      2} elements of favorite prop`, () => {
+      2} elements of favoriteData prop`, () => {
       const propData = wrapper.find('ProductList').prop('data');
 
-      const expected = favorite.toList().slice(24, 48);
+      const expected = favoriteData.toList().slice(24, 48);
 
       expect(is(propData, expected)).toBeTruthy();
     });
@@ -120,7 +120,7 @@ describe('test <FavoriteCatalog /> component', () => {
   });
 
   describe('Should correct render 3rd page ', () => {
-    const wrapper = shallow(<FavoriteCatalog favorite={favorite} />);
+    const wrapper = shallow(<FavoriteCatalog favoriteData={favoriteData} />);
     wrapper.setState({ page: 2 });
     test('should match snapshot', () => {
       expect(wrapper).toMatchSnapshot();
@@ -144,10 +144,10 @@ describe('test <FavoriteCatalog /> component', () => {
       expect(wrapper.find('ProductList').prop('data').size).toBe(4);
     });
 
-    test(`ProductList prop data shuold be equal  last 3 elements of favorite prop`, () => {
+    test(`ProductList prop data shuold be equal  last 3 elements of favoriteData prop`, () => {
       const propData = wrapper.find('ProductList').prop('data');
 
-      const expected = favorite.toList().slice(48, 72);
+      const expected = favoriteData.toList().slice(48, 72);
 
       expect(is(propData, expected)).toBeTruthy();
     });
@@ -170,10 +170,10 @@ describe('test <FavoriteCatalog /> component', () => {
     });
   });
 
-  describe(`Should not  render FavoritPagination component if prop favorite.size < ${CATALOG_BEER_AMOUNT} `, () => {
+  describe(`Should not  render FavoritPagination component if prop favoriteData.size < ${CATALOG_BEER_AMOUNT} `, () => {
     const wrapper = shallow(
       <FavoriteCatalog
-        favorite={convertFavoriteToImmutable({ 1: { id: 1 } })}
+        favoriteData={convertFavoriteToImmutable({ 1: { id: 1 } })}
       />
     );
 

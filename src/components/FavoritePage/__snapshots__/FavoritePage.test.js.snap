@@ -15,7 +15,7 @@ exports[`test <FavoritePage /> component should match snapshot 1`] = `
       >
         Favorite
       </h2>
-      <Connect(FavoriteCatalog) />
+      <Connect(FavoriteWrapper(FavoriteCatalog)) />
     </section>
   </Container>
 </Main>

@@ -9,7 +9,9 @@ describe('test <FavoritePage /> component', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  test('should  render Connect(FavoriteCatalog) component ', () => {
-    expect(wrapper.find('Connect(FavoriteCatalog)')).toHaveLength(1);
+  test('should  render Connect(FavoriteWrapper(FavoriteCatalog)) component ', () => {
+    expect(
+      wrapper.find('Connect(FavoriteWrapper(FavoriteCatalog))')
+    ).toHaveLength(1);
   });
 });
