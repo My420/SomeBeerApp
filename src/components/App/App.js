@@ -7,6 +7,7 @@ import MainPage from '../MainPage/MainPage';
 import Footer from '../Footer/Footer';
 import CatalogPage from '../CatalogPage/CatalogPage';
 import FavoritePage from '../FavoritePage/FavoritePage';
+import CartPage from '../CartPage/CartPage';
 import ItemPage from '../ItemPage/ItemPage';
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
         <Route exact path="/" component={MainPage} />
         <Route exact path="/catalog" component={CatalogPage} />
         <Route exact path="/favorite" component={FavoritePage} />
+        <Route exact path="/cart" component={CartPage} />
         <Route exact path="/id/:id" component={ItemPage} />
         <Route path="/random" render={() => <h2>Random</h2>} />
         <Route render={() => <h2>404 error</h2>} />

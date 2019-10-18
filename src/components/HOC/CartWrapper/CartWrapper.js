@@ -20,7 +20,7 @@ const withCart = WrappedComponent => {
     cartData: PropTypes.instanceOf(Map).isRequired,
     addItemToCart: PropTypes.func.isRequired,
     deleteItemFromCart: PropTypes.func.isRequired,
-    cahngeCartItemAmount: PropTypes.func.isRequired
+    changeCartItemAmount: PropTypes.func.isRequired
   };
 
   CartWrapper.displayName = `CartWrapper(${WrappedComponent.displayName ||
@@ -43,7 +43,7 @@ const withCart = WrappedComponent => {
         dispatch(deleteFromCart(itemId));
       },
 
-      cahngeCartItemAmount: (itemId, amount) => {
+      changeCartItemAmount: (itemId, amount) => {
         dispatch(changeCartItemAmount(itemId, amount));
       }
     };

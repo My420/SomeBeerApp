@@ -1,0 +1,43 @@
+@import '../../sass/variables.scss';
+
+.main,
+.cartPage {
+  width: 100%;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  width: $PC-container-width;
+
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 40px;
+}
+
+@media (max-width: $PC-max-width) {
+  .container {
+    width: $MPC-container-width;
+  }
+}
+
+@media (max-width: $MPC-max-width) {
+  .main {
+    padding-top: 60px;
+  }
+
+  .container {
+    box-sizing: border-box;
+    width: 100%;
+
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: $Tablet9-max-width) {
+  .container {
+    padding-top: 40px;
+  }
+}

@@ -1,0 +1,60 @@
+@import '../../sass/variables.scss';
+
+.wrapper {
+  display: flex;
+  width: 500px;
+
+  margin: 0 auto;
+  padding: 5px;
+
+  border: 1px solid $menu-bar-color;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+
+  width: 30%;
+  height: 120px;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.nameWrapper {
+  width: 30%;
+  height: 120px;
+
+  flex-grow: 1;
+
+  overflow: hidden;
+}
+
+.controlsWrapper {
+  width: 20%;
+  height: 120px;
+}
+
+.amountWrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+}
+
+.decrease,
+.increase,
+.delete {
+  @include link-button;
+}
+
+.delete {
+  margin: 0 auto;
+}
+
+.amount {
+  width: 35px;
+  text-align: center;
+}

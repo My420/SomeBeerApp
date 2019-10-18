@@ -1,0 +1,28 @@
+@import '../../sass/variables.scss';
+
+.list {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.item {
+  margin-bottom: 10px;
+}
+
+.title,
+.empty {
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.controls {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.proceed {
+  @include link-button;
+  margin: 0 auto;
+}
