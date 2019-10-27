@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test <UserCart /> component test component when cardData is empty should match snapshot 1`] = `
+<Fragment>
+  <p
+    className="title"
+  >
+    Your Shopping Cart
+  </p>
+  <ListGroup
+    className="list"
+    tag="ul"
+  >
+    <ListGroupItem
+      className="empty"
+    >
+      is empty.
+    </ListGroupItem>
+  </ListGroup>
+</Fragment>
+`;
+
+exports[`test <UserCart /> component test component when cardData is not empty should match snapshot 1`] = `
+<Fragment>
+  <p
+    className="title"
+  >
+    Your Shopping Cart
+  </p>
+  <ListGroup
+    className="list"
+    tag="ul"
+  >
+    <ListGroupItem
+      className="item"
+      key="1"
+    >
+      <CartCard
+        changeAmount={[MockFunction]}
+        data={
+          Object {
+            "amount": 1,
+            "item": Object {
+              "id": 1,
+              "image_url": "test_url1",
+              "name": "test name 1",
+            },
+          }
+        }
+        deleteCard={[MockFunction]}
+      />
+    </ListGroupItem>
+    <ListGroupItem
+      className="item"
+      key="2"
+    >
+      <CartCard
+        changeAmount={[MockFunction]}
+        data={
+          Object {
+            "amount": 1,
+            "item": Object {
+              "id": 2,
+              "image_url": "test_url2",
+              "name": "test name 2",
+            },
+          }
+        }
+        deleteCard={[MockFunction]}
+      />
+    </ListGroupItem>
+  </ListGroup>
+  <div
+    className="controls"
+  >
+    <Button
+      activeStyle=""
+      className="proceed"
+      disabled={true}
+      onClick={[Function]}
+    >
+      Proceed to checkout
+    </Button>
+  </div>
+</Fragment>
+`;

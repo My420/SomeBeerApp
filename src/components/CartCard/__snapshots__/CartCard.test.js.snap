@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test <CartCard /> component should match snapshot 1`] = `
+<div
+  className="wrapper"
+>
+  <div
+    className="imageWrapper"
+  >
+    <img
+      alt="test name"
+      className="image"
+      src="test_url"
+    />
+  </div>
+  <div
+    className="nameWrapper"
+  >
+    <Link
+      className="name"
+      to="id/1"
+    >
+      test name
+    </Link>
+  </div>
+  <div
+    className="controlsWrapper"
+  >
+    <div
+      className="amountWrapper"
+    >
+      <Button
+        activeStyle=""
+        className="decrease"
+        data-action="decrease"
+        disabled={false}
+        onClick={[Function]}
+      >
+        <span
+          className="visually-hidden"
+        >
+          decrease
+        </span>
+        -
+      </Button>
+      <span
+        className="amount"
+      >
+        1
+      </span>
+      <Button
+        activeStyle=""
+        className="increase"
+        data-action="increase"
+        disabled={false}
+        onClick={[Function]}
+      >
+        <span
+          className="visually-hidden"
+        >
+          increase
+        </span>
+        +
+      </Button>
+    </div>
+    <Button
+      activeStyle=""
+      className="delete"
+      data-action="delete"
+      disabled={false}
+      onClick={[Function]}
+    >
+      <span
+        className="visually-hidden"
+      >
+        delete
+      </span>
+      <IconTrashCan
+        containerClass="deleteContainer"
+        pathClass="deletePath"
+        wrapperClass="container"
+      />
+    </Button>
+  </div>
+</div>
+`;

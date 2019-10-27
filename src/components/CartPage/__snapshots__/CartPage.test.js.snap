@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test <CartPage /> component should match snapshot 1`] = `
+<Main
+  className="main"
+>
+  <Container
+    className="container"
+  >
+    <section
+      className="cartPage"
+    >
+      <h2
+        className="visually-hidden"
+      >
+        Cart
+      </h2>
+      <Connect(CartWrapper(UserCart)) />
+    </section>
+  </Container>
+</Main>
+`;
