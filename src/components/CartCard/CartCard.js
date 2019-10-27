@@ -5,74 +5,106 @@ import styles from './CartCard.module.scss';
 import Button from '../Button/Button';
 import IconTrashCan from '../IconTrashCan/IconTrashCan';
 
-const CartCard = ({ data, changeAmount, deleteCard }) => {
-  // eslint-disable-next-line no-console
-  console.log('render ==================== CartCard');
+class CartCard extends React.Component {
+  shouldComponentUpdate(nextProps) {
+    const { data } = this.props;
+    const {
+      amount,
+      item: { id }
+    } = data;
 
-  let { amount } = data;
-  const { item } = data;
-  const { image_url: url, name, id } = item;
+    const { data: nextData } = nextProps;
+    const { amount: nextAmount, item: nextItem } = nextData;
+    const { id: nextId } = nextItem;
 
-  const onAmountChange = evt => {
-    const { action } = evt.target.dataset;
+    if (amount !== nextAmount || id !== nextId) {
+      return true;
+    }
 
-    if (action === 'increase') {
-      amount += 1;
-      changeAmount(id, amount);
-    } else if (action === 'decrease') {
-      amount -= 1;
-      if (amount === 0) {
+    return false;
+  }
+
+  onButtonClick = evt => {
+    const { action } = evt.currentTarget.dataset;
+    const { data, changeAmount, deleteCard } = this.props;
+    const {
+      item: { id },
+      amount
+    } = data;
+
+    switch (action) {
+      case 'increase':
+        changeAmount(id, amount + 1);
+        break;
+      case 'delete':
         deleteCard(id);
-      } else {
-        changeAmount(id, amount);
+        break;
+      case 'decrease': {
+        const newAmount = amount - 1;
+        if (newAmount === 0) {
+          deleteCard(id);
+        } else {
+          changeAmount(id, newAmount);
+        }
+        break;
       }
+      default:
+        break;
     }
   };
 
-  const onDeleteClick = () => {
-    deleteCard(id);
-  };
+  render() {
+    // eslint-disable-next-line no-console
+    console.log('render ==================== CartCard');
+    const { data } = this.props;
+    const { item, amount } = data;
+    const { image_url: url, name, id } = item;
 
-  return (
-    <div className={styles.wrapper}>
-      <div className={styles.imageWrapper}>
-        <img className={styles.image} src={url} alt={name} />
-      </div>
-      <div className={styles.nameWrapper}>
-        <Link className={styles.name} to={`id/${id}`}>
-          {name}
-        </Link>
-      </div>
-      <div className={styles.controlsWrapper}>
-        <div className={styles.amountWrapper}>
+    return (
+      <div className={styles.wrapper}>
+        <div className={styles.imageWrapper}>
+          <img className={styles.image} src={url} alt={name} />
+        </div>
+        <div className={styles.nameWrapper}>
+          <Link className={styles.name} to={`id/${id}`}>
+            {name}
+          </Link>
+        </div>
+        <div className={styles.controlsWrapper}>
+          <div className={styles.amountWrapper}>
+            <Button
+              className={styles.decrease}
+              onClick={this.onButtonClick}
+              data-action="decrease"
+            >
+              <span className="visually-hidden">decrease</span>-
+            </Button>
+            <span className={styles.amount}>{amount}</span>
+            <Button
+              className={styles.increase}
+              onClick={this.onButtonClick}
+              data-action="increase"
+            >
+              <span className="visually-hidden">increase</span>+
+            </Button>
+          </div>
+
           <Button
-            className={styles.decrease}
-            onClick={onAmountChange}
-            data-action="decrease"
+            className={styles.delete}
+            onClick={this.onButtonClick}
+            data-action="delete"
           >
-            <span className="visually-hidden">decrease</span>-
-          </Button>
-          <span className={styles.amount}>{amount}</span>
-          <Button
-            className={styles.increase}
-            onClick={onAmountChange}
-            data-action="increase"
-          >
-            <span className="visually-hidden">increase</span>+
+            <span className="visually-hidden">delete</span>
+            <IconTrashCan
+              containerClass={styles.deleteContainer}
+              pathClass={styles.deletePath}
+            />
           </Button>
         </div>
-
-        <Button className={styles.delete} onClick={onDeleteClick}>
-          <span className="visually-hidden">delete</span>
-          <IconTrashCan
-            containerClass={styles.deleteContainer}
-            pathClass={styles.deletePath}
-          />
-        </Button>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 CartCard.propTypes = {
   // eslint-disable-next-line react/forbid-prop-types
