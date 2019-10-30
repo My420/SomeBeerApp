@@ -1,0 +1,142 @@
+@import '../../sass/variables.scss';
+
+$cell-width: 120px;
+$cell-height: 120px;
+
+$screen-border-width: 6px;
+$cell-border-width: 2px;
+
+$row-cell-amount: 6;
+$window-cell-amount: 4;
+
+$pointer-width: $cell-border-width * 2;
+
+.wrapper {
+  width: ($cell-width * $window-cell-amount) + ($screen-border-width * 2);
+  margin: 0 auto;
+
+  outline: 2px solid green;
+}
+
+.window {
+  display: flex;
+  position: relative;
+
+  width: $cell-width * $window-cell-amount;
+  height: $cell-height;
+
+  border: $screen-border-width solid $menu-bar-color;
+
+  overflow: hidden;
+  list-style: none;
+}
+
+.pointer {
+  position: absolute;
+  top: 0px;
+  left: ($cell-width * $window-cell-amount / 2) - $pointer-width / 2;
+  z-index: 3;
+
+  width: $pointer-width;
+  height: 100%;
+
+  background-color: yellowgreen;
+}
+
+.firstRow,
+.secondRow {
+  display: flex;
+
+  width: $cell-width * $row-cell-amount;
+  height: $cell-height;
+
+  list-style: none;
+}
+
+.cell {
+  box-sizing: border-box;
+
+  width: $cell-width;
+  height: $cell-height;
+
+  border: $cell-border-width solid $menu-hover-color;
+
+  overflow: hidden;
+}
+
+.startButton {
+  display: block;
+  margin: 30px auto;
+}
+
+@media (max-width: 550px) {
+  $cell-width: 86px;
+  $cell-height: 86px;
+
+  .wrapper {
+    width: ($cell-width * $window-cell-amount) + ($screen-border-width * 2);
+  }
+
+  .window {
+    width: $cell-width * $window-cell-amount;
+    height: $cell-height;
+  }
+
+  .pointer {
+    left: ($cell-width * $window-cell-amount / 2) - $pointer-width / 2;
+  }
+
+  .firstRow,
+  .secondRow {
+    width: $cell-width * $row-cell-amount;
+    height: $cell-height;
+  }
+
+  .cell {
+    width: $cell-width;
+    height: $cell-height;
+  }
+
+  .startButton {
+    display: block;
+    margin: 30px auto;
+  }
+}
+
+@media (max-width: 400px) {
+  $cell-width: 60px;
+  $cell-height: 60px;
+
+  $screen-border-width: 4px;
+
+  .wrapper {
+    width: ($cell-width * $window-cell-amount) + ($screen-border-width * 2);
+  }
+
+  .window {
+    width: $cell-width * $window-cell-amount;
+    height: $cell-height;
+
+    border: $screen-border-width solid $menu-bar-color;
+  }
+
+  .pointer {
+    left: ($cell-width * $window-cell-amount / 2) - $pointer-width / 2;
+  }
+
+  .firstRow,
+  .secondRow {
+    width: $cell-width * $row-cell-amount;
+    height: $cell-height;
+  }
+
+  .cell {
+    width: $cell-width;
+    height: $cell-height;
+  }
+
+  .startButton {
+    display: block;
+    margin: 30px auto;
+  }
+}

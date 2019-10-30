@@ -102,3 +102,5 @@ export const ERROR_TITLE = 'Oops! Something went wrong.';
 export const ERROR_ACTION = 'Please refresh page or try again later.';
 
 export const ENTER_CHAR_CODE = 13;
+
+export const ROULETTE_CELLS_AMOUNT = 12;

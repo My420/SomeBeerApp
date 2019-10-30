@@ -9,6 +9,7 @@ import CatalogPage from '../CatalogPage/CatalogPage';
 import FavoritePage from '../FavoritePage/FavoritePage';
 import CartPage from '../CartPage/CartPage';
 import ItemPage from '../ItemPage/ItemPage';
+import RoulettePage from '../RoulettePage/RoulettePage';
 
 const App = () => {
   // eslint-disable-next-line no-console
@@ -24,7 +25,7 @@ const App = () => {
         <Route exact path="/favorite" component={FavoritePage} />
         <Route exact path="/cart" component={CartPage} />
         <Route exact path="/id/:id" component={ItemPage} />
-        <Route path="/random" render={() => <h2>Random</h2>} />
+        <Route exact path="/roulette" component={RoulettePage} />
         <Route render={() => <h2>404 error</h2>} />
       </Switch>
       <Container className={styles.container}>
