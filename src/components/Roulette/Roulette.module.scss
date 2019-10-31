@@ -27,7 +27,7 @@ $pointer-width: $cell-border-width * 2;
 
   border: $screen-border-width solid $menu-bar-color;
 
-  overflow: hidden;
+  //overflow: hidden;
   list-style: none;
 }
 
@@ -60,6 +60,9 @@ $pointer-width: $cell-border-width * 2;
   height: $cell-height;
 
   border: $cell-border-width solid $menu-hover-color;
+
+  border-left-width: $cell-border-width / 2;
+  border-right-width: $cell-border-width / 2;
 
   overflow: hidden;
 }
