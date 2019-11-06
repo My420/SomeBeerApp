@@ -7,7 +7,7 @@ import RouletteItem from '../RouletteItem/RouletteItem';
 
 const RoulettePanel = ({ data }) => {
   // eslint-disable-next-line no-console
-  console.log('render ==================== RoulettePanel');
+  console.log('render ============= RoulettePanel');
 
   const components = data.toJS().map(elem => {
     return <RouletteItem data={elem} />;

@@ -8,6 +8,13 @@ const CELLS_IN_WINDOW = 4;
 const FULL_CIRCLE_IN_SPIN = 2;
 const SHIFT_VALUE = 10;
 
+const calcStepForZeroPosition = (cellWidth, row1X) => {
+  const rowsWidth = cellWidth * CELLS_IN_ROW * ROW_AMOUNT;
+  const widthToZero = row1X && row1X > 0 ? row1X : rowsWidth + row1X;
+  const stepAmount = widthToZero / SHIFT_VALUE;
+  return stepAmount;
+};
+
 const calcStepAmountForFullCircle = cellWidth => {
   const stepAmount =
     (cellWidth * CELLS_IN_ROW * ROW_AMOUNT * FULL_CIRCLE_IN_SPIN) / SHIFT_VALUE;
@@ -25,7 +32,7 @@ const calcStepAmountForWinnerCell = (cellWidth, winner) => {
   return stepAmount;
 };
 
-const spin = (row1, row2) => {
+const spin = (row1, row2, row1X, row2X) => {
   return new Promise(resolve => {
     const winner = random(1, CELLS_IN_ROW * ROW_AMOUNT);
     const computedStyle = window.getComputedStyle(row1);
@@ -36,12 +43,13 @@ const spin = (row1, row2) => {
     const row2ChangePos = -SHIFT_VALUE;
 
     const stepAmount =
+      calcStepForZeroPosition(cellWidth, row1X) +
       calcStepAmountForFullCircle(cellWidth) +
       calcStepAmountForWinnerCell(cellWidth, winner);
 
     let currentStep = 0;
-    let currentRow1X = 0;
-    let currentRow2X = 0;
+    let currentRow1X = row1X;
+    let currentRow2X = row2X;
 
     const step = () => {
       if (currentStep < stepAmount) {
