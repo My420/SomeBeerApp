@@ -24,7 +24,7 @@ const Roulette = ({ components }) => {
     );
   });
 
-  const onButtonClick = () => {
+  const onButtonClick = async () => {
     const firstRow = firstRowRef.current;
     const secondRow = secondRowRef.current;
     spin(firstRow, secondRow);

@@ -1,29 +1,88 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { List } from 'immutable';
+import { connect } from 'react-redux';
 import styles from './RoulettePage.module.scss';
-import Main from '../Main/Main';
-import Container from '../Container/Container';
-import Roulette from '../Roulette/Roulette';
+import IconLoadingSvg from '../IconLoadingSvg/IconLoadingSvg';
+import ErrorMsg from '../ErrorMsg/ErrorMsg';
+import LoadStatusSwitcher from '../LoadStatusSwitcher/LoadStatusSwitcher';
+import getRouletteData from '../../ActionCreator/getRouletteData';
+import RoulettePanel from '../RoulettePanel/RoulettePanel';
 
-const RoulettePage = () => {
-  // eslint-disable-next-line no-console
-  console.log('render ==================== RoulettePage');
-
-  const components = [];
-
-  for (let i = 1; i < 13; i += 1) {
-    components.push(<span>{i}</span>);
+export class RoulettePage extends React.Component {
+  componentDidMount() {
+    const { getData, isLoaded } = this.props;
+    if (!isLoaded) {
+      getData();
+    }
   }
 
-  return (
-    <Main className={styles.main}>
-      <Container className={styles.container}>
-        <section className={styles.roulettePage}>
-          <h2 className="visually-hidden">Roulette!</h2>
-          <Roulette components={components} />
-        </section>
-      </Container>
-    </Main>
-  );
+  render() {
+    const { isLoaded, isLoading, isError, errorMessage, data } = this.props;
+
+    const LoadingComponent = () => {
+      return (
+        <div className={styles.loader}>
+          <IconLoadingSvg color="#e69e63" />
+        </div>
+      );
+    };
+
+    const ErrorComponent = () => {
+      return (
+        <div className={styles.error}>
+          <ErrorMsg errorMsg={errorMessage} />
+        </div>
+      );
+    };
+
+    const DataComponent = () => {
+      return <RoulettePanel data={data} />;
+    };
+
+    return (
+      <React.Fragment>
+        <LoadStatusSwitcher
+          isLoading={isLoading}
+          isError={isError}
+          isLoaded={isLoaded}
+          LoadingComponent={LoadingComponent}
+          ErrorComponent={ErrorComponent}
+          DataComponent={DataComponent}
+        />
+      </React.Fragment>
+    );
+  }
+}
+
+const mapStateToProps = store => {
+  return {
+    isLoaded: store.roulette.isLoaded,
+    isLoading: store.roulette.isLoading,
+    isError: store.roulette.isError,
+    errorMessage: store.roulette.errorMessage,
+    data: store.roulette.data
+  };
 };
 
-export default RoulettePage;
+const mapDispatchToProps = dispatch => {
+  return {
+    getData: () => {
+      dispatch(getRouletteData());
+    }
+  };
+};
+
+RoulettePage.propTypes = {
+  isLoaded: PropTypes.bool.isRequired, // form connect
+  isLoading: PropTypes.bool.isRequired, // form connect
+  isError: PropTypes.bool.isRequired, // form connect
+  errorMessage: PropTypes.string.isRequired, // form connect
+  data: PropTypes.instanceOf(List).isRequired, // form connect
+  getData: PropTypes.func.isRequired // form connect
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(RoulettePage);

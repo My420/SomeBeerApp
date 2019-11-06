@@ -86,6 +86,10 @@ export const BEER_ID__GET_REQUEST = 'BEER_ID__GET_REQUEST';
 export const BEER_ID__GET_SUCCESS = 'BEER_ID__GET_SUCCESS';
 export const BEER_ID__GET_FAILURE = 'BEER_ID__GET_FAILURE';
 
+export const ROULETTE__GET_REQUEST = 'ROULETTE__GET_REQUEST';
+export const ROULETTE__GET_SUCCESS = 'ROULETTE__GET_SUCCESS';
+export const ROULETTE__GET_FAILURE = 'ROULETTE__GET_FAILURE';
+
 export const CART_ADD_ITEM = 'CART_ADD_ITEM';
 export const CART_DELETE_ITEM = 'CART_DELETE_ITEM';
 export const CART_SET_ITEM_AMOUNT = 'CART_SET_ITEM_AMOUNT';
@@ -94,6 +98,7 @@ export const FAVORITE_ADD_ITEM = 'FAVORITE_ADD_ITEM';
 export const FAVORITE_DELETE_ITEM = 'FAVORITE_DELETE_ITEM';
 
 export const API_HOST = 'https://api.punkapi.com/v2/beers';
+export const API_ITEM_AMOUNT = 325;
 
 export const LOAD_ERROR_MESSAGE =
   'Could not download data, please refresh the page';
