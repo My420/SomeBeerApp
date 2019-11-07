@@ -1,0 +1,20 @@
+.prize {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: transparent;
+}
+
+.wrapper {
+  width: 269px;
+  height: 335px;
+}

@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { List } from 'immutable';
 import { connect } from 'react-redux';
 import styles from './RoulettePage.module.scss';
+import Main from '../Main/Main';
+import Container from '../Container/Container';
 import IconLoadingSvg from '../IconLoadingSvg/IconLoadingSvg';
 import ErrorMsg from '../ErrorMsg/ErrorMsg';
 import LoadStatusSwitcher from '../LoadStatusSwitcher/LoadStatusSwitcher';
@@ -16,6 +18,11 @@ export class RoulettePage extends React.Component {
       getData();
     }
   }
+
+  changeRouletteData = () => {
+    const { getData } = this.props;
+    getData();
+  };
 
   render() {
     // eslint-disable-next-line no-console
@@ -40,20 +47,22 @@ export class RoulettePage extends React.Component {
     };
 
     const DataComponent = () => {
-      return <RoulettePanel data={data} />;
+      return <RoulettePanel data={data} changeData={this.changeRouletteData} />;
     };
 
     return (
-      <React.Fragment>
-        <LoadStatusSwitcher
-          isLoading={isLoading}
-          isError={isError}
-          isLoaded={isLoaded}
-          LoadingComponent={LoadingComponent}
-          ErrorComponent={ErrorComponent}
-          DataComponent={DataComponent}
-        />
-      </React.Fragment>
+      <Main className={styles.main}>
+        <Container className={styles.container}>
+          <LoadStatusSwitcher
+            isLoading={isLoading}
+            isError={isError}
+            isLoaded={isLoaded}
+            LoadingComponent={LoadingComponent}
+            ErrorComponent={ErrorComponent}
+            DataComponent={DataComponent}
+          />
+        </Container>
+      </Main>
     );
   }
 }
