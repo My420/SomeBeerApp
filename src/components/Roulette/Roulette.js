@@ -4,11 +4,11 @@ import styles from './Roulette.module.scss';
 import ListGroup from '../ListGroup/ListGroup';
 import ListGroupItem from '../ListGroupItem/ListGroupItem';
 import { ROULETTE_CELLS_AMOUNT } from '../../utils/constants';
-import generateID from '../../utils/generateID';
 import spin from '../../utils/spin';
+import generateID from '../../utils/generateID';
 
 const Roulette = ({
-  components,
+  components, // components in roulette must have unique prop id
   firstRowX,
   secondRowX,
   onNewWinner,
@@ -24,8 +24,15 @@ const Roulette = ({
   const middle = ROULETTE_CELLS_AMOUNT / 2;
 
   const cells = components.map(elem => {
+    let { id } = elem.props;
+
+    if (!id) {
+      console.warn('components in roulette must have unique prop id');
+      id = generateID();
+    }
+
     return (
-      <ListGroupItem className={styles.cell} key={generateID()}>
+      <ListGroupItem className={styles.cell} key={id}>
         {elem}
       </ListGroupItem>
     );

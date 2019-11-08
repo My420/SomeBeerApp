@@ -6,7 +6,7 @@ import GridItemCard from '../GridItemCard/GridItemCard';
 
 const PrizeWindow = ({ prize, onButtonClick }) => {
   // eslint-disable-next-line no-console
-  console.log('render ============= RoulettePanel', prize);
+  console.log('render ============= RoulettePanel');
 
   return (
     <section className={styles.prize}>

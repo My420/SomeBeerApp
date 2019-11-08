@@ -4,6 +4,7 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import GridCardDescription from '../GridCardDescription/GridCardDescription';
 import styles from './GridCardLink.module.scss';
 import animation from './animation.module.css';
+import replaceEmptyImageUrl from '../../../utils/replaceEmptyImageUrl';
 
 const GridCardLink = ({
   data,
@@ -43,7 +44,11 @@ const GridCardLink = ({
             </CSSTransition>
           ) : null}
         </TransitionGroup>
-        <img className={styles.image} src={data.image_url} alt={data.name} />
+        <img
+          className={styles.image}
+          src={replaceEmptyImageUrl(data.image_url)}
+          alt={data.name}
+        />
       </div>
       <p className={styles.description}>
         <span className={styles.beerName}>{data.name}</span>

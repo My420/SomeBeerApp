@@ -1,4 +1,5 @@
 export const SHOP_NAME = 'Some Beer Shop';
+export const DEFAULT_BEER_IMAGE = 'https://images.punkapi.com/v2/keg.png';
 
 export const LINK = {
   HOME: '/',

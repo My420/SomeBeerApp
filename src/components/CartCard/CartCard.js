@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import styles from './CartCard.module.scss';
 import Button from '../Button/Button';
 import IconTrashCan from '../IconTrashCan/IconTrashCan';
+import replaceEmptyImageUrl from '../../utils/replaceEmptyImageUrl';
 
 class CartCard extends React.Component {
   shouldComponentUpdate(nextProps) {
@@ -63,7 +64,11 @@ class CartCard extends React.Component {
     return (
       <div className={styles.wrapper}>
         <div className={styles.imageWrapper}>
-          <img className={styles.image} src={url} alt={name} />
+          <img
+            className={styles.image}
+            src={replaceEmptyImageUrl(url)}
+            alt={name}
+          />
         </div>
         <div className={styles.nameWrapper}>
           <Link className={styles.name} to={`id/${id}`}>

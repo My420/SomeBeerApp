@@ -29,13 +29,15 @@ class RoulettePanel extends React.Component {
     const { winner, firstRowX, secondRowX } = this.state;
 
     const components = data.toJS().map(elem => {
-      return <RouletteItem data={elem} />;
+      const { image_url: url, name, id } = elem;
+      return <RouletteItem url={url} name={name} id={id} />;
     });
 
     const prize = winner && data.get(winner - 1).toJS();
 
     return (
       <section className={styles.roulettePage}>
+        <h3 className="visually-hidden">Roulette</h3>
         <Roulette
           components={components}
           firstRowX={firstRowX}

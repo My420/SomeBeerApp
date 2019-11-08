@@ -6,6 +6,7 @@ import BeerItemParameters from './BeerItemParameters/BeerItemParameters';
 import FavoriteBtn from '../FavoriteButton/FavoriteButton';
 import CartBtn from '../CartButton/CartButton';
 import BeerItemDescription from './BeerItemDescription/BeerItemDescription';
+import replaceEmptyImageUrl from '../../utils/replaceEmptyImageUrl';
 
 const BeerItem = ({ data }) => {
   // eslint-disable-next-line no-console
@@ -41,7 +42,11 @@ const BeerItem = ({ data }) => {
       <h1 className="visually-hidden">Beer</h1>
       <div className={styles.wrapper}>
         <div className={styles.imageWrapper}>
-          <img className={styles.image} src={url} alt={name} />
+          <img
+            className={styles.image}
+            src={replaceEmptyImageUrl(url)}
+            alt={name}
+          />
         </div>
         <div className={styles.infoWrapper}>
           <h2 className={styles.name}>{name}</h2>
