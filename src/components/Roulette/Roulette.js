@@ -87,7 +87,11 @@ const Roulette = ({
 };
 
 Roulette.propTypes = {
-  components: PropTypes.arrayOf(PropTypes.node).isRequired
+  components: PropTypes.arrayOf(PropTypes.node).isRequired,
+  firstRowX: PropTypes.number.isRequired,
+  secondRowX: PropTypes.number.isRequired,
+  onNewWinner: PropTypes.func.isRequired,
+  changeData: PropTypes.func.isRequired
 };
 
 export default Roulette;

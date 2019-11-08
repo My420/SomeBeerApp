@@ -72,9 +72,9 @@ $pointer-width: $cell-border-width * 2;
   margin: 30px auto;
 }
 
-@media (max-width: 550px) {
-  $cell-width: 86px;
-  $cell-height: 86px;
+@media (max-width: $Tablet9-max-width) {
+  $cell-width: 80px;
+  $cell-height: 80px;
 
   .wrapper {
     width: ($cell-width * $window-cell-amount) + ($screen-border-width * 2);
@@ -106,7 +106,7 @@ $pointer-width: $cell-border-width * 2;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: $Tablet7-max-width) {
   $cell-width: 60px;
   $cell-height: 60px;
 

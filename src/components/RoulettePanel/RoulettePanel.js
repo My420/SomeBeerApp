@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { List } from 'immutable';
 import styles from './RoulettePanel.module.scss';
 import Roulette from '../Roulette/Roulette';
 import RouletteItem from '../RouletteItem/RouletteItem';
 import PrizeWindow from '../PrizeWindow/PrizeWindow';
-import { SHOP_NAME } from '../../utils/constants';
 
 class RoulettePanel extends React.Component {
   state = {
@@ -35,11 +36,6 @@ class RoulettePanel extends React.Component {
 
     return (
       <section className={styles.roulettePage}>
-        <h2 className={styles.name}>
-          <span className={styles.shopName}>{SHOP_NAME}</span>
-          <span className={styles.pageName}>Roulette!</span>
-        </h2>
-        <p className={styles.slogan}>We will decide which beer you get!</p>
         <Roulette
           components={components}
           firstRowX={firstRowX}
@@ -54,5 +50,10 @@ class RoulettePanel extends React.Component {
     );
   }
 }
+
+RoulettePanel.propTypes = {
+  data: PropTypes.instanceOf(List).isRequired,
+  changeData: PropTypes.func.isRequired
+};
 
 export default RoulettePanel;

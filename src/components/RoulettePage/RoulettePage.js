@@ -10,6 +10,8 @@ import ErrorMsg from '../ErrorMsg/ErrorMsg';
 import LoadStatusSwitcher from '../LoadStatusSwitcher/LoadStatusSwitcher';
 import getRouletteData from '../../ActionCreator/getRouletteData';
 import RoulettePanel from '../RoulettePanel/RoulettePanel';
+import { SHOP_NAME } from '../../utils/constants';
+import withResize from '../ResizeContext/ResizeWrapper';
 
 export class RoulettePage extends React.Component {
   componentDidMount() {
@@ -28,7 +30,14 @@ export class RoulettePage extends React.Component {
     // eslint-disable-next-line no-console
     console.log('render ============================ RoulettePage');
 
-    const { isLoaded, isLoading, isError, errorMessage, data } = this.props;
+    const {
+      isLoaded,
+      isLoading,
+      isError,
+      errorMessage,
+      data,
+      browserWidthRatio
+    } = this.props;
 
     const LoadingComponent = () => {
       return (
@@ -47,12 +56,23 @@ export class RoulettePage extends React.Component {
     };
 
     const DataComponent = () => {
-      return <RoulettePanel data={data} changeData={this.changeRouletteData} />;
+      return (
+        <RoulettePanel
+          key={browserWidthRatio}
+          data={data}
+          changeData={this.changeRouletteData}
+        />
+      );
     };
 
     return (
       <Main className={styles.main}>
         <Container className={styles.container}>
+          <h2 className={styles.name}>
+            <span className={styles.shopName}>{SHOP_NAME}</span>
+            <span className={styles.pageName}>Roulette!</span>
+          </h2>
+          <p className={styles.slogan}>We will decide which beer you get!</p>
           <LoadStatusSwitcher
             isLoading={isLoading}
             isError={isError}
@@ -86,6 +106,7 @@ const mapDispatchToProps = dispatch => {
 };
 
 RoulettePage.propTypes = {
+  browserWidthRatio: PropTypes.number.isRequired,
   isLoaded: PropTypes.bool.isRequired, // form connect
   isLoading: PropTypes.bool.isRequired, // form connect
   isError: PropTypes.bool.isRequired, // form connect
@@ -97,4 +118,4 @@ RoulettePage.propTypes = {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(RoulettePage);
+)(withResize(RoulettePage));
