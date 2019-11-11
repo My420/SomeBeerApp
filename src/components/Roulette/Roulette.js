@@ -73,22 +73,24 @@ const Roulette = ({
           {cells.slice(middle, ROULETTE_CELLS_AMOUNT + 1)}
         </div>
       </ListGroup>
-      <button
-        className={styles.startButton}
-        type="button"
-        ref={startButtonRef}
-        onClick={onButtonClick}
-      >
-        Start
-      </button>
-      <button
-        className={styles.changeButton}
-        type="button"
-        ref={changeButtonRef}
-        onClick={changeData}
-      >
-        Change
-      </button>
+      <div className={styles.controls}>
+        <button
+          className={styles.startButton}
+          type="button"
+          ref={startButtonRef}
+          onClick={onButtonClick}
+        >
+          Spin
+        </button>
+        <button
+          className={styles.changeButton}
+          type="button"
+          ref={changeButtonRef}
+          onClick={changeData}
+        >
+          Change
+        </button>
+      </div>
     </div>
   );
 };

@@ -14,8 +14,6 @@ $pointer-width: $cell-border-width * 2;
 .wrapper {
   width: ($cell-width * $window-cell-amount) + ($screen-border-width * 2);
   margin: 0 auto;
-
-  outline: 2px solid green;
 }
 
 .window {
@@ -67,9 +65,57 @@ $pointer-width: $cell-border-width * 2;
   overflow: hidden;
 }
 
-.startButton {
-  display: block;
-  margin: 30px auto;
+.controls {
+  display: flex;
+  justify-content: space-around;
+  padding: 25px 0;
+}
+
+.startButton,
+.changeButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 30px;
+
+  box-sizing: border-box;
+
+  border: 2px solid $menu-color;
+  border-radius: 5px;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.startButton:hover,
+.changeButton:hover {
+  border-color: $menu-hover-color;
+  color: $menu-hover-color;
+}
+
+.startButton:active,
+.changeButton:active {
+  opacity: 0.5;
+}
+
+.startButton:focus,
+.changeButton:focus {
+  border-color: $menu-hover-color;
+  outline: none;
+  box-shadow: inset 0 0 1px 1px $menu-hover-color;
+}
+
+.startButton:disabled,
+.changeButton:disabled {
+  border-color: $menu-color;
+  color: $menu-color;
+  opacity: 0.2;
+}
+
+.startButton:disabled:hover,
+.changeButton:disabled:hover {
+  opacity: 0.2;
 }
 
 @media (max-width: $Tablet9-max-width) {
@@ -98,11 +144,6 @@ $pointer-width: $cell-border-width * 2;
   .cell {
     width: $cell-width;
     height: $cell-height;
-  }
-
-  .startButton {
-    display: block;
-    margin: 30px auto;
   }
 }
 
@@ -136,10 +177,5 @@ $pointer-width: $cell-border-width * 2;
   .cell {
     width: $cell-width;
     height: $cell-height;
-  }
-
-  .startButton {
-    display: block;
-    margin: 30px auto;
   }
 }

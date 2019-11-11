@@ -13,7 +13,7 @@
 
   margin: 0 auto;
   padding: 0 20px;
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
 .loader {
@@ -26,6 +26,25 @@
   height: auto;
 
   margin-bottom: 20px;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.shopName {
+  margin-bottom: 5px;
+}
+
+.name,
+.slogan {
+  text-align: center;
+}
+
+.slogan {
+  margin-bottom: 30px;
 }
 
 @media (max-width: $PC-max-width) {
@@ -43,7 +62,7 @@
     box-sizing: border-box;
     width: 100%;
 
-    padding-top: 100px;
+    padding-top: 50px;
   }
 }
 

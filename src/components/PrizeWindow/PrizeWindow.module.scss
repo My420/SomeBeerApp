@@ -1,3 +1,5 @@
+@import '../../sass/variables.scss';
+
 .prize {
   position: fixed;
   top: 0;
@@ -14,7 +16,49 @@
   background-color: transparent;
 }
 
-.wrapper {
+.inner {
   width: 269px;
   height: 335px;
+}
+
+.wrapper {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  width: 500px;
+  padding: 20px 0;
+  background-color: $background;
+  border: 2px solid $menu-color;
+}
+
+.closeButton {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+button:focus {
+  outline: 2px solid $menu-hover-color;
+}
+
+@media (max-width: $Tablet9-max-width) {
+  .wrapper {
+    width: 380px;
+    padding: 22px 0;
+  }
+}
+
+@media (max-width: $Tablet7-max-width) {
+  .wrapper {
+    width: 300px;
+    padding: 40px 0;
+  }
 }
