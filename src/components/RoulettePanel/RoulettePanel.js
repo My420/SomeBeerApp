@@ -45,9 +45,11 @@ class RoulettePanel extends React.Component {
           onNewWinner={this.onNewWinner}
           changeData={changeData}
         />
-        {winner && (
-          <PrizeWindow prize={prize} onButtonClick={this.deleteWinner} />
-        )}
+        <PrizeWindow
+          prize={prize}
+          onButtonClick={this.deleteWinner}
+          isOpen={!!winner}
+        />
       </section>
     );
   }

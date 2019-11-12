@@ -5,7 +5,7 @@ import random from './random';
 const ROW_AMOUNT = 2;
 const CELLS_IN_ROW = 6;
 const CELLS_IN_WINDOW = 4;
-const FULL_CIRCLE_IN_SPIN = 2;
+const FULL_CIRCLE_IN_SPIN = 4;
 const SHIFT_VALUE = 10;
 
 const calcStepForZeroPosition = (cellWidth, row1X) => {

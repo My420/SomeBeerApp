@@ -8,7 +8,6 @@
 
   display: flex;
   justify-content: center;
-  align-items: center;
 
   width: 100vw;
   height: 100vh;
@@ -28,7 +27,11 @@
   justify-content: center;
 
   width: 500px;
+  height: 340px;
+
+  margin-top: 220px;
   padding: 20px 0;
+
   background-color: $background;
   border: 2px solid $menu-color;
 }
@@ -43,6 +46,8 @@
   border: none;
   background-color: transparent;
   outline: none;
+
+  cursor: pointer;
 }
 
 button:focus {
@@ -52,6 +57,7 @@ button:focus {
 @media (max-width: $Tablet9-max-width) {
   .wrapper {
     width: 380px;
+    margin-top: 200px;
     padding: 22px 0;
   }
 }
@@ -59,6 +65,7 @@ button:focus {
 @media (max-width: $Tablet7-max-width) {
   .wrapper {
     width: 300px;
+    margin-top: 80px;
     padding: 40px 0;
   }
 }
