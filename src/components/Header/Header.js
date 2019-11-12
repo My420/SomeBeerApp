@@ -7,8 +7,8 @@ import Navigation from '../Navigation/Navigation';
 import Button from '../Button/Button';
 import Container from '../Container/Container';
 import { NAVIGATION_LINKS } from '../../utils/constants';
-import IconCrossCss from '../IconCrossCss/IconCrossCss';
-import IconMenuCss from '../IconMenuCss/IconMenuCss';
+import IconCrossCss from '../Icons/IconCrossCss/IconCrossCss';
+import IconMenuCss from '../Icons/IconMenuCss/IconMenuCss';
 
 const Header = ({ isOpen, toggleState, isButtonShown }) => {
   // eslint-disable-next-line no-console

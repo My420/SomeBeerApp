@@ -3,7 +3,7 @@ import { Map } from 'immutable';
 import PropTypes from 'prop-types';
 import styles from './CartButton.module.scss';
 import Button from '../Button/Button';
-import IconCartSvg from '../IconCartSvg/IconCartSvg';
+import IconCartSvg from '../Icons/IconCartSvg/IconCartSvg';
 import withCart from '../HOC/CartWrapper/CartWrapper';
 
 export const CartButton = ({

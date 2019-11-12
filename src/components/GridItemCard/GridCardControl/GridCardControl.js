@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '../../Button/Button';
-import IconInfoSvg from '../../IconInfoSvg/IconInfoSvg';
+import IconInfoSvg from '../../Icons/IconInfoSvg/IconInfoSvg';
 import styles from './GridCardControl.module.scss';
 import CartBtn from '../../CartButton/CartButton';
 import FavoriteBtn from '../../FavoriteButton/FavoriteButton';

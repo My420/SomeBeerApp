@@ -4,7 +4,7 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import styles from './SlideShow.module.scss';
 import './animation.css';
 import Button from '../Button/Button';
-import IconArrowSvg from '../IconArrowSvg/IconArrowSvg';
+import IconArrowSvg from '../Icons/IconArrowSvg/IconArrowSvg';
 import Slide from './Slide/Slide';
 import debounce from '../../utils/debounce';
 

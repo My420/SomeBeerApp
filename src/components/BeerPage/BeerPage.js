@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Record } from 'immutable';
 import { connect } from 'react-redux';
 import BeerItem from '../BeerItem/BeerItem';
-import IconLoadingSvg from '../IconLoadingSvg/IconLoadingSvg';
+import IconLoadingSvg from '../Icons/IconLoadingSvg/IconLoadingSvg';
 import ErrorMsg from '../ErrorMsg/ErrorMsg';
 import styles from './BeerPage.module.scss';
 import getBeerById from '../../ActionCreator/getBeerById';

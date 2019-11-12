@@ -3,8 +3,8 @@ import { Map } from 'immutable';
 import PropTypes from 'prop-types';
 import styles from './FavoriteButton.module.scss';
 import Button from '../Button/Button';
-import IconFavoriteSvg from '../IconFavoriteSvg/IconFavoriteSvg';
-import IconFavoriteFillSvg from '../IconFavoriteFillSvg/IconFavoriteFillSvg';
+import IconFavoriteSvg from '../Icons/IconFavoriteSvg/IconFavoriteSvg';
+import IconFavoriteFillSvg from '../Icons/IconFavoriteFillSvg/IconFavoriteFillSvg';
 import withFavorite from '../HOC/FavoriteWrapper/FavoriteWrapper';
 
 export const FavoriteButton = ({

@@ -5,7 +5,7 @@ import styles from './PrizeWindow.module.scss';
 import animation from './animation.module.css';
 import Button from '../Button/Button';
 import GridItemCard from '../GridItemCard/GridItemCard';
-import IconCrossCss from '../IconCrossCss/IconCrossCss';
+import IconCrossCss from '../Icons/IconCrossCss/IconCrossCss';
 
 const PrizeWindow = ({ prize, onButtonClick, isOpen }) => {
   // eslint-disable-next-line no-console

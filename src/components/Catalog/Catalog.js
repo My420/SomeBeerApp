@@ -4,7 +4,7 @@ import { List } from 'immutable';
 import { connect } from 'react-redux';
 import ProductList from '../ProductList/ProductList';
 import GridItemCard from '../GridItemCard/GridItemCard';
-import IconLoadingSvg from '../IconLoadingSvg/IconLoadingSvg';
+import IconLoadingSvg from '../Icons/IconLoadingSvg/IconLoadingSvg';
 import ErrorMsg from '../ErrorMsg/ErrorMsg';
 import styles from './Catalog.module.scss';
 import getCatalogBeerData from '../../ActionCreator/getCatalogBeerData';

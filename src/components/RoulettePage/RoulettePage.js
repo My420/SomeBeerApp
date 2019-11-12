@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import styles from './RoulettePage.module.scss';
 import Main from '../Main/Main';
 import Container from '../Container/Container';
-import IconLoadingSvg from '../IconLoadingSvg/IconLoadingSvg';
+import IconLoadingSvg from '../Icons/IconLoadingSvg/IconLoadingSvg';
 import ErrorMsg from '../ErrorMsg/ErrorMsg';
 import LoadStatusSwitcher from '../LoadStatusSwitcher/LoadStatusSwitcher';
 import getRouletteData from '../../ActionCreator/getRouletteData';

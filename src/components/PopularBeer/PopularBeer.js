@@ -6,7 +6,7 @@ import styles from './PopularBeer.module.scss';
 import downloadPopularBeerData from '../../ActionCreator/downloadPopularBeerData';
 import ProductList from '../ProductList/ProductList';
 import GridItemCard from '../GridItemCard/GridItemCard';
-import IconLoadingSvg from '../IconLoadingSvg/IconLoadingSvg';
+import IconLoadingSvg from '../Icons/IconLoadingSvg/IconLoadingSvg';
 import ErrorMsg from '../ErrorMsg/ErrorMsg';
 import LoadStatusSwitcher from '../LoadStatusSwitcher/LoadStatusSwitcher';
 

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import styles from './CartCard.module.scss';
 import Button from '../Button/Button';
-import IconTrashCan from '../IconTrashCan/IconTrashCan';
+import IconTrashCan from '../Icons/IconTrashCan/IconTrashCan';
 import replaceEmptyImageUrl from '../../utils/replaceEmptyImageUrl';
 
 class CartCard extends React.Component {

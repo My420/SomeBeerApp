@@ -2,9 +2,9 @@ import React from 'react';
 import styles from './SocialMedia.module.scss';
 import ListGroup from '../ListGroup/ListGroup';
 import ListGroupItem from '../ListGroupItem/ListGroupItem';
-import IconGithub from '../IconGithub/IconGithub';
-import IconEmail from '../IconEmail/IconEmail';
-import IconSkype from '../IconSkype/IconSkype';
+import IconGithub from '../Icons/IconGithub/IconGithub';
+import IconEmail from '../Icons/IconEmail/IconEmail';
+import IconSkype from '../Icons/IconSkype/IconSkype';
 import { SOCIAL_LINK } from '../../utils/constants';
 
 const socialMedia = [

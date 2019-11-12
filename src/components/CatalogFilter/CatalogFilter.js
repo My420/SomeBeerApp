@@ -6,7 +6,7 @@ import Button from '../Button/Button';
 import createOptions from '../../utils/createOptions';
 import compareOptions from '../../utils/compareOptions';
 import Options from './Parameters/Parameters';
-import IconSearchSvg from '../IconSearchSvg/IconSearchSvg';
+import IconSearchSvg from '../Icons/IconSearchSvg/IconSearchSvg';
 import {
   ABV_LESS_PROP,
   ABV_MORE_PROP,
