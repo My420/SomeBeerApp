@@ -11,6 +11,7 @@ import CartPage from '../CartPage/CartPage';
 import ItemPage from '../ItemPage/ItemPage';
 import Roulette from '../RoulettePage/RoulettePage';
 import AboutPage from '../AboutPage/AboutPage';
+import NotFoundPage from '../NotFoundPage/NotFoundPage';
 
 const App = () => {
   // eslint-disable-next-line no-console
@@ -28,7 +29,7 @@ const App = () => {
         <Route exact path="/id/:id" component={ItemPage} />
         <Route exact path="/roulette" component={Roulette} />
         <Route exact path="/about" component={AboutPage} />
-        <Route render={() => <h2>404 error</h2>} />
+        <Route component={NotFoundPage} />
       </Switch>
       <Container className={styles.container}>
         <Footer />
