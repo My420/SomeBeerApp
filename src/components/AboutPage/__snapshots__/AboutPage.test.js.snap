@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <AboutPage /> component should correct render component 1`] = `
+<Main
+  className="main"
+>
+  <Container
+    className="container"
+  >
+    <h2
+      className="visually-hidden"
+    >
+      About
+    </h2>
+    <div
+      className="wrapper"
+    >
+      <p
+        className="description"
+      >
+        <span
+          className="shopName"
+        >
+          Some Beer Shop
+        </span>
+         is a fictional online beer store created to study front-end development. More description on
+        <a
+          className="link"
+          href="https://github.com/My420/SomeBeerApp"
+        >
+          GitHub
+        </a>
+        .
+      </p>
+      <p
+        className="services"
+      >
+        This application uses the
+        <a
+          className="link"
+          href="https://punkapi.com/"
+        >
+          Punk API
+        </a>
+        .
+      </p>
+    </div>
+  </Container>
+</Main>
+`;

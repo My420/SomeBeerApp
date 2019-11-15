@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <NotFoundPage /> component should correct render component 1`] = `
+<Main
+  className="main"
+>
+  <Container
+    className="container"
+  >
+    <section
+      className="page"
+    >
+      <h2
+        className="visually-hidden"
+      >
+        Page not found
+      </h2>
+      <p
+        className="message"
+      >
+        <span
+          className="number"
+        >
+          404
+        </span>
+        <br />
+        <span
+          className="text"
+        >
+          Page Not Found
+        </span>
+      </p>
+    </section>
+  </Container>
+</Main>
+`;

@@ -49,6 +49,8 @@ export const SOCIAL_LINK = {
   SKYPE: 'skype:live:klinovitsky.aleksey?chat'
 };
 
+export const PROJECT_GITHUB = 'https://github.com/My420/SomeBeerApp';
+
 export const SEARCH_INPUT_MAX_LENGTH = 40;
 export const CATALOG_BEER_AMOUNT = 24;
 export const POPULAR_BEER_AMOUNT = 8;

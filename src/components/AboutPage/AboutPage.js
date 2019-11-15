@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './AboutPage.module.scss';
 import Main from '../Main/Main';
 import Container from '../Container/Container';
-import { SHOP_NAME } from '../../utils/constants';
+import { SHOP_NAME, PROJECT_GITHUB } from '../../utils/constants';
 
 const AboutPage = () => {
   return (
@@ -14,10 +14,7 @@ const AboutPage = () => {
             <span className={styles.shopName}>{SHOP_NAME}</span> is a fictional
             online beer store created to study front-end development. More
             description on
-            <a
-              className={styles.link}
-              href="https://github.com/My420/SomeBeerApp"
-            >
+            <a className={styles.link} href={PROJECT_GITHUB}>
               GitHub
             </a>
             .

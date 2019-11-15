@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <RoulettePage /> component should match snapshot 1`] = `
+<Main
+  className="main"
+>
+  <Container
+    className="container"
+  >
+    <h2
+      className="name"
+    >
+      <span
+        className="shopName"
+      >
+        Some Beer Shop
+      </span>
+      <span
+        className="pageName"
+      >
+        Roulette!
+      </span>
+    </h2>
+    <p
+      className="slogan"
+    >
+      We will decide which beer you get!
+    </p>
+    <LoadStatusSwitcher
+      DataComponent={[Function]}
+      ErrorComponent={[Function]}
+      LoadingComponent={[Function]}
+      isError={false}
+      isLoaded={false}
+      isLoading={false}
+    />
+  </Container>
+</Main>
+`;
