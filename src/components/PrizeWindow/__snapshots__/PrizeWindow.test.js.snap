@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <PrizeWindow /> component Test  component when props isOpen = false should correct render component 1`] = `
+<TransitionGroup
+  childFactory={[Function]}
+  component="div"
+/>
+`;
+
+exports[`Test <PrizeWindow /> component Test  component when props isOpen = true should correct render component 1`] = `
+<TransitionGroup
+  childFactory={[Function]}
+  component="div"
+>
+  <CSSTransition
+    classNames={Object {}}
+    timeout={300}
+  >
+    <section
+      className="prize"
+    >
+      <h3
+        className="visually-hidden"
+      >
+        Prize
+      </h3>
+      <div
+        className="wrapper"
+      >
+        <div
+          className="inner"
+        >
+          <GridItemCard
+            data="prize"
+          />
+        </div>
+        <Button
+          activeStyle=""
+          className="closeButton"
+          disabled={false}
+          onClick={[MockFunction]}
+        >
+          <span
+            className="visually-hidden"
+          >
+            Close
+          </span>
+          <IconCrossCss />
+        </Button>
+      </div>
+    </section>
+  </CSSTransition>
+</TransitionGroup>
+`;
