@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test <GridCardLink/> component test component when prop isDescriptionOpen = false should match snapshot 1`] = `
+<Link
+  className="link"
+  onMouseEnter={[MockFunction]}
+  onMouseLeave={[MockFunction]}
+  to="id/11"
+>
+  <div
+    className="wrapper"
+  >
+    <TransitionGroup
+      childFactory={[Function]}
+      component={null}
+    />
+    <img
+      alt="test name"
+      className="image"
+      src="test url"
+    />
+  </div>
+  <p
+    className="description"
+  >
+    <span
+      className="beerName"
+    >
+      test name
+    </span>
+  </p>
+</Link>
+`;
+
+exports[`test <GridCardLink/> component test component when prop isDescriptionOpen = true should match snapshot 1`] = `
+<Link
+  className="link"
+  onMouseEnter={[MockFunction]}
+  onMouseLeave={[MockFunction]}
+  to="id/11"
+>
+  <div
+    className="wrapper"
+  >
+    <TransitionGroup
+      childFactory={[Function]}
+      component={null}
+    >
+      <CSSTransition
+        addEndListener={[Function]}
+        classNames={Object {}}
+        timeout={200}
+      >
+        <GridCardDescription
+          parameter={
+            Object {
+              "abv": 11,
+              "ebc": 33,
+              "ibu": 22,
+            }
+          }
+          title="test tagline"
+        />
+      </CSSTransition>
+    </TransitionGroup>
+    <img
+      alt="test name"
+      className="image"
+      src="test url"
+    />
+  </div>
+  <p
+    className="description"
+  >
+    <span
+      className="beerName"
+    >
+      test name
+    </span>
+  </p>
+</Link>
+`;

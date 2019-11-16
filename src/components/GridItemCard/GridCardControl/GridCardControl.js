@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Button from '../../Button/Button';
 import IconInfoSvg from '../../Icons/IconInfoSvg/IconInfoSvg';
 import styles from './GridCardControl.module.scss';
@@ -23,6 +24,13 @@ const GridCardControl = ({ data, isDescriptionOpen, onToggleButtonClick }) => {
       <CartBtn itemData={data} />
     </div>
   );
+};
+
+GridCardControl.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
+  data: PropTypes.object.isRequired,
+  isDescriptionOpen: PropTypes.bool.isRequired,
+  onToggleButtonClick: PropTypes.func.isRequired
 };
 
 export default GridCardControl;

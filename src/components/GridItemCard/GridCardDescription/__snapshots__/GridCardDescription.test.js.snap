@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test <GridCardDescription/> component should match snapshot 1`] = `
+<div
+  className="description"
+>
+  <p
+    className="title"
+  >
+    test title
+  </p>
+  <dl
+    className="parameter"
+  >
+    <dt
+      className="name"
+      key="abv-dt"
+    >
+      abv
+    </dt>
+    <dd
+      className="value"
+      key="abv-dd"
+    >
+      11
+    </dd>
+    <dt
+      className="name"
+      key="ibu-dt"
+    >
+      ibu
+    </dt>
+    <dd
+      className="value"
+      key="ibu-dd"
+    >
+      22
+    </dd>
+    <dt
+      className="name"
+      key="ebc-dt"
+    >
+      ebc
+    </dt>
+    <dd
+      className="value"
+      key="ebc-dd"
+    >
+      33
+    </dd>
+  </dl>
+</div>
+`;

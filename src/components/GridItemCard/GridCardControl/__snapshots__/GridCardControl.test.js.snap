@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test <GridCardControl /> component should match snapshot 1`] = `
+<div
+  className="controls"
+>
+  <Button
+    activeStyle=""
+    className="toggleButton"
+    disabled={false}
+    onClick={[MockFunction]}
+  >
+    <IconInfoSvg
+      containerClass="infoContainer"
+      pathClass="infoPathClose"
+    />
+  </Button>
+  <Connect(FavoriteWrapper(FavoriteButton))
+    itemData={
+      Object {
+        "id": "test",
+      }
+    }
+  />
+  <Connect(CartWrapper(CartButton))
+    itemData={
+      Object {
+        "id": "test",
+      }
+    }
+  />
+</div>
+`;

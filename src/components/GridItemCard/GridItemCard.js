@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './GridItemCard.module.scss';
 import GridCardControl from './GridCardControl/GridCardControl';
 import GridCardLink from './GridCardLink/GridCardLink';
@@ -45,5 +46,10 @@ class GridItemCard extends React.Component {
     );
   }
 }
+
+GridItemCard.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
+  data: PropTypes.object.isRequired
+};
 
 export default GridItemCard;

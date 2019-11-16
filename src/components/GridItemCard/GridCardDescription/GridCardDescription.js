@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './GridCardDescription.module.scss';
 
 const GridCardDescription = ({ parameter, title }) => {
@@ -22,6 +23,15 @@ const GridCardDescription = ({ parameter, title }) => {
       <dl className={styles.parameter}>{description}</dl>
     </div>
   );
+};
+
+GridCardDescription.propTypes = {
+  parameter: PropTypes.exact({
+    abv: PropTypes.number,
+    ebc: PropTypes.number,
+    ibu: PropTypes.number
+  }).isRequired,
+  title: PropTypes.string.isRequired
 };
 
 export default GridCardDescription;

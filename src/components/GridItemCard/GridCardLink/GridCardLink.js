@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import GridCardDescription from '../GridCardDescription/GridCardDescription';
@@ -55,6 +56,14 @@ const GridCardLink = ({
       </p>
     </Link>
   );
+};
+
+GridCardLink.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
+  data: PropTypes.object.isRequired,
+  isDescriptionOpen: PropTypes.bool.isRequired,
+  onCursorEnter: PropTypes.func.isRequired,
+  onCursorLeave: PropTypes.func.isRequired
 };
 
 export default GridCardLink;

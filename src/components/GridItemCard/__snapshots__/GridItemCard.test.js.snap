@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test <GridItemCard/> component test component when state change should match snapshot 1`] = `
+<div
+  className="card"
+>
+  <GridCardLink
+    data={
+      Object {
+        "id": 1,
+      }
+    }
+    isDescriptionOpen={true}
+    onCursorEnter={[Function]}
+    onCursorLeave={[Function]}
+  />
+  <GridCardControl
+    data={
+      Object {
+        "id": 1,
+      }
+    }
+    isDescriptionOpen={true}
+    onToggleButtonClick={[Function]}
+  />
+</div>
+`;
+
+exports[`test <GridItemCard/> component test component with default state should match snapshot 1`] = `
+<div
+  className="card"
+>
+  <GridCardLink
+    data={
+      Object {
+        "id": 1,
+      }
+    }
+    isDescriptionOpen={false}
+    onCursorEnter={[Function]}
+    onCursorLeave={[Function]}
+  />
+  <GridCardControl
+    data={
+      Object {
+        "id": 1,
+      }
+    }
+    isDescriptionOpen={false}
+    onToggleButtonClick={[Function]}
+  />
+</div>
+`;
