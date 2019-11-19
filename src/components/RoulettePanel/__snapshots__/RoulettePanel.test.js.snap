@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <RoulettePanel/> component should correct render component 1`] = `
+<section
+  className="roulettePage"
+>
+  <h3
+    className="visually-hidden"
+  >
+    Roulette
+  </h3>
+  <Roulette
+    changeData={[MockFunction]}
+    components={
+      Array [
+        <RouletteItem
+          id={1}
+          name="name-1"
+          url="url-1"
+        />,
+        <RouletteItem
+          id={2}
+          name="name-2"
+          url="url-2"
+        />,
+        <RouletteItem
+          id={3}
+          name="name-3"
+          url="url-3"
+        />,
+        <RouletteItem
+          id={4}
+          name="name-4"
+          url="url-4"
+        />,
+        <RouletteItem
+          id={5}
+          name="name-5"
+          url="url-5"
+        />,
+        <RouletteItem
+          id={6}
+          name="name-6"
+          url="url-6"
+        />,
+        <RouletteItem
+          id={7}
+          name="name-7"
+          url="url-7"
+        />,
+        <RouletteItem
+          id={8}
+          name="name-8"
+          url="url-8"
+        />,
+        <RouletteItem
+          id={9}
+          name="name-9"
+          url="url-9"
+        />,
+        <RouletteItem
+          id={10}
+          name="name-10"
+          url="url-10"
+        />,
+        <RouletteItem
+          id={11}
+          name="name-11"
+          url="url-11"
+        />,
+        <RouletteItem
+          id={12}
+          name="name-12"
+          url="url-12"
+        />,
+      ]
+    }
+    firstRowX={0}
+    onNewWinner={[Function]}
+    secondRowX={0}
+  />
+  <PrizeWindow
+    isOpen={false}
+    onButtonClick={[Function]}
+    prize={null}
+  />
+</section>
+`;

@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <MainPage /> component should correct render component 1`] = `
+<Main
+  className="main"
+>
+  <Container
+    className="container"
+  >
+    <Logo />
+    <SlideShow>
+      <SloganShakespeare />
+      <SloganJohnnyDepp />
+      <SloganChurchhill />
+      <SloganLuther />
+    </SlideShow>
+    <PopularGoods />
+  </Container>
+</Main>
+`;

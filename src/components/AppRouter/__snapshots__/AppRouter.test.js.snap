@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <AppRouter/> component should correct render component 1`] = `
+<HashRouter>
+  <ResizeProvider>
+    <App />
+  </ResizeProvider>
+</HashRouter>
+`;

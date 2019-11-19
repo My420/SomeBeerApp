@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <RouletteItem /> component should correct render component 1`] = `
+<div
+  className="wrapper"
+>
+  <img
+    alt="test name"
+    className="image"
+    id={20}
+    src="test url"
+  />
+</div>
+`;

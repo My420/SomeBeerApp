@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <App /> component should correct render component 1`] = `
+<div
+  className="wrapper"
+>
+  <Container
+    className="container"
+  >
+    <ResizeWrapper(HeaderCreator) />
+  </Container>
+  <Switch>
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/catalog"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/favorite"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/cart"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/id/:id"
+    />
+    <Route
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "displayName": "Connect(ResizeWrapper(RoulettePage))",
+          "type": [Function],
+        }
+      }
+      exact={true}
+      path="/roulette"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/about"
+    />
+    <Route
+      component={[Function]}
+    />
+  </Switch>
+  <Container
+    className="container"
+  >
+    <Footer />
+  </Container>
+</div>
+`;
