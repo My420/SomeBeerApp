@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test withToggle HOC should correct render component 1`] = `
+<ToggleWrapper(MyComponent)
+  test="test"
+>
+  <MyComponent
+    isOpen={false}
+    test="test"
+    toggleState={[Function]}
+  >
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Close
+    </button>
+  </MyComponent>
+</ToggleWrapper(MyComponent)>
+`;
