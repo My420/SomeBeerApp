@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test withFavorite HOC should correct render component 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Connect(FavoriteWrapper(TestComp))
+    anotherOne="anotherOne"
+    test="test"
+  >
+    <FavoriteWrapper(TestComp)
+      addItemToFavorite={[Function]}
+      anotherOne="anotherOne"
+      deleteItemFromFavorite={[Function]}
+      favoriteData={Immutable.Map {}}
+      test="test"
+    >
+      <TestComp
+        addItemToFavorite={[Function]}
+        anotherOne="anotherOne"
+        deleteItemFromFavorite={[Function]}
+        favoriteData={Immutable.Map {}}
+        test="test"
+      >
+        <p>
+          My Component
+        </p>
+      </TestComp>
+    </FavoriteWrapper(TestComp)>
+  </Connect(FavoriteWrapper(TestComp))>
+</Provider>
+`;

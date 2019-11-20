@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test withCart HOC should correct render component 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Connect(CartWrapper(TestComp))
+    anotherOne="anotherOne"
+    test="test"
+  >
+    <CartWrapper(TestComp)
+      addItemToCart={[Function]}
+      anotherOne="anotherOne"
+      cartData={Immutable.Map {}}
+      changeCartItemAmount={[Function]}
+      deleteItemFromCart={[Function]}
+      test="test"
+    >
+      <TestComp
+        addItemToCart={[Function]}
+        anotherOne="anotherOne"
+        cartData={Immutable.Map {}}
+        changeCartItemAmount={[Function]}
+        deleteItemFromCart={[Function]}
+        test="test"
+      >
+        <p>
+          My Component
+        </p>
+      </TestComp>
+    </CartWrapper(TestComp)>
+  </Connect(CartWrapper(TestComp))>
+</Provider>
+`;
