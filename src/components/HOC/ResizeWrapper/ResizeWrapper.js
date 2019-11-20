@@ -28,8 +28,6 @@ const withResize = WrappedComponent => {
 
     render() {
       const { browserWidthRatio } = this.state;
-      // eslint-disable-next-line no-console
-      console.log('render ===== ResizeWrapper');
       return (
         <WrappedComponent
           {...this.props}

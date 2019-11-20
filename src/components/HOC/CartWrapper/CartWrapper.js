@@ -10,9 +10,6 @@ import {
 
 const withCart = WrappedComponent => {
   const CartWrapper = props => {
-    // eslint-disable-next-line no-console
-    console.log('render ===== CartWrapper');
-
     return <WrappedComponent {...props} />;
   };
 

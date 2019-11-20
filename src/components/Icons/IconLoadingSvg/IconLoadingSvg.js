@@ -3,9 +3,6 @@ import PropTypes from 'prop-types';
 import styles from './IconLoadingSvg.module.scss';
 
 const IconLoadingSvg = ({ svgClass, wrapperClass, color }) => {
-  // eslint-disable-next-line no-console
-  console.log('render ===== IconLoadingSvg');
-
   return (
     <div className={wrapperClass}>
       <svg

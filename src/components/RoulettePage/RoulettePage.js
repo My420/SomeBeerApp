@@ -27,9 +27,6 @@ export class RoulettePage extends React.Component {
   };
 
   render() {
-    // eslint-disable-next-line no-console
-    console.log('render ============================ RoulettePage');
-
     const {
       isLoaded,
       isLoading,

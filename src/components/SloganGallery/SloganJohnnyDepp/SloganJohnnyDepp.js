@@ -6,9 +6,6 @@ import imageTablet from './img/beer_beach@Tablet.jpg';
 import imageMobile from './img/beer_beach@Mobile.jpg';
 
 const SloganJohnnyDepp = () => {
-  // eslint-disable-next-line no-console
-  console.log('render ===== SloganJohnnyDepp');
-
   return (
     <article className={styles.container}>
       <h5 className="visually-hidden"> Johnny Depp quote</h5>

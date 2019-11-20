@@ -37,8 +37,6 @@ export class FavoriteCatalog extends React.Component {
   };
 
   render() {
-    // eslint-disable-next-line no-console
-    console.log('render ========== FavoriteCatalog');
     const {
       favoriteData: { size }
     } = this.props;

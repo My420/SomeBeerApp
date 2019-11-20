@@ -9,9 +9,6 @@ import {
 
 const withFavorite = WrappedComponent => {
   const FavoriteWrapper = props => {
-    // eslint-disable-next-line no-console
-    console.log('render ===== FavoriteWrapper');
-
     return <WrappedComponent {...props} />;
   };
 

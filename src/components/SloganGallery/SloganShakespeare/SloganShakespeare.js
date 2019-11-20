@@ -6,9 +6,6 @@ import imageTablet from './img/beer_cheers@Tablet.jpg';
 import imageMobile from './img/beer_cheers@Mobile.jpg';
 
 const SloganShakespeare = () => {
-  // eslint-disable-next-line no-console
-  console.log('render ===== Shakespeare');
-
   return (
     <article className={styles.container}>
       <h5 className="visually-hidden"> William Shakespeare quote</h5>

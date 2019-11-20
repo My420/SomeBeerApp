@@ -6,9 +6,6 @@ import withCart from '../HOC/CartWrapper/CartWrapper';
 import { CART } from '../../utils/constants';
 
 export const CartLink = ({ cartData }) => {
-  // eslint-disable-next-line no-console
-  console.log('render ===== CartLink');
-
   const itemAmount = cartData.size;
 
   return (

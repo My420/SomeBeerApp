@@ -7,9 +7,6 @@ import CartBtn from '../../CartButton/CartButton';
 import FavoriteBtn from '../../FavoriteButton/FavoriteButton';
 
 const GridCardControl = ({ data, isDescriptionOpen, onToggleButtonClick }) => {
-  // eslint-disable-next-line no-console
-  console.log('render ===== GridCardControl');
-
   return (
     <div className={styles.controls}>
       <Button className={styles.toggleButton} onClick={onToggleButtonClick}>

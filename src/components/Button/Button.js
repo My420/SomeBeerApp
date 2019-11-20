@@ -11,8 +11,6 @@ const Button = ({
   ...attr
 }) => {
   const buttonClassName = `${className} ${activeStyle}`;
-  // eslint-disable-next-line no-console
-  console.log('render ===== button');
   return (
     <button
       type="button"

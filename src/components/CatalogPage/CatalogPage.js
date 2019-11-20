@@ -8,8 +8,6 @@ import Container from '../Container/Container';
 import validateOptions from '../../utils/validateOptions';
 
 const CatalogPage = ({ location, history }) => {
-  // eslint-disable-next-line no-console
-  console.log('render ==================== CatalogPage');
   const { search } = location;
   const parseSearch = qs.parse(search);
   const options = validateOptions(parseSearch);

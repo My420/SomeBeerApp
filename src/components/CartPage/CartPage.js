@@ -5,9 +5,6 @@ import Container from '../Container/Container';
 import Cart from '../UserCart/UserCart';
 
 const CartPage = () => {
-  // eslint-disable-next-line no-console
-  console.log('render ==================== CartPage');
-
   return (
     <Main className={styles.main}>
       <Container className={styles.container}>

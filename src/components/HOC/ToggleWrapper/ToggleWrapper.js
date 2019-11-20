@@ -15,8 +15,6 @@ const withToggle = (WrappedComponent, startToggleValue = false) => {
     };
 
     render() {
-      // eslint-disable-next-line no-console
-      console.log('render ===== ToggleWrapper');
       const { isOpen } = this.state;
       return (
         <WrappedComponent

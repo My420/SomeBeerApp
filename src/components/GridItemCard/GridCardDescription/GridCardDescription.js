@@ -3,9 +3,6 @@ import PropTypes from 'prop-types';
 import styles from './GridCardDescription.module.scss';
 
 const GridCardDescription = ({ parameter, title }) => {
-  // eslint-disable-next-line no-console
-  console.log('render ===== GridCardDescription');
-
   const description = Object.keys(parameter).map(key => {
     return [
       <dt className={styles.name} key={`${key}-dt`}>

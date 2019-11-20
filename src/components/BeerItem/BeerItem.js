@@ -9,9 +9,6 @@ import BeerItemDescription from './BeerItemDescription/BeerItemDescription';
 import replaceEmptyImageUrl from '../../utils/replaceEmptyImageUrl';
 
 const BeerItem = ({ data }) => {
-  // eslint-disable-next-line no-console
-  console.log('render ================ BeerItem');
-
   const beerData = data.toJS();
   const {
     name,

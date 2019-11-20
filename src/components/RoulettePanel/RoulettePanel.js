@@ -22,9 +22,6 @@ class RoulettePanel extends React.Component {
   };
 
   render() {
-    // eslint-disable-next-line no-console
-    console.log('render ============= RoulettePanel');
-
     const { data, changeData } = this.props;
     const { winner, firstRowX, secondRowX } = this.state;
 

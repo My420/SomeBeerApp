@@ -6,9 +6,6 @@ import imageTablet from './img/beer_glass@Tablet.jpg';
 import imageMobile from './img/beer_glass@Mobile.jpg';
 
 const SloganLuther = () => {
-  // eslint-disable-next-line no-console
-  console.log('render ===== SloganLuther');
-
   return (
     <article className={styles.container}>
       <h5 className="visually-hidden"> Martin Luther quote</h5>

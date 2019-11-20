@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import './listgroup.scss';
 
 const ListGroup = ({ children, className, tag: Tag, ...attr }) => {
-  // eslint-disable-next-line no-console
-  console.log('render ===== ListGroup');
   return (
     <Tag className={className} {...attr}>
       {children}

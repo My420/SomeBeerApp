@@ -6,8 +6,6 @@ import Container from '../Container/Container';
 import CatalogBeerPage from '../BeerPage/BeerPage';
 
 const ItemPage = ({ match }) => {
-  // eslint-disable-next-line no-console
-  console.log('render ==================== ItemPage');
   const { id } = match.params;
 
   return (

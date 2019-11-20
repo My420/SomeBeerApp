@@ -38,8 +38,6 @@ export class Catalog extends React.Component {
   }
 
   render() {
-    // eslint-disable-next-line no-console
-    console.log('render ========== Catalog');
     const {
       history,
       options,

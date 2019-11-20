@@ -55,8 +55,6 @@ class CartCard extends React.Component {
   };
 
   render() {
-    // eslint-disable-next-line no-console
-    console.log('render ==================== CartCard');
     const { data } = this.props;
     const { item, amount } = data;
     const { image_url: url, name, id } = item;

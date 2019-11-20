@@ -6,9 +6,6 @@ import imageTablet from './img/bottle_caps@Tablet.jpg';
 import imageMobile from './img/bottle_caps@Mobile.jpg';
 
 const SloganChurchhill = () => {
-  // eslint-disable-next-line no-console
-  console.log('render ===== SloganChurchhill');
-
   return (
     <article className={styles.container}>
       <h5 className="visually-hidden"> Winston Churchhill quote</h5>

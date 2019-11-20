@@ -11,8 +11,6 @@ import IconCrossCss from '../Icons/IconCrossCss/IconCrossCss';
 import IconMenuCss from '../Icons/IconMenuCss/IconMenuCss';
 
 const Header = ({ isOpen, toggleState, isButtonShown }) => {
-  // eslint-disable-next-line no-console
-  console.log('render ======================== Header');
   return (
     <header className={styles.header}>
       <Container className={styles.inner}>

@@ -30,8 +30,6 @@ class ResizeProvider extends React.Component {
   render() {
     const { browserWidthRatio } = this.state;
     const { children } = this.props;
-    // eslint-disable-next-line no-console
-    console.log('render ===== ResizeContextProvider');
     return (
       <ResizeContext.Provider value={{ browserWidthRatio }}>
         {children}

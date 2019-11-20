@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import './Container.scss';
 
 const Container = ({ children, className }) => {
-  // eslint-disable-next-line no-console
-  console.log('render ===== container');
   return <div className={className}>{children}</div>;
 };
 

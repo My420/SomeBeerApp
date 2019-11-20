@@ -4,10 +4,6 @@ import styles from './IconArrowSvg.module.scss';
 
 const IconArrowSvg = ({ direction, containerClass, pathClass }) => {
   const containerClassName = `${containerClass} ${styles[direction]}`;
-
-  // eslint-disable-next-line no-console
-  console.log('render ===== IconArrowSvg');
-
   return (
     <div className={containerClassName}>
       <svg width="100%" height="100%" viewBox="0 0 24 24">

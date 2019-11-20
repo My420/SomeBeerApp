@@ -23,9 +23,6 @@ const GridCardLink = ({
     node.addEventListener('transitionend', done, false);
   };
 
-  // eslint-disable-next-line no-console
-  console.log('render ===== GridCardLink');
-
   return (
     <Link
       className={styles.link}

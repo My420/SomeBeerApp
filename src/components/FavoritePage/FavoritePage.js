@@ -5,9 +5,6 @@ import Container from '../Container/Container';
 import Catalog from '../FavoriteCatalog/FavoriteCatalog';
 
 const FavoritePage = () => {
-  // eslint-disable-next-line no-console
-  console.log('render ==================== FavoritePage');
-
   return (
     <Main className={styles.main}>
       <Container className={styles.container}>

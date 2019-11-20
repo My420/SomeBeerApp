@@ -8,9 +8,6 @@ import GridItemCard from '../GridItemCard/GridItemCard';
 import IconCrossCss from '../Icons/IconCrossCss/IconCrossCss';
 
 const PrizeWindow = ({ prize, onButtonClick, isOpen }) => {
-  // eslint-disable-next-line no-console
-  console.log('render ============= PrizeWindow');
-
   return (
     <TransitionGroup>
       {isOpen && (

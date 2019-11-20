@@ -13,9 +13,6 @@ export const UserCart = ({
   deleteItemFromCart,
   changeCartItemAmount
 }) => {
-  // eslint-disable-next-line no-console
-  console.log('render ==================== userCart');
-
   const isEmpty = cartData.size === 0;
 
   const getCartList = () => {

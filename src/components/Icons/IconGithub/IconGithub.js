@@ -3,9 +3,6 @@ import PropTypes from 'prop-types';
 import styles from './IconGithub.module.scss';
 
 const IconGithub = ({ pathClass, wrapperClass }) => {
-  // eslint-disable-next-line no-console
-  console.log('render ===== IconGithub');
-
   return (
     <div className={wrapperClass}>
       <svg width="100%" height="100%" viewBox="0 0 24 24">

@@ -4,9 +4,6 @@ import styles from './Picture.module.scss';
 import { BROWSER_MIN_WIDTH } from '../../utils/constants';
 
 const Picture = ({ className, pcSrc, tabletSrc, mobileSrc, alt, ...attr }) => {
-  // eslint-disable-next-line no-console
-  console.log('render ===== Picture');
-
   return (
     <picture>
       <source

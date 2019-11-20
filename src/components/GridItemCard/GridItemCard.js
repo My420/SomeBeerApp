@@ -24,8 +24,6 @@ class GridItemCard extends React.Component {
     node.addEventListener('transitionend', done, false);
 
   render() {
-    // eslint-disable-next-line no-console
-    console.log('render ===== GridCard');
     const { data } = this.props;
     const { isDescriptionOpen } = this.state;
 

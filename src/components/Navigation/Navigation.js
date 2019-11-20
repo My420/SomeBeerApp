@@ -8,8 +8,6 @@ import Cart from '../CartLink/CartLink';
 import { CART } from '../../utils/constants';
 
 const Navigation = ({ links }) => {
-  // eslint-disable-next-line no-console
-  console.log('render ===== Navigation');
   return (
     <nav className={styles.navigation}>
       <ListGroup className={styles.list}>

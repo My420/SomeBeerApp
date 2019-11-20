@@ -12,9 +12,6 @@ export const CartButton = ({
   addItemToCart,
   deleteItemFromCart
 }) => {
-  // eslint-disable-next-line no-console
-  console.log('render ===== CartButton');
-
   const { id } = itemData;
   const isItemOnCart = cartData.has(id);
   const onCartButtonClick = () => {

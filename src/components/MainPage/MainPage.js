@@ -11,8 +11,6 @@ import SloganLuther from '../SloganGallery/SloganLuther/SloganLuther';
 import PopularGoods from '../PopularGoods/PopularGoods';
 
 const MainPage = () => {
-  // eslint-disable-next-line no-console
-  console.log('render ===== MainPage');
   return (
     <Main className={styles.main}>
       <Container className={styles.container}>

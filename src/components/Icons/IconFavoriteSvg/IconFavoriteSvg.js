@@ -3,9 +3,6 @@ import PropTypes from 'prop-types';
 import styles from './IconFavoriteSvg.module.scss';
 
 const IconFavoriteSvg = ({ containerClass, pathClass }) => {
-  // eslint-disable-next-line no-console
-  console.log('render ===== IconFavorite');
-
   return (
     <div className={containerClass}>
       <svg width="100%" height="100%" viewBox="0 0 24 24">

@@ -14,9 +14,6 @@ const Roulette = ({
   onNewWinner,
   changeData
 }) => {
-  // eslint-disable-next-line no-console
-  console.log('render ==================== Roulette');
-
   const startButtonRef = React.createRef();
   const changeButtonRef = React.createRef();
   const firstRowRef = React.createRef();

@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import styles from './Main.module.scss';
 
 const Main = ({ children, ...attr }) => {
-  // eslint-disable-next-line no-console
-  console.log('render =========================== Main');
   return (
     <main className={styles.pageMain} {...attr}>
       {children}

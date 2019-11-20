@@ -14,8 +14,6 @@ import AboutPage from '../AboutPage/AboutPage';
 import NotFoundPage from '../NotFoundPage/NotFoundPage';
 
 const App = () => {
-  // eslint-disable-next-line no-console
-  console.log('render ===== App');
   return (
     <div className={styles.wrapper}>
       <Container className={styles.container}>
