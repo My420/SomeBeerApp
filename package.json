@@ -1,5 +1,6 @@
 {
   "name": "somebeerapp",
+  "homepage": "https://my420.github.io/SomeBeerApp/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
