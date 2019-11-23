@@ -4,6 +4,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "codecov.io": "^0.1.6",
+    "coveralls": "^3.0.8",
     "enzyme-to-json": "^3.4.3",
     "immutable": "^4.0.0-rc.12",
     "jest-fetch-mock": "^2.1.2",
@@ -22,7 +24,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom --coverage --collectCoverageFrom=src/**/*js --collectCoverageFrom=!src/registerServiceWorker.js",
     "eject": "react-scripts eject",
     "precommit": "lint-staged"
   },
