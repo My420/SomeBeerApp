@@ -43,6 +43,7 @@ class CatalogFilter extends React.Component {
 
     return (
       <section className={styles.filter}>
+        <h3 className="visually-hidden">Options</h3>
         <form className={styles.form} onSubmit={this.onSubmit}>
           <div className={styles.nameWrapper}>
             <BeerName value={name} onPropertyChange={this.onPropertyChange} />

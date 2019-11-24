@@ -10,8 +10,8 @@ describe('Test <IconArrowSvg /> component', () => {
       expect(wrapper).toMatchSnapshot();
     });
 
-    test('should  render div with default className', () => {
-      expect(wrapper.find('div').prop('className')).toBe('container right');
+    test('should  render span with default className', () => {
+      expect(wrapper.find('span').prop('className')).toBe('container right');
     });
 
     test("should  render svg'", () => {
@@ -36,8 +36,8 @@ describe('Test <IconArrowSvg /> component', () => {
       expect(wrapper).toMatchSnapshot();
     });
 
-    test('should  correct set className at div ', () => {
-      expect(wrapper.find('div').prop('className')).toBe('testContainer top');
+    test('should  correct set className at span ', () => {
+      expect(wrapper.find('span').prop('className')).toBe('testContainer top');
     });
 
     test('should  correct set className at path', () => {

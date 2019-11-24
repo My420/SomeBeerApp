@@ -9,7 +9,7 @@ describe('Test <IconCrossCss/> component', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  test('should  render div with class container', () => {
-    expect(wrapper.find('div.container')).toHaveLength(1);
+  test('should  render span with class container', () => {
+    expect(wrapper.find('span.container')).toHaveLength(1);
   });
 });

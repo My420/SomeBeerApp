@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Test <IconArrowSvg /> component Test <IconArrowSvg /> with props should correct render component with props 1`] = `
-<div
+<span
   className="testContainer top"
 >
   <svg
@@ -14,11 +14,11 @@ exports[`Test <IconArrowSvg /> component Test <IconArrowSvg /> with props should
       d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"
     />
   </svg>
-</div>
+</span>
 `;
 
 exports[`Test <IconArrowSvg /> component Test <IconArrowSvg /> without props should correct render component without props 1`] = `
-<div
+<span
   className="container right"
 >
   <svg
@@ -31,5 +31,5 @@ exports[`Test <IconArrowSvg /> component Test <IconArrowSvg /> without props sho
       d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"
     />
   </svg>
-</div>
+</span>
 `;

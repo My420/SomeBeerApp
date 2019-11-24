@@ -10,12 +10,12 @@ describe('Test <IconCartSvg /> component', () => {
       expect(wrapper).toMatchSnapshot();
     });
 
-    test('should  render div with default className', () => {
-      expect(wrapper.find('div').prop('className')).toBe('container');
+    test('should  render span with default className', () => {
+      expect(wrapper.find('span').prop('className')).toBe('container');
     });
 
-    test('should  render svg inside div', () => {
-      expect(wrapper.find('div.container').find('svg')).toHaveLength(1);
+    test('should  render svg inside span', () => {
+      expect(wrapper.find('span.container').find('svg')).toHaveLength(1);
     });
 
     test('svg should  have path with default className', () => {
@@ -32,8 +32,8 @@ describe('Test <IconCartSvg /> component', () => {
       expect(wrapper).toMatchSnapshot();
     });
 
-    test('should  correct set className at div ', () => {
-      expect(wrapper.find('div').prop('className')).toBe('testContainer');
+    test('should  correct set className at span ', () => {
+      expect(wrapper.find('span').prop('className')).toBe('testContainer');
     });
 
     test('should  correct set className at path', () => {
