@@ -5,7 +5,7 @@
   "private": true,
   "dependencies": {
     "codecov.io": "^0.1.6",
-    "coveralls": "^3.0.8",
+    "coveralls": "^3.1.1",
     "enzyme-to-json": "^3.4.3",
     "immutable": "^4.0.0-rc.12",
     "jest-fetch-mock": "^2.1.2",
